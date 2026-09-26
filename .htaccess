@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Redirect any URL that still contains index.html to the clean equivalent
+RewriteCond %{THE_REQUEST} \s/(.+/)?index\.html[\s?] [NC]
+RewriteRule ^(.+/)?index\.html$ /$1 [R=301,L]
