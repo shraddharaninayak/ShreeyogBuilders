@@ -122,10 +122,14 @@ $(document).ready(function () {
 	// reveal scroll trigger
 	$(".reveal").each(function(){
 		var text = $(this);
+		// If element is already in or above viewport on load, animate immediately
+		if (text.length && text[0].getBoundingClientRect().top < window.innerHeight) {
+			text.addClass('animate');
+		}
 		gsap.from(text, {
 			scrollTrigger: {
 			  trigger: text,
-			  start: "top 80%",
+			  start: "top 95%",
 			  onEnter: () => {$(text).addClass('animate');},
 			  //toggleClass: 'active'
 			}

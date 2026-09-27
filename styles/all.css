@@ -246,7 +246,7 @@ body.is-loader {
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 120rem;
+	bottom: 160rem;
 	width: max(350px, 440rem);
 	text-align: center;
 	font-size: var(--sub);
@@ -258,7 +258,7 @@ body.is-loader {
 }
 .loader-key-wrap {
 	overflow: hidden;
-	margin: 40rem 0 0;
+	margin: 0 0 40rem;
 }
 .loader-key {
 	width: 126rem;
@@ -712,16 +712,19 @@ body.is-loader {
 	padding: 1px var(--p1);
 }
 .text-wrap {
-	overflow: hidden;
-	padding: 15px 0;
-	margin: -15px 0;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
 }
 .text-inner {
 	transition: transform 0.8s cubic-bezier(0.46,0.03,0.52,0.96);
 	transform: translateY(calc(100% + 20px));
 }
-.reveal.animate .text-inner {
-	transform: translateY(0%);
+.reveal.animate .text-inner,
+.top .text-inner,
+.contacts .text-inner {
+	transform: translateY(0%) !important;
+	opacity: 1 !important;
 }
 .key-wrap {
 	overflow: hidden;
@@ -1909,10 +1912,10 @@ body.is-loader {
 		transform: scale(12);
 	}
 	.loader-box {
-		bottom: 70px;
+		bottom: 95px;
 	}
 	.loader-key-wrap {
-		margin: 16px 0 0;
+		margin: 0 0 16px;
 	}
 	.loader-key {
 		width: 48px;
@@ -3026,5 +3029,915 @@ body.is-loader {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
+/* ==========================================================================
+   MOBILE VIEW ONLY ENHANCEMENTS (Continuous Flow, Tight Spacing & Crisp Typography)
+   ========================================================================== */
+@media screen and (max-width: 1023px) {
+
+  /* --- GLOBAL MOBILE SPACING & LAYOUT --- */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  #wrapper {
+    padding: 0;
+  }
+
+  .holder {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Prevent text clipping and reveal animation transforms from hiding headers on mobile */
+  .text-wrap {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  .text-inner,
+  .reveal .text-inner,
+  .reveal.animate .text-inner,
+  .top .text-inner,
+  .contacts .text-inner,
+  .subheading .text-inner {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+    display: block !important;
+  }
+
+  .reveal,
+  .reveal.animate {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Reset image floats and inline transforms that cause large empty vertical gaps on mobile */
+  .img-float img,
+  .about-team-col.img-float img,
+  .info-bg img,
+  .info-img img,
+  .invest-info-img img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 420px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    display: block !important;
+  }
+
+  .about-team-col.img-float,
+  .about-top-img,
+  .invest-top-img,
+  .info-bg,
+  .info-img,
+  .invest-info-img {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 16px 0 24px !important;
+    width: 100% !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+  }
+
+  /* Remove distracting vertical line overlay on mobile layout */
+  .info-content .line-wrap,
+  .line-wrap {
+    display: none !important;
+  }
+
+  /* --- 1. HERO SECTION (.banner) --- */
+  .banner {
+    height: 100vh !important;
+    height: 100dvh !important;
+    margin-top: 0 !important;
+  }
+
+  .banner-slider,
+  .banner-slider .slick-list,
+  .banner-slider .slick-track,
+  .banner-slider .slick-slide,
+  .banner-float {
+    height: 100vh !important;
+    height: 100dvh !important;
+  }
+
+  .banner-slider::before {
+    height: 280px !important;
+  }
+
+  .banner-main {
+    bottom: 40px !important;
+  }
+
+  .banner-block {
+    gap: 18px !important;
+  }
+
+  .banner-block h1,
+  .banner-h1 {
+    font-size: clamp(30px, 8.2vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    color: #ffffff !important;
+  }
+
+  .banner-right {
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .banner-block .subheading {
+    font-size: clamp(12px, 3.5vw, 14px) !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.4 !important;
+    color: var(--c2, #DCCBB3) !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .banner-block .button {
+    padding: 12px 28px !important;
+    font-size: 13px !important;
+    letter-spacing: 1.2px !important;
+    margin: 0 !important;
+  }
+
+  /* --- 2. MAIN WRAP & ABOUT SECTION (.main, .main-wrap, .about-team, .about-top) --- */
+  .main {
+    padding-top: 108px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .main-wrap {
+    padding-top: 40px !important;
+  }
+
+  .header::before {
+    height: 120px !important;
+    background: linear-gradient(180deg, rgba(21, 38, 33, 0.95) 0%, rgba(21, 38, 33, 0.75) 70%, rgba(21, 38, 33, 0) 100%) !important;
+  }
+
+  .top,
+  .top[style] {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    margin: 0 auto 16px !important;
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  .top h1,
+  .top h1 .text-inner {
+    font-size: clamp(28px, 7.5vw, 38px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    margin: 0 0 8px !important;
+    text-align: center !important;
+    color: var(--c1) !important;
+  }
+
+  .top .subheading,
+  .top .subheading .text-inner {
+    font-size: clamp(12px, 3.2vw, 14px) !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 12px !important;
+    text-align: center !important;
+    color: var(--c2) !important;
+  }
+
+  .about-top-img {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 12px 0 16px !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+  }
+
+  .about-top-img img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    display: block !important;
+  }
+
+  .line-mob {
+    height: 32px !important;
+    margin: 0 auto 16px !important;
+  }
+
+  .about-top {
+    margin: 0 auto 24px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .about-top h2,
+  .about-top h2 .text-inner {
+    font-size: clamp(24px, 6.2vw, 32px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.5px !important;
+    margin: 0 0 10px !important;
+    color: var(--c1) !important;
+  }
+
+  .about-top-text,
+  .about-top p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 12px !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+  }
+
+  .about-team {
+    margin: 0 auto 32px !important;
+    padding-bottom: 0 !important;
+    gap: 0 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .about-team-col {
+    width: 100% !important;
+    margin: 0 0 16px !important;
+  }
+
+  .about-team-col:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .key-wrap {
+    margin: 0 0 10px !important;
+  }
+
+  .key {
+    width: 40px !important;
+    height: 12px !important;
+  }
+
+  .about-team-col h2,
+  .about-team-col h2 .text-inner {
+    font-size: clamp(25px, 6.5vw, 34px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.5px !important;
+    margin: 0 0 8px !important;
+    color: var(--c1) !important;
+  }
+
+  .about-team-col .subheading,
+  .about-team-col .subheading .text-inner {
+    font-size: clamp(12px, 3.2vw, 14px) !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 12px !important;
+    color: var(--c2) !important;
+  }
+
+  .about-team-text {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 14px !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+  }
+
+  .about-team-text.mob-hidden {
+    margin: 12px 0 0 !important;
+  }
+
+  .about-team-col.img-float {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 12px 0 16px !important;
+    width: 100% !important;
+  }
+
+  .about-team-col.img-float img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    display: block !important;
+  }
+
+  .link-flash {
+    font-size: 13px !important;
+    letter-spacing: 1.2px !important;
+    display: inline-block !important;
+    margin-top: 4px !important;
+  }
+
+  .history {
+    flex-direction: column !important;
+    margin: 0 0 36px !important;
+  }
+
+  .history-col {
+    width: 100% !important;
+    padding: 0 0 16px !important;
+  }
+
+  .history-title h2,
+  .history-title h2 .text-inner {
+    font-size: clamp(24px, 6.2vw, 32px) !important;
+    line-height: 1.2 !important;
+    margin: 0 0 8px !important;
+  }
+
+  .history-title .subheading,
+  .history-title .subheading .text-inner {
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 20px !important;
+  }
+
+  .history-item {
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    padding: 0 0 24px !important;
+    margin: 0 0 20px !important;
+  }
+
+  .history-item:last-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Vertical line centered at 42% */
+  .history-item::after {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 42% !important;
+    content: '' !important;
+    width: 1px !important;
+    background: rgba(242, 241, 237, 0.3) !important;
+  }
+
+  /* Year column on left */
+  .history-year {
+    position: relative !important;
+    width: 42% !important;
+    margin: 0 !important;
+    padding-right: 20px !important;
+    font-size: 16px !important;
+    font-family: 'NanumMyeongjo', serif !important;
+    color: var(--c2, #DCCBB3) !important;
+    line-height: 1.4 !important;
+    text-align: right !important;
+  }
+
+  /* Timeline Dot - PRECISELY CENTERED ON THE LINE (left: 42%) */
+  .history-year::after {
+    position: absolute !important;
+    top: 6px !important;
+    right: 0 !important;
+    transform: translateX(50%) !important;
+    z-index: 10 !important;
+    content: '' !important;
+    width: 10px !important;
+    height: 10px !important;
+    background: var(--c2, #DCCBB3) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 0 3px var(--c4, #152621) !important;
+  }
+
+  /* Content column on right with clean 24px padding so text never touches line or dot */
+  .history-text {
+    width: 58% !important;
+    padding-left: 24px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: rgba(242, 241, 237, 0.85) !important;
+  }
+
+  .history-text h3,
+  .history-text h3 .text-inner {
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 6px !important;
+    color: #ffffff !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .history-text p {
+    margin: 0 !important;
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+  }
+
+
+
+  /* --- 3. APPROACH SLOGAN SECTION (.slogan) --- */
+  .main-wrap .slogan,
+  .slogan {
+    margin: 0 auto 36px !important;
+    padding: 20px 16px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-left: 2px solid var(--c2, #DCCBB3) !important;
+    border-radius: 0 4px 4px 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .slogan-text {
+    font-size: clamp(17px, 4.8vw, 24px) !important;
+    line-height: 1.45 !important;
+    letter-spacing: -0.2px !important;
+    font-family: 'NanumMyeongjo', serif !important;
+    color: var(--c1, #F2F1ED) !important;
+  }
+
+  /* --- 4. PROJECTS SECTION (.info, .projects-container, .project-sec, .invest-top) --- */
+
+  /* Projects Container & Vertical Spacing */
+  .projects-container {
+    padding: 24px 0 36px !important;
+    max-width: 100% !important;
+    position: relative !important;
+  }
+
+  .projects-story-line {
+    display: none !important;
+  }
+
+  /* Compact spacing between project items so they flow smoothly one after another */
+  .project-sec {
+    flex-direction: column !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    margin-bottom: 36px !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+
+  .project-sec:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Project Columns */
+  .project-col {
+    width: 100% !important;
+    margin-bottom: 14px !important;
+    padding: 0 !important;
+  }
+
+  .project-col:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Project Image Sizing & Prominence */
+  .project-col-img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    min-height: 220px !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    margin-bottom: 14px !important;
+  }
+
+  .project-col-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: none !important;
+    display: block !important;
+    border-radius: 4px !important;
+  }
+
+  /* Project Content & Typography */
+  .project-col-content {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .project-number {
+    font-size: 20px !important;
+    margin-bottom: 4px !important;
+    font-family: 'NanumMyeongjo', serif !important;
+    color: var(--c2, #DCCBB3) !important;
+  }
+
+  .project-title,
+  .project-title .text-inner {
+    font-size: clamp(22px, 5.8vw, 30px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.3px !important;
+    margin-bottom: 6px !important;
+    color: #ffffff !important;
+  }
+
+  .project-meta {
+    font-size: 13px !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 10px !important;
+    color: var(--c2, #DCCBB3) !important;
+    text-transform: uppercase !important;
+  }
+
+  .project-desc {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+    margin-bottom: 14px !important;
+  }
+
+  .project-status-badge {
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    padding: 4px 10px !important;
+    display: inline-block !important;
+    margin-bottom: 10px !important;
+    border-radius: 2px !important;
+  }
+
+  .project-amenities-wrap {
+    margin-top: 14px !important;
+    padding-top: 12px !important;
+    border-top: 1px dashed rgba(220, 203, 179, 0.2) !important;
+  }
+
+  .project-amenities-label {
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+    color: var(--c2, #DCCBB3) !important;
+  }
+
+  .project-amenities-list {
+    gap: 8px !important;
+  }
+
+  /* Homepage Projects Header & Blocks (.info) */
+  .info-top {
+    margin: 0 auto 16px !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  .info-top h2,
+  .info-top h2 .text-inner {
+    font-size: clamp(26px, 6.8vw, 36px) !important;
+    line-height: 1.2 !important;
+    margin: 0 0 8px !important;
+    text-align: left !important;
+  }
+
+  .info-top .subheading,
+  .info-top .subheading .text-inner {
+    font-size: clamp(12px, 3.2vw, 14px) !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 14px !important;
+    text-align: left !important;
+  }
+
+  .info-block {
+    margin: 0 auto 36px !important;
+  }
+
+  .info-text {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 0 18px !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+  }
+
+  .info-bg,
+  .info-img {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 12px 0 16px !important;
+    width: 100% !important;
+  }
+
+  .info-bg img,
+  .info-img img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    display: block !important;
+  }
+
+  /* Investment / Project Top Section (.invest-top) */
+  .invest-top {
+    margin: 0 auto 32px !important;
+    padding: 0 !important;
+  }
+
+  .invest-top-img {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 12px 0 16px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+  }
+
+  .invest-top-img img {
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    display: block !important;
+  }
+
+  .invest-top-block {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .invest-top-col {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 12px !important;
+  }
+
+  .invest-top-text {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 12px !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+  }
+
+  .invest-top-highliht {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    margin: 0 0 12px !important;
+    text-align: left !important;
+    font-family: 'NanumMyeongjo', serif !important;
+    color: var(--c1) !important;
+    display: block !important;
+  }
+
+  /* --- 5. APPROACH DETAILS SECTION (.invest-info) --- */
+  .main-wrap .invest-info,
+  .invest-info {
+    position: relative !important;
+    max-width: 100% !important;
+    margin: 0 auto 36px !important;
+    padding: 0 !important;
+  }
+
+  .invest-info-top {
+    margin: 0 auto 16px !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  .invest-info-top h2,
+  .invest-info-top h2 .text-inner {
+    font-size: clamp(26px, 6.8vw, 36px) !important;
+    line-height: 1.2 !important;
+    margin: 0 0 8px !important;
+    text-align: left !important;
+  }
+
+  .invest-info-top .subheading,
+  .invest-info-top .subheading .text-inner {
+    font-size: clamp(12px, 3.2vw, 14px) !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 14px !important;
+    text-align: left !important;
+  }
+
+  .invest-info-block {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .invest-info-block .invest-info-img,
+  .invest-info-img {
+    display: block !important;
+    width: 100% !important;
+    margin: 14px 0 20px !important;
+  }
+
+  .invest-info-content {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .invest-info-text {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 0 18px !important;
+    color: rgba(242, 241, 237, 0.88) !important;
+  }
+
+
+  /* --- 6. AWARDS SECTION (.awards-sec) --- */
+  .awards-sec {
+    padding: 40px 0 45px !important;
+    margin-top: 0 !important;
+  }
+
+  .awards-top {
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+
+  .awards-top .key-wrap {
+    margin-bottom: 12px !important;
+  }
+
+  .awards-top h2,
+  .awards-top h2 .text-inner {
+    font-size: clamp(24px, 6.2vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+
+  .awards-top .subheading,
+  .awards-top .subheading .text-inner {
+    font-size: 12px !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .award-card {
+    padding: 24px 20px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 4px !important;
+  }
+
+  .award-year-badge {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .award-card-body h3 {
+    font-size: 17px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.35 !important;
+  }
+
+  .award-card-body p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: rgba(242, 241, 237, 0.8) !important;
+  }
+
+  /* --- 7. LOCATION SECTION (.location-sec) --- */
+  .location-sec {
+    padding: 40px 0 0 !important;
+  }
+
+  .location-top {
+    margin: 0 auto 24px !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .location-top h2,
+  .location-top h2 .text-inner {
+    font-size: clamp(24px, 6.2vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+
+  .location-top .subheading,
+  .location-top .subheading .text-inner {
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+    text-align: center !important;
+  }
+
+  .location-video-container {
+    aspect-ratio: 16 / 9 !important;
+    width: 100% !important;
+    max-height: 60vh !important;
+    margin: 0 auto !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .location-audio-btn {
+    bottom: 12px !important;
+    right: 12px !important;
+    padding: 8px 14px !important;
+    font-size: 11px !important;
+  }
+
+  /* --- 8. CTA SECTION (.join) --- */
+  .join {
+    padding: 40px 0 45px !important;
+  }
+
+  .join h2,
+  .join h2 .text-inner {
+    font-size: clamp(22px, 5.8vw, 30px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+
+  .join .subheading,
+  .join .subheading .text-inner {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+
+  .join .join-form {
+    padding: 24px 16px 0 !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .join-form::before {
+    margin: 0 auto 16px !important;
+  }
+
+  .input-box {
+    gap: 14px !important;
+  }
+
+  .input-box .input-item input {
+    padding: 14px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .form-button {
+    padding: 20px 0 0 !important;
+    text-align: center !important;
+  }
+
+  .form-button .button {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 14px 24px !important;
+    font-size: 13px !important;
+  }
+
+  /* --- 9. FOOTER SECTION (.footer) --- */
+  .footer {
+    padding: 40px 0 24px !important;
+  }
+
+  .footer .holder {
+    padding: 0 20px !important;
+  }
+
+  .footer-grid-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding-bottom: 24px !important;
+    text-align: center !important;
+  }
+
+  .footer-col-left .footer-links,
+  .footer-col-right .footer-links {
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .footer-links li a {
+    font-size: 14px !important;
+  }
+
+  .footer-logo {
+    max-width: 220px !important;
+    margin: 0 auto !important;
+  }
+
+  .footer-bottom-row {
+    padding-top: 20px !important;
+    gap: 16px !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
+
 
 
