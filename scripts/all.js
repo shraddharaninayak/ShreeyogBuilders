@@ -10,7 +10,23 @@ $(document).ready(function () {
 		}else{
 			$('.header-nav').addClass('vis');
 			$('.mob-nav-icon').addClass('active');
+			$('.header').removeClass('header--hidden');
 		}
+	});
+
+	// Navbar Scroll Direction Behavior: DOWN = HIDE, UP = SHOW, <= 5px = VISIBLE
+	var lastScrollTop = $(window).scrollTop();
+	$(window).on('scroll touchmove', function () {
+		var currentScrollTop = $(window).scrollTop();
+		var $header = $('.header');
+		if (currentScrollTop <= 5) {
+			$header.removeClass('header--hidden').css('transform', 'translateY(0)');
+		} else if (currentScrollTop > lastScrollTop) {
+			$header.addClass('header--hidden').css('transform', 'translateY(-110%)');
+		} else if (currentScrollTop < lastScrollTop) {
+			$header.removeClass('header--hidden').css('transform', 'translateY(0)');
+		}
+		lastScrollTop = currentScrollTop;
 	});
 
 
