@@ -324,7 +324,7 @@ body.is-loader {
 	transform: translateX(-50%);
 }
 .header-logo img {
-	height: 120rem;
+	height: 80rem;
 	width: auto;
 	object-fit: contain;
 	display: block;
@@ -761,14 +761,16 @@ body.is-loader {
 /************************* about *************************/
 .about-top-img {
 	max-width: 980rem;
-	height: 356rem;
+	height: auto;
+	min-height: 0;
 	margin: 0 auto 110rem;
 }
 .about-top-img img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: cover;
 	object-position: center;
+	display: block;
 }
 .about-top {
 	position: relative;
@@ -813,11 +815,13 @@ body.is-loader {
 	margin-left: auto;
 }
 .about-team-col.img-float{
-	height: 540rem;
-	min-height: 360px;
+	height: auto;
+	min-height: 0;
 }
 .about-team-col img {
 	width: 100%;
+	height: auto;
+	display: block;
 }
 .about-team-text {
 	width: 155%;
@@ -1014,16 +1018,16 @@ body.is-loader {
 	align-items: center;
 	text-align: center;
 	font-family: 'NanumMyeongjo';
-	font-size: var(--high);
+	font-size: clamp(38px, 3.6vw, 64px);
 	font-weight: 400;
-	line-height: 120%;
-	letter-spacing: -2.88rem;
+	line-height: 125%;
+	letter-spacing: -1.2px;
 	width: 100%;
 }
 .slogan-line {
 	position: relative;
 	white-space: nowrap;
-	color: rgba(41, 42, 39, 0.07);
+	color: rgba(247, 245, 240, 0.15);
 	display: inline-block;
 	max-width: 100%;
 }
@@ -1212,10 +1216,7 @@ body.is-loader {
 	position: relative;
 }
 .footer-logo {
-	width: 300rem;
-	position: absolute;
-	left: 0;
-	top: 22rem;
+	width: 200rem;
 }
 .footer-logo img {
 	width: 100%;
@@ -1484,11 +1485,8 @@ body.is-loader {
 		padding: 0 0 16px;
 	}
 	.footer-logo {
-		width: 300px;
+		width: 200px;
 		margin: 0 auto 36px;
-		position: relative;
-		left: auto;
-		top: auto;
 	}
 	.footer-top {
 		flex-direction: column;
@@ -1964,10 +1962,12 @@ body.is-loader {
 		margin: 0 auto 16px;
 	}
 	.about-top-img {
-		min-height: 200px;
+		min-height: 0;
+		height: auto;
 	}
 	.about-team-col.img-float{
-		min-height: 450px;
+		min-height: 0;
+		height: auto;
 	}
 	.invest-top-img {
 		min-height: 200px;
@@ -2956,12 +2956,10 @@ body.is-loader {
 }
 
 .footer-logo {
-  max-width: 260px;
+  max-width: 200px;
   width: 100%;
-  position: static !important;
-  margin: 0 auto !important;
-  left: auto !important;
-  top: auto !important;
+  position: relative;
+  margin: 0 auto;
 }
 
 .footer-logo img {
@@ -3465,10 +3463,11 @@ body.is-loader {
   .main-wrap .slogan,
   .slogan {
     margin: 0 auto 36px !important;
-    padding: 20px 16px !important;
-    background: rgba(255, 255, 255, 0.03) !important;
-    border-left: 2px solid var(--c2, #DCCBB3) !important;
-    border-radius: 0 4px 4px 0 !important;
+    padding: 0 16px !important;
+    background: transparent !important;
+    border: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -3946,7 +3945,7 @@ body.is-loader {
   }
 
   .footer-logo {
-    max-width: 220px !important;
+    max-width: 200px !important;
     margin: 0 auto !important;
   }
 
@@ -4124,9 +4123,10 @@ p,
 
 .main-wrap .slogan,
 .slogan {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-left: 3px solid #C9B68A !important;
-  border-radius: 0 12px 12px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
 }
 
 .link-flash {
@@ -4185,17 +4185,55 @@ p,
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3) !important;
 }
 
+.about-team-col.img-float,
+.about-top-img,
+.about-team-col.img-float::before,
+.about-team-col.img-float::after,
+.about-top-img::before,
+.about-top-img::after {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
 .about-top-img,
 .about-team-col.img-float {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-radius: 12px !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
   overflow: hidden !important;
-  border: 1px solid rgba(212, 210, 204, 0.2) !important;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3) !important;
-  height: 480px !important;
+  aspect-ratio: 16 / 10.5 !important;
+  width: calc(50% - 20rem) !important;
+  height: auto !important;
   min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 !important;
+  margin: 0 0 60rem !important;
   display: block !important;
   position: relative !important;
+  align-self: flex-start !important;
+}
+
+.about-top-img {
+  width: 100% !important;
+  max-width: 980rem !important;
+  aspect-ratio: 16 / 8.5 !important;
+  margin: 0 auto 110rem !important;
+}
+
+.about-top-img picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
 }
 
 .about-top-img img,
@@ -4203,11 +4241,17 @@ p,
 .about-top-img picture img {
   width: 100% !important;
   height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
-  transform: none !important;
   display: block !important;
-  border-radius: 12px !important;
+  border: none !important;
+  outline: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
 .project-col-img img {
@@ -4525,10 +4569,11 @@ p,
 
   .about-team-col.img-float,
   .about-top-img {
-    height: 280px !important;
-    max-height: 320px !important;
+    height: auto !important;
+    max-height: none !important;
     min-height: 0 !important;
     width: 100% !important;
+    aspect-ratio: 16 / 10.5 !important;
     margin: 16px 0 20px !important;
   }
 
@@ -4562,10 +4607,11 @@ p,
 @media (max-width: 576px) {
   .about-team-col.img-float,
   .about-top-img {
-    height: 220px !important;
-    max-height: 250px !important;
+    height: auto !important;
+    max-height: none !important;
     min-height: 0 !important;
     width: 100% !important;
+    aspect-ratio: 16 / 10.5 !important;
     margin: 12px 0 16px !important;
   }
 
@@ -4606,7 +4652,7 @@ p,
   }
 
   .header-logo img {
-    height: 68px !important;
+    height: 80px !important;
     width: auto !important;
     object-fit: contain !important;
     display: block !important;
