@@ -1,10 +1,11 @@
 const fs = require('fs');
-const transcript = fs.readFileSync('C:/Users/supri/.gemini/antigravity/brain/89593eea-e8c2-4d6c-9260-30bc2a80253a/.system_generated/logs/transcript_full.jsonl', 'utf8');
 
-const lines = transcript.split('\n').filter(Boolean);
-for (const line of lines) {
-  const obj = JSON.parse(line);
-  if (obj.step_index >= 181 && obj.step_index <= 187 && obj.type === 'PLANNER_RESPONSE') {
-    console.log(obj.tool_calls[0].args.script);
-  }
-}
+const js = fs.readFileSync('public/_nuxt/entry.6ece3b7b.js', 'utf-8');
+
+// Target 1: IntersectionObserver callback around index 202815
+const target1 = 'y.isIntersecting?e.enter():e.leave()';
+console.log('Target 1 index:', js.indexOf(target1));
+
+// Target 2: isScrollbarManipulation in Ty.onFrame around index 214876
+const target2 = 'if(this.isScrollbarManipulation){this.isScrollbarManipulation=!1,this.context.data.scroll.current=this.context.data.scroll.elementContainer.scrollTop,this.context.data.scroll.target=this.context.data.scroll.elementContainer.scrollTop,this.context.data.scroll.transformedCurrent=this.context.data.scroll.current*this.context.data.viewport.transformScale;return}';
+console.log('Target 2 index:', js.indexOf(target2));

@@ -10,8 +10,8 @@ body:has(.people-page) {
   overflow-x: hidden !important;
 }
 
-/* 1. HERO SECTION (.c-welcome) */
-.c-welcome {
+/* 1. HERO SECTION (.people-page .c-welcome) */
+.people-page .c-welcome {
   background-color: #151415 !important;
   color: #ffffff !important;
   min-height: 80vh !important;
@@ -25,7 +25,7 @@ body:has(.people-page) {
   box-sizing: border-box !important;
 }
 
-.c-welcome .figure-sculpture {
+.people-page .c-welcome .figure-sculpture {
   position: absolute !important;
   inset: 0 !important;
   z-index: 1 !important;
@@ -36,7 +36,7 @@ body:has(.people-page) {
   align-items: center !important;
 }
 
-.c-welcome .figure-sculpture figure {
+.people-page .c-welcome .figure-sculpture figure {
   width: min(650px, 90vw) !important;
   height: min(750px, 80vh) !important;
   margin: 0 auto !important;
@@ -46,7 +46,7 @@ body:has(.people-page) {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) !important;
 }
 
-.c-welcome .figure-sculpture figure img {
+.people-page .c-welcome .figure-sculpture figure img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
@@ -54,7 +54,7 @@ body:has(.people-page) {
   filter: brightness(0.65) contrast(1.15) !important;
 }
 
-.c-welcome .figure-sculpture:after {
+.people-page .c-welcome .figure-sculpture:after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -62,7 +62,7 @@ body:has(.people-page) {
   pointer-events: none !important;
 }
 
-.c-welcome .-w {
+.people-page .c-welcome .-w {
   position: relative !important;
   z-index: 10 !important;
   width: 100% !important;
@@ -75,7 +75,7 @@ body:has(.people-page) {
   padding: 0 1.5rem !important;
 }
 
-.c-welcome .-w .tt-red {
+.people-page .c-welcome .-w .tt-red {
   display: block !important;
   font-family: var(--font-b-regular), "Cormorant Garamond", Georgia, serif !important;
   font-size: clamp(3.2rem, 8vw, 7.5rem) !important;
@@ -88,11 +88,11 @@ body:has(.people-page) {
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7) !important;
 }
 
-.c-welcome .-w .tt-red:after {
+.people-page .c-welcome .-w .tt-red:after {
   display: none !important;
 }
 
-.c-welcome .-w .tt-1 {
+.people-page .c-welcome .-w .tt-1 {
   font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
   font-size: clamp(0.75rem, 0.9vw, 0.95rem) !important;
   letter-spacing: 0.22em !important;
@@ -101,7 +101,7 @@ body:has(.people-page) {
   margin-bottom: 0.6rem !important;
 }
 
-.c-welcome .-w .tt-2 {
+.people-page .c-welcome .-w .tt-2 {
   font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
   letter-spacing: 0.04em !important;
@@ -111,7 +111,7 @@ body:has(.people-page) {
   margin: 0 auto !important;
 }
 
-.c-welcome .people-welcome-path {
+.people-page .c-welcome .people-welcome-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -121,8 +121,8 @@ body:has(.people-page) {
   opacity: 0.25 !important;
 }
 
-/* 2. MAIN TWO-COLUMN CONTACT SECTION (.c-about) */
-.c-about {
+/* 2. MAIN TWO-COLUMN CONTACT SECTION (.people-page .c-about) */
+.people-page .c-about {
   background-color: #151415 !important;
   color: #f1eade !important;
   position: relative !important;
@@ -133,18 +133,18 @@ body:has(.people-page) {
 }
 
 /* Eliminate the problematic black mountain underlay mask */
-.c-about .underlay {
+.people-page .c-about .underlay {
   display: none !important;
   background-color: transparent !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
 
-.c-about .stone {
+.people-page .c-about .stone {
   display: none !important;
 }
 
-.c-about .people-about-path {
+.people-page .c-about .people-about-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -154,8 +154,8 @@ body:has(.people-page) {
   opacity: 0.12 !important;
 }
 
-/* Custom contact layout grid container */
-.c-about .-w {
+/* Unbind Obsidian's 12-column grid container */
+.people-page .c-about .-w {
   display: block !important;
   width: 100% !important;
   max-width: 1360px !important;
@@ -166,7 +166,7 @@ body:has(.people-page) {
   z-index: 10 !important;
 }
 
-.c-about .-w > * {
+.people-page .c-about .-w > * {
   grid-column: auto !important;
   grid-row: auto !important;
   width: 100% !important;
@@ -180,7 +180,6 @@ body:has(.people-page) {
   gap: clamp(2.5rem, 5vw, 5rem) !important;
   align-items: start !important;
   width: 100% !important;
-  max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
@@ -365,15 +364,14 @@ body:has(.people-page) {
 }
 
 .contact-glass-card {
-  background: rgba(28, 27, 28, 0.72) !important;
-  border: 1px solid rgba(198, 167, 106, 0.28) !important;
-  border-radius: 0.75rem !important;
-  padding: clamp(2rem, 3.5vw, 3rem) !important;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(198, 167, 106, 0.08) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
+  background: rgba(255, 255, 255, 0.025) !important;
+  border: 1px solid rgba(198, 167, 106, 0.22) !important;
+  border-radius: 16px !important;
+  padding: clamp(2rem, 3.5vw, 3.2rem) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   width: 100% !important;
-  max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
@@ -650,1278 +648,5 @@ body:has(.people-page) {
   }
   .contact-glass-card {
     padding: 1.5rem !important;
-  }
-}
-
-
-
-/* ==========================================================================
-   SHREEYOG UNIVERSAL NAVBAR SPECIFICATION
-   Exact visual match for Obsidian Assembly reference navbar
-   ========================================================================== */
-
-/* Main Header Container */
-header,
-header[data-v-81ce8483] {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: auto !important;
-  padding: 0 !important;
-  z-index: 102 !important;
-  pointer-events: none !important;
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
-header.-at-top,
-header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
-header:not(.-scrolled-up) {
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
-}
-
-/* Inner Layout Row */
-header .-w,
-header .-w[data-v-81ce8483] {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  position: relative !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: clamp(14px, 1.8vw, 20px) clamp(24px, 3.5vw, 48px) !important;
-  box-sizing: border-box !important;
-  height: auto !important;
-  min-height: 64px !important;
-  grid-template-columns: none !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
-/* Left Brand Logo */
-header .-w a.-nl,
-header .-w a.-nl[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  pointer-events: all !important;
-  margin-right: auto !important;
-  text-decoration: none !important;
-  flex: 0 0 auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-.shreeyog-brand-logo {
-  height: clamp(34px, 3.8vw, 42px) !important;
-  width: auto !important;
-  max-width: 220px !important;
-  object-fit: contain !important;
-  display: block !important;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45)) !important;
-  transition: transform 0.3s ease, filter 0.3s ease !important;
-}
-
-.shreeyog-brand-logo:hover {
-  transform: scale(1.02) !important;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55)) !important;
-}
-
-/* Center Vertical Divider */
-header .-w .sep,
-header .-w .sep[data-v-81ce8483] {
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 1px !important;
-  height: 22px !important;
-  background-color: rgba(21, 20, 21, 0.45) !important;
-  pointer-events: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  z-index: 2 !important;
-  display: block !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease !important;
-}
-
-header.-scrolled-up .-w .sep,
-header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-}
-
-/* Center Left Navigation Button (Projects / Places) */
-header .-w .places,
-header .-w [data-v-81ce8483].places,
-header .-w a.places {
-  position: absolute !important;
-  right: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-/* Center Right Navigation Button (About / Objects) */
-header .-w .objects,
-header .-w .objects.about,
-header .-w [data-v-81ce8483].objects,
-header .-w a.objects {
-  position: absolute !important;
-  left: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-header .-w .places:hover,
-header .-w .objects:hover,
-header .-w .objects.about:hover {
-  background-color: rgba(255, 255, 255, 0.18) !important;
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Nav Button Text Labels */
-header .-w .places .text,
-header .-w .objects .text,
-header .-w .objects.about .text,
-header .-w .places [data-v-f52f19c3].text,
-header .-w .objects [data-v-f52f19c3].text {
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  line-height: 1 !important;
-  display: inline-block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  translate: 0 0 !important;
-  white-space: nowrap !important;
-}
-
-header .-w .places .text .-s-char,
-header .-w .objects .text .-s-char {
-  color: inherit !important;
-}
-
-/* Right Menu Capsule Button Wrapper */
-header .-w .menu-wrap,
-header .-w .menu-wrap[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  pointer-events: all !important;
-  margin-left: auto !important;
-  flex: 0 0 auto !important;
-  width: auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-header .-w .menu-wrap:before,
-header .-w .menu-wrap[data-v-81ce8483]:before {
-  display: none !important;
-}
-
-/* Menu Button Capsule */
-header .-w .menu-wrap .menu.button,
-header .-w .menu.button,
-header .-w button.menu,
-button.menu.button[data-v-f52f19c3] {
-  display: inline-flex !important;
-  flex-direction: row-reverse !important; /* Hamburger on left, text on right */
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 9px !important;
-  padding: 0.45rem 1.25rem 0.45rem 1.05rem !important;
-  height: 36px !important;
-  min-width: 105px !important;
-  width: auto !important;
-  white-space: nowrap !important;
-  border-radius: 0.4rem !important;
-  background-color: var(--c-yellow, #f1eade) !important;
-  border: 1px solid rgba(var(--c-yellow-rgb, 241, 234, 222), 0.6) !important;
-  cursor: pointer !important;
-  position: relative !important;
-  overflow: hidden !important;
-  box-sizing: border-box !important;
-  transform: translateZ(0) !important;
-  flex-shrink: 0 !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease !important;
-}
-
-header.-scrolled .-w .menu-wrap .menu.button,
-header.-scrolled .-w .menu.button {
-  flex-grow: 0 !important;
-  width: auto !important;
-  min-width: 105px !important;
-}
-
-header .-w .menu-wrap .button > * {
-  grid-area: auto !important;
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  margin: 0 !important;
-}
-
-/* Hamburger Icon: Two distinct parallel horizontal black lines */
-header .-w .menu-wrap .menu.button .menu-icon,
-header.-scrolled .-w .menu-wrap .button .menu-icon,
-header .-w .menu.button .menu-icon,
-.menu-icon[data-v-81ce8483],
-.menu-icon {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  gap: 4.5px !important;
-  width: 18px !important;
-  height: 11px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: none !important;
-  flex-shrink: 0 !important;
-  pointer-events: none !important;
-}
-
-header .-w .menu-wrap .menu.button .menu-icon:before,
-header .-w .menu-wrap .menu.button .menu-icon:after,
-header .-w .menu.button .menu-icon:before,
-header .-w .menu.button .menu-icon:after,
-.menu-icon[data-v-81ce8483]:before,
-.menu-icon[data-v-81ce8483]:after,
-.menu-icon:before,
-.menu-icon:after {
-  content: "" !important;
-  display: block !important;
-  width: 100% !important;
-  height: 1.5px !important;
-  background-color: #151415 !important;
-  border-radius: 1px !important;
-  position: static !important;
-  background-image: none !important;
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease !important;
-}
-
-/* Menu Text Label */
-header .-w .menu-wrap .menu.button .text,
-header.-scrolled .-w .menu-wrap .button .text,
-header .-w .menu.button .text,
-header .-w .menu.button .text span,
-.menu.button .text[data-v-f52f19c3] {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-  color: #151415 !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  margin: 0 !important;
-  white-space: nowrap !important;
-}
-
-/* Hover on Menu Button */
-header .-w .menu-wrap .menu.button:hover,
-header .-w .menu.button:hover {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
-  transform: translateY(-1px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:before {
-  transform: translateX(2px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:after {
-  transform: translateX(-2px) !important;
-}
-
-/* Send Request Button Removal (Strict user requirement) */
-header .request,
-header .-w .request,
-header .-w .button.request,
-header .-w [data-v-81ce8483].request,
-header .-w [data-v-f52f19c3].request {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Responsive Handling */
-@media (max-width: 860px) {
-  header .-w .places,
-  header .-w .sep,
-  header .-w .objects,
-  header .-w .objects.about {
-    display: none !important;
-  }
-  header .-w {
-    padding: 12px 18px !important;
-  }
-  .shreeyog-brand-logo {
-    height: 34px !important;
-  }
-}
-
-
-/* ==========================================================================
-   SHREEYOG UNIVERSAL NAVBAR SPECIFICATION
-   Exact visual match for Obsidian Assembly reference navbar
-   ========================================================================== */
-
-/* Main Header Container */
-header,
-header[data-v-81ce8483] {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: auto !important;
-  padding: 0 !important;
-  z-index: 102 !important;
-  pointer-events: none !important;
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
-header.-at-top,
-header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
-header:not(.-scrolled-up) {
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
-}
-
-/* Inner Layout Row */
-header .-w,
-header .-w[data-v-81ce8483] {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  position: relative !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: clamp(14px, 1.8vw, 20px) clamp(24px, 3.5vw, 48px) !important;
-  box-sizing: border-box !important;
-  height: auto !important;
-  min-height: 64px !important;
-  grid-template-columns: none !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
-/* Left Brand Logo */
-header .-w a.-nl,
-header .-w a.-nl[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  pointer-events: all !important;
-  margin-right: auto !important;
-  text-decoration: none !important;
-  flex: 0 0 auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-.shreeyog-brand-logo {
-  height: clamp(34px, 3.8vw, 42px) !important;
-  width: auto !important;
-  max-width: 220px !important;
-  object-fit: contain !important;
-  display: block !important;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45)) !important;
-  transition: transform 0.3s ease, filter 0.3s ease !important;
-}
-
-.shreeyog-brand-logo:hover {
-  transform: scale(1.02) !important;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55)) !important;
-}
-
-/* Center Vertical Divider */
-header .-w .sep,
-header .-w .sep[data-v-81ce8483] {
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 1px !important;
-  height: 22px !important;
-  background-color: rgba(21, 20, 21, 0.45) !important;
-  pointer-events: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  z-index: 2 !important;
-  display: block !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease !important;
-}
-
-header.-scrolled-up .-w .sep,
-header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Center Left Navigation Button (Projects / Places) */
-header .-w .places,
-header .-w [data-v-81ce8483].places,
-header .-w a.places {
-  position: absolute !important;
-  right: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-/* Center Right Navigation Button (About / Objects) */
-header .-w .objects,
-header .-w .objects.about,
-header .-w [data-v-81ce8483].objects,
-header .-w a.objects {
-  position: absolute !important;
-  left: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-header .-w .places:hover,
-header .-w .objects:hover,
-header .-w .objects.about:hover {
-  background-color: rgba(255, 255, 255, 0.18) !important;
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Nav Button Text Labels */
-header .-w .places .text,
-header .-w .objects .text,
-header .-w .objects.about .text,
-header .-w .places [data-v-f52f19c3].text,
-header .-w .objects [data-v-f52f19c3].text {
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  line-height: 1 !important;
-  display: inline-block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  translate: 0 0 !important;
-  white-space: nowrap !important;
-}
-
-header .-w .places .text .-s-char,
-header .-w .objects .text .-s-char {
-  color: inherit !important;
-}
-
-/* Right Menu Capsule Button Wrapper */
-header .-w .menu-wrap,
-header .-w .menu-wrap[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  pointer-events: all !important;
-  margin-left: auto !important;
-  flex: 0 0 auto !important;
-  width: auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-header .-w .menu-wrap:before,
-header .-w .menu-wrap[data-v-81ce8483]:before {
-  display: none !important;
-}
-
-/* Menu Button Capsule */
-header .-w .menu-wrap .menu.button,
-header .-w .menu.button,
-header .-w button.menu,
-button.menu.button[data-v-f52f19c3] {
-  display: inline-flex !important;
-  flex-direction: row-reverse !important; /* Hamburger on left, text on right */
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  padding: 0.45rem 1.35rem 0.45rem 1.15rem !important;
-  height: 36px !important;
-  min-width: 112px !important;
-  width: auto !important;
-  white-space: nowrap !important;
-  border-radius: 0.4rem !important;
-  background-color: var(--c-yellow, #f1eade) !important;
-  border: 1px solid rgba(var(--c-yellow-rgb, 241, 234, 222), 0.6) !important;
-  cursor: pointer !important;
-  position: relative !important;
-  overflow: hidden !important;
-  box-sizing: border-box !important;
-  transform: translateZ(0) !important;
-  flex-shrink: 0 !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease !important;
-}
-
-header.-scrolled .-w .menu-wrap .menu.button,
-header.-scrolled .-w .menu.button {
-  flex-grow: 0 !important;
-  width: auto !important;
-  min-width: 112px !important;
-}
-
-header .-w .menu-wrap .button > * {
-  grid-area: auto !important;
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  margin: 0 !important;
-}
-
-/* Hamburger Icon: Two distinct parallel horizontal black lines */
-header .-w .menu-wrap .menu.button .menu-icon,
-header.-scrolled .-w .menu-wrap .button .menu-icon,
-header .-w .menu.button .menu-icon,
-.menu-icon[data-v-81ce8483],
-.menu-icon {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  gap: 4.5px !important;
-  width: 18px !important;
-  height: 11px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: none !important;
-  flex-shrink: 0 !important;
-  pointer-events: none !important;
-}
-
-header .-w .menu-wrap .menu.button .menu-icon:before,
-header .-w .menu-wrap .menu.button .menu-icon:after,
-header .-w .menu.button .menu-icon:before,
-header .-w .menu.button .menu-icon:after,
-.menu-icon[data-v-81ce8483]:before,
-.menu-icon[data-v-81ce8483]:after,
-.menu-icon:before,
-.menu-icon:after {
-  content: "" !important;
-  display: block !important;
-  width: 100% !important;
-  height: 1.5px !important;
-  background-color: #151415 !important;
-  border-radius: 1px !important;
-  position: static !important;
-  background-image: none !important;
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease !important;
-}
-
-/* Menu Text Label */
-header .-w .menu-wrap .menu.button .text,
-header.-scrolled .-w .menu-wrap .button .text,
-header .-w .menu.button .text,
-header .-w .menu.button .text span,
-.menu.button .text[data-v-f52f19c3] {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-  color: #151415 !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  margin: 0 !important;
-  white-space: nowrap !important;
-}
-
-/* Suppress split :after animation on Menu button to prevent duplicate stacked letters */
-header .-w .menu-wrap .menu.button .-s-char:after,
-header .-w .menu-wrap .button .-s-char:after,
-header .-w .menu.button .-s-char:after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Hover on Menu Button */
-header .-w .menu-wrap .menu.button:hover,
-header .-w .menu.button:hover {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
-  transform: translateY(-1px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:before {
-  transform: translateX(2px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:after {
-  transform: translateX(-2px) !important;
-}
-
-/* Send Request Button Removal (Strict user requirement) */
-header .request,
-header .-w .request,
-header .-w .button.request,
-header .-w [data-v-81ce8483].request,
-header .-w [data-v-f52f19c3].request {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Responsive Handling */
-@media (max-width: 860px) {
-  header .-w .places,
-  header .-w .sep,
-  header .-w .objects,
-  header .-w .objects.about {
-    display: none !important;
-  }
-  header .-w {
-    padding: 12px 18px !important;
-  }
-  .shreeyog-brand-logo {
-    height: 34px !important;
-  }
-}
-
-
-/* ==========================================================================
-   SHREEYOG UNIVERSAL NAVBAR SPECIFICATION
-   Exact visual match for Obsidian Assembly reference navbar
-   ========================================================================== */
-
-/* Main Header Container */
-header,
-header[data-v-81ce8483] {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: auto !important;
-  padding: 0 !important;
-  z-index: 102 !important;
-  pointer-events: none !important;
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
-header.-at-top,
-header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
-header:not(.-scrolled-up) {
-  background: transparent !important;
-  background-image: linear-gradient(180deg,
-    rgba(123, 81, 54, 0.65) 0%,
-    rgba(123, 81, 54, 0.55) 22%,
-    rgba(123, 81, 54, 0.35) 45%,
-    rgba(123, 81, 54, 0.15) 70%,
-    rgba(123, 81, 54, 0) 100%) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
-}
-
-/* Inner Layout Row */
-header .-w,
-header .-w[data-v-81ce8483] {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  position: relative !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: clamp(14px, 1.8vw, 20px) clamp(24px, 3.5vw, 48px) !important;
-  box-sizing: border-box !important;
-  height: auto !important;
-  min-height: 64px !important;
-  grid-template-columns: none !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
-/* Left Brand Logo */
-header .-w a.-nl,
-header .-w a.-nl[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  pointer-events: all !important;
-  margin-right: auto !important;
-  text-decoration: none !important;
-  flex: 0 0 auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-.shreeyog-brand-logo {
-  height: clamp(34px, 3.8vw, 42px) !important;
-  width: auto !important;
-  max-width: 220px !important;
-  object-fit: contain !important;
-  display: block !important;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45)) !important;
-  transition: transform 0.3s ease, filter 0.3s ease !important;
-}
-
-.shreeyog-brand-logo:hover {
-  transform: scale(1.02) !important;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.55)) !important;
-}
-
-/* Center Vertical Divider */
-header .-w .sep,
-header .-w .sep[data-v-81ce8483] {
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 1px !important;
-  height: 22px !important;
-  background-color: rgba(21, 20, 21, 0.45) !important;
-  pointer-events: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  z-index: 2 !important;
-  display: block !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease !important;
-}
-
-header.-scrolled-up .-w .sep,
-header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Center Left Navigation Button (Projects / Places) */
-header .-w .places,
-header .-w [data-v-81ce8483].places,
-header .-w a.places {
-  position: absolute !important;
-  right: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-/* Center Right Navigation Button (About / Objects) */
-header .-w .objects,
-header .-w .objects.about,
-header .-w [data-v-81ce8483].objects,
-header .-w a.objects {
-  position: absolute !important;
-  left: calc(50% + 14px) !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 36px !important;
-  padding: 0.45rem 1.4rem !important;
-  border-radius: 0.4rem !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border-top: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  pointer-events: all !important;
-  box-sizing: border-box !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  margin: 0 !important;
-  width: auto !important;
-  min-width: 90px !important;
-  grid-area: auto !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease !important;
-}
-
-header .-w .places:hover,
-header .-w .objects:hover,
-header .-w .objects.about:hover {
-  background-color: rgba(255, 255, 255, 0.18) !important;
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Nav Button Text Labels */
-header .-w .places .text,
-header .-w .objects .text,
-header .-w .objects.about .text,
-header .-w .places [data-v-f52f19c3].text,
-header .-w .objects [data-v-f52f19c3].text {
-  color: var(--c-yellow, #f1eade) !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  line-height: 1 !important;
-  display: inline-block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  translate: 0 0 !important;
-  white-space: nowrap !important;
-}
-
-header .-w .places .text .-s-char,
-header .-w .objects .text .-s-char {
-  color: inherit !important;
-}
-
-/* Right Menu Capsule Button Wrapper */
-header .-w .menu-wrap,
-header .-w .menu-wrap[data-v-81ce8483] {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  pointer-events: all !important;
-  margin-left: auto !important;
-  flex: 0 0 auto !important;
-  width: auto !important;
-  z-index: 2 !important;
-  grid-area: auto !important;
-}
-
-header .-w .menu-wrap:before,
-header .-w .menu-wrap[data-v-81ce8483]:before {
-  display: none !important;
-}
-
-/* Menu Button Capsule */
-header .-w .menu-wrap .menu.button,
-header .-w .menu.button,
-header .-w button.menu,
-button.menu.button[data-v-f52f19c3] {
-  display: inline-flex !important;
-  flex-direction: row-reverse !important; /* Hamburger on left, text on right */
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  padding: 0.45rem 1.35rem 0.45rem 1.15rem !important;
-  height: 36px !important;
-  min-width: 112px !important;
-  width: auto !important;
-  white-space: nowrap !important;
-  border-radius: 0.4rem !important;
-  background-color: var(--c-yellow, #f1eade) !important;
-  border: 1px solid rgba(var(--c-yellow-rgb, 241, 234, 222), 0.6) !important;
-  cursor: pointer !important;
-  position: relative !important;
-  overflow: hidden !important;
-  box-sizing: border-box !important;
-  transform: translateZ(0) !important;
-  flex-shrink: 0 !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease !important;
-}
-
-header.-scrolled .-w .menu-wrap .menu.button,
-header.-scrolled .-w .menu.button {
-  flex-grow: 0 !important;
-  width: auto !important;
-  min-width: 112px !important;
-}
-
-header .-w .menu-wrap .button > * {
-  grid-area: auto !important;
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  margin: 0 !important;
-}
-
-/* Hamburger Icon: Two distinct parallel horizontal black lines */
-header .-w .menu-wrap .menu.button .menu-icon,
-header.-scrolled .-w .menu-wrap .button .menu-icon,
-header .-w .menu.button .menu-icon,
-.menu-icon[data-v-81ce8483],
-.menu-icon {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  gap: 4.5px !important;
-  width: 18px !important;
-  height: 11px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: none !important;
-  flex-shrink: 0 !important;
-  pointer-events: none !important;
-}
-
-header .-w .menu-wrap .menu.button .menu-icon:before,
-header .-w .menu-wrap .menu.button .menu-icon:after,
-header .-w .menu.button .menu-icon:before,
-header .-w .menu.button .menu-icon:after,
-.menu-icon[data-v-81ce8483]:before,
-.menu-icon[data-v-81ce8483]:after,
-.menu-icon:before,
-.menu-icon:after {
-  content: "" !important;
-  display: block !important;
-  width: 100% !important;
-  height: 1.5px !important;
-  background-color: #151415 !important;
-  border-radius: 1px !important;
-  position: static !important;
-  background-image: none !important;
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease !important;
-}
-
-/* Menu Text Label */
-header .-w .menu-wrap .menu.button .text,
-header.-scrolled .-w .menu-wrap .button .text,
-header .-w .menu.button .text,
-header .-w .menu.button .text span,
-.menu.button .text[data-v-f52f19c3] {
-  position: static !important;
-  left: auto !important;
-  translate: none !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: 0.74rem !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-  color: #151415 !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  margin: 0 !important;
-  white-space: nowrap !important;
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  flex-direction: row !important;
-  width: auto !important;
-}
-
-header .-w .menu-wrap .menu.button .text .-s-char,
-header .-w .menu.button .text .-s-char {
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-  white-space: nowrap !important;
-}
-
-/* Suppress split :after animation on Menu button to prevent duplicate stacked letters */
-header .-w .menu-wrap .menu.button .-s-char:after,
-header .-w .menu-wrap .button .-s-char:after,
-header .-w .menu.button .-s-char:after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Hover on Menu Button */
-header .-w .menu-wrap .menu.button:hover,
-header .-w .menu.button:hover {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
-  transform: translateY(-1px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:before {
-  transform: translateX(2px) !important;
-}
-
-header .-w .menu-wrap .menu.button:hover .menu-icon:after {
-  transform: translateX(-2px) !important;
-}
-
-/* Send Request Button Removal (Strict user requirement) */
-header .request,
-header .-w .request,
-header .-w .button.request,
-header .-w [data-v-81ce8483].request,
-header .-w [data-v-f52f19c3].request {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Responsive Handling */
-@media (max-width: 860px) {
-  header .-w .places,
-  header .-w .sep,
-  header .-w .objects,
-  header .-w .objects.about {
-    display: none !important;
-  }
-  header .-w {
-    padding: 12px 18px !important;
-  }
-  .shreeyog-brand-logo {
-    height: 34px !important;
   }
 }

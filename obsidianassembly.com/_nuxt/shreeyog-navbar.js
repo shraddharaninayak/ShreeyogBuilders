@@ -21,6 +21,7 @@
         header.classList.add('-at-top');
         header.classList.remove('-scrolled-up');
         header.classList.remove('-scrolled-down');
+        updateHeroScrollState(0);
       } else if (diff < -2) {
         // Scrolling UP: Turn solid black with crisp high contrast
         header.classList.remove('-at-top');
@@ -33,6 +34,7 @@
         header.classList.add('-scrolled-down');
       }
 
+      updateHeroScrollState(currentScrollY);
       lastScrollY = currentScrollY;
       ticking = false;
     }
@@ -42,6 +44,64 @@
         window.requestAnimationFrame(onScrollUpdate);
         ticking = true;
       }
+    }
+
+    
+    // -------------------------------------------------------------
+    // Shreeyog Homepage Hero Scroll Position & State Controller
+    // Guarantees 100% accurate position return and prevents dislocation
+    // -------------------------------------------------------------
+    var welcomeSection = document.querySelector('.c-welcome');
+    function updateHeroScrollState(currentScrollY) {
+      if (!welcomeSection) return;
+
+      var heroHeight = welcomeSection.offsetHeight || 1101;
+      var rawP = currentScrollY <= 26 ? 0 : (currentScrollY - 26) / heroHeight;
+      var p = Math.min(1, Math.max(0, rawP));
+
+      // At or near top (<= 35px), strictly lock progress to exactly 0
+      if (currentScrollY <= 35) {
+        p = 0;
+      }
+
+      // Synchronize StringTune engine if available
+      try {
+        var nuxtApp = window.useNuxtApp ? window.useNuxtApp() : null;
+        var st = nuxtApp ? nuxtApp.$stringTune : null;
+        if (st && st.objectManager) {
+          var w = st.objectManager.objects.get('welcome');
+          if (w && (currentScrollY <= 35 || Math.abs((w.progress || 0) - p) > 0.001)) {
+            w.progress = p;
+            w.progressRaw = p;
+            w.setProperty('progress-applied', p);
+            if (w.mirrorObjects) {
+              for (var mi = 0; mi < w.mirrorObjects.length; mi++) {
+                var mo = w.mirrorObjects[mi];
+                mo.setProperty('progress', p);
+                if (mo.htmlElement) {
+                  mo.htmlElement.style.setProperty('--progress', p.toString());
+                }
+              }
+            }
+          }
+        }
+      } catch (err) {}
+
+      // Directly ensure hero DOM elements have exact --progress
+      welcomeSection.style.setProperty('--progress', p.toString());
+      var mirrors = welcomeSection.querySelectorAll('[string-copy-from="welcome"], .stone, span.line-2, span.line-3, .cta, .places, .items');
+      for (var j = 0; j < mirrors.length; j++) {
+        mirrors[j].style.setProperty('--progress', p.toString());
+      }
+    }
+
+    // Dismiss preloader completely after initial page transition finishes
+    var pageTrans = document.querySelector('.page-transition');
+    if (pageTrans) {
+      setTimeout(function() {
+        pageTrans.style.setProperty('display', 'none', 'important');
+        pageTrans.style.setProperty('pointer-events', 'none', 'important');
+      }, 1500);
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });

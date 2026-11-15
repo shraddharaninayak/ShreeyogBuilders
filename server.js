@@ -107,7 +107,9 @@ const server = http.createServer((req, res) => {
         'Accept-Ranges': 'bytes',
         'Content-Length': chunkSize,
         'Content-Type': contentType,
-        'Cache-Control': 'no-cache'
+        'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
       });
 
       const stream = fs.createReadStream(filePath, { start, end });
@@ -117,7 +119,9 @@ const server = http.createServer((req, res) => {
         'Content-Type': contentType,
         'Content-Length': totalSize,
         'Accept-Ranges': 'bytes',
-        'Cache-Control': 'no-cache'
+        'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
       });
 
       const stream = fs.createReadStream(filePath);

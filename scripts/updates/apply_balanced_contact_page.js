@@ -19,8 +19,8 @@ body:has(.people-page) {
   overflow-x: hidden !important;
 }
 
-/* 1. HERO SECTION (.c-welcome) */
-.c-welcome {
+/* 1. HERO SECTION (.people-page .c-welcome) */
+.people-page .c-welcome {
   background-color: #151415 !important;
   color: #ffffff !important;
   min-height: 80vh !important;
@@ -34,7 +34,7 @@ body:has(.people-page) {
   box-sizing: border-box !important;
 }
 
-.c-welcome .figure-sculpture {
+.people-page .c-welcome .figure-sculpture {
   position: absolute !important;
   inset: 0 !important;
   z-index: 1 !important;
@@ -45,7 +45,7 @@ body:has(.people-page) {
   align-items: center !important;
 }
 
-.c-welcome .figure-sculpture figure {
+.people-page .c-welcome .figure-sculpture figure {
   width: min(650px, 90vw) !important;
   height: min(750px, 80vh) !important;
   margin: 0 auto !important;
@@ -55,7 +55,7 @@ body:has(.people-page) {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) !important;
 }
 
-.c-welcome .figure-sculpture figure img {
+.people-page .c-welcome .figure-sculpture figure img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
@@ -63,7 +63,7 @@ body:has(.people-page) {
   filter: brightness(0.65) contrast(1.15) !important;
 }
 
-.c-welcome .figure-sculpture:after {
+.people-page .c-welcome .figure-sculpture:after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -71,7 +71,7 @@ body:has(.people-page) {
   pointer-events: none !important;
 }
 
-.c-welcome .-w {
+.people-page .c-welcome .-w {
   position: relative !important;
   z-index: 10 !important;
   width: 100% !important;
@@ -84,7 +84,7 @@ body:has(.people-page) {
   padding: 0 1.5rem !important;
 }
 
-.c-welcome .-w .tt-red {
+.people-page .c-welcome .-w .tt-red {
   display: block !important;
   font-family: var(--font-b-regular), "Cormorant Garamond", Georgia, serif !important;
   font-size: clamp(3.2rem, 8vw, 7.5rem) !important;
@@ -97,11 +97,11 @@ body:has(.people-page) {
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7) !important;
 }
 
-.c-welcome .-w .tt-red:after {
+.people-page .c-welcome .-w .tt-red:after {
   display: none !important;
 }
 
-.c-welcome .-w .tt-1 {
+.people-page .c-welcome .-w .tt-1 {
   font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
   font-size: clamp(0.75rem, 0.9vw, 0.95rem) !important;
   letter-spacing: 0.22em !important;
@@ -110,7 +110,7 @@ body:has(.people-page) {
   margin-bottom: 0.6rem !important;
 }
 
-.c-welcome .-w .tt-2 {
+.people-page .c-welcome .-w .tt-2 {
   font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
   letter-spacing: 0.04em !important;
@@ -120,7 +120,7 @@ body:has(.people-page) {
   margin: 0 auto !important;
 }
 
-.c-welcome .people-welcome-path {
+.people-page .c-welcome .people-welcome-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -130,8 +130,8 @@ body:has(.people-page) {
   opacity: 0.25 !important;
 }
 
-/* 2. MAIN TWO-COLUMN CONTACT SECTION (.c-about) */
-.c-about {
+/* 2. MAIN TWO-COLUMN CONTACT SECTION (.people-page .c-about) */
+.people-page .c-about {
   background-color: #151415 !important;
   color: #f1eade !important;
   position: relative !important;
@@ -142,18 +142,18 @@ body:has(.people-page) {
 }
 
 /* Eliminate the problematic black mountain underlay mask */
-.c-about .underlay {
+.people-page .c-about .underlay {
   display: none !important;
   background-color: transparent !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
 
-.c-about .stone {
+.people-page .c-about .stone {
   display: none !important;
 }
 
-.c-about .people-about-path {
+.people-page .c-about .people-about-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -164,7 +164,7 @@ body:has(.people-page) {
 }
 
 /* Unbind Obsidian's 12-column grid container */
-.c-about .-w {
+.people-page .c-about .-w {
   display: block !important;
   width: 100% !important;
   max-width: 1360px !important;
@@ -175,7 +175,7 @@ body:has(.people-page) {
   z-index: 10 !important;
 }
 
-.c-about .-w > * {
+.people-page .c-about .-w > * {
   grid-column: auto !important;
   grid-row: auto !important;
   width: 100% !important;

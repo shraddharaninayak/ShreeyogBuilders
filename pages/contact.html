@@ -72,113 +72,142 @@ footer .-w.block .credits[data-v-a41b36d1] {
   display: none !important;
 }
 
-/* Base / Mobile Grid (6 columns) */
-footer .-w.after[data-v-a41b36d1] {
-  align-items: flex-start !important;
-  padding-top: var(--h1) !important;
-  padding-bottom: var(--h2) !important;
-  position: relative !important;
+/* Base / Mobile Grid (< 1024px) */
+@media (max-width: 1023px) {
+  footer.page-footer[data-v-a41b36d1] {
+    padding-top: clamp(2.5rem, 5vw, 3.5rem) !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+  }
+
+  footer .-w.after[data-v-a41b36d1] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding-top: clamp(1.75rem, 4vw, 2.5rem) !important;
+    padding-bottom: 0 !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    margin: 0 var(--g-margin) !important;
+    width: auto !important;
+    max-width: calc(100% - var(--g-margin) * 2) !important;
+  }
+
+  footer .-w.after a.-nl[data-v-a41b36d1] {
+    --top: 1 !important;
+    --left: 1 !important;
+    --width: 6 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    pointer-events: all !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    width: auto !important;
+  }
+
+  .footer-shreeyog-brand-logo[data-v-a41b36d1] {
+    width: clamp(145px, 42vw, 185px) !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    filter: brightness(1.18) contrast(1.12) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6)) !important;
+    transition: opacity 0.3s ease !important;
+  }
+
+  footer .-w.after .ip-1[data-v-a41b36d1] {
+    --top: 2 !important;
+    --left: 1 !important;
+    --width: 6 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  .footer-shreeyog-title[data-v-a41b36d1] {
+    font-family: var(--font-t-1), "OTJubilee-Platinum", Georgia, serif !important;
+    font-size: clamp(1.45rem, 4.5vw, 1.85rem) !important;
+    font-weight: 400 !important;
+    color: #f1eade !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.01em !important;
+    margin: 0 0 0.35rem 0 !important;
+    display: block !important;
+  }
+
+  .footer-shreeyog-sub[data-v-a41b36d1] {
+    font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+    font-size: clamp(0.7rem, 2.2vw, 0.82rem) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase !important;
+    color: #c49a6c !important;
+    margin: 0 0 0.85rem 0 !important;
+    display: block !important;
+    white-space: normal !important;
+  }
+
+  .footer-shreeyog-desc[data-v-a41b36d1] {
+    font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+    font-size: clamp(0.92rem, 2.8vw, 1.05rem) !important;
+    line-height: 1.55 !important;
+    color: rgba(241, 234, 222, 0.78) !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  footer .-w.after .ip-2[data-v-a41b36d1] {
+    --top: 3 !important;
+    --left: 1 !important;
+    --width: 6 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.75rem !important;
+    font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+    font-size: clamp(0.88rem, 2.7vw, 1.0rem) !important;
+    line-height: 1.65 !important;
+    color: rgba(241, 234, 222, 0.72) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  footer .stone-3[data-v-a41b36d1] {
+    position: relative !important;
+    transform: none !important;
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 var(--g-margin) clamp(2.5rem, 6vw, 3.5rem) var(--g-margin) !important;
+    width: clamp(160px, 48vw, 220px) !important;
+    max-width: calc(100% - var(--g-margin) * 2) !important;
+    aspect-ratio: 400 / 560 !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(241, 234, 222, 0.16) !important;
+    display: block !important;
+    z-index: 20 !important;
+  }
+  footer .stone-3[data-v-a41b36d1] img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 11px !important;
+    filter: brightness(1.04) contrast(1.04) !important;
+  }
 }
 
-footer .-w.after a.-nl[data-v-a41b36d1] {
-  --top: 1 !important;
-  --left: 1 !important;
-  --width: 6 !important;
-  display: flex !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  pointer-events: all !important;
-  margin-top: 0 !important;
-  margin-bottom: 2rem !important;
-}
-
-.footer-shreeyog-brand-logo[data-v-a41b36d1] {
-  width: clamp(170px, 18vw, 225px) !important;
-  height: auto !important;
-  max-width: 100% !important;
-  object-fit: contain !important;
-  display: block !important;
-  filter: brightness(1.18) contrast(1.12) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6)) !important;
-  transition: opacity 0.3s ease !important;
-}
+/* Base Fallbacks */
 .footer-shreeyog-brand-logo[data-v-a41b36d1]:hover {
   opacity: 0.9 !important;
-}
-
-footer .-w.after .ip-1[data-v-a41b36d1] {
-  --top: 2 !important;
-  --left: 1 !important;
-  --width: 6 !important;
-  margin-top: 0 !important;
-  margin-bottom: 2rem !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  text-align: left !important;
-}
-
-.footer-shreeyog-title[data-v-a41b36d1] {
-  font-family: var(--font-t-1), "OTJubilee-Platinum", Georgia, serif !important;
-  font-size: clamp(1.4rem, 1.7vw, 1.85rem) !important;
-  font-weight: 400 !important;
-  color: #f1eade !important;
-  line-height: 1.15 !important;
-  letter-spacing: -0.01em !important;
-  margin: 0 0 0.4rem 0 !important;
-  display: block !important;
-}
-
-.footer-shreeyog-sub[data-v-a41b36d1] {
-  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
-  font-size: clamp(0.68rem, 0.78vw, 0.82rem) !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-  color: #c49a6c !important;
-  margin: 0 0 0.8rem 0 !important;
-  display: block !important;
-  white-space: nowrap !important;
-}
-
-.footer-shreeyog-desc[data-v-a41b36d1] {
-  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
-  font-size: clamp(0.9rem, 0.96vw, 1.02rem) !important;
-  line-height: 1.55 !important;
-  color: rgba(241, 234, 222, 0.65) !important;
-  margin: 0 !important;
-}
-
-footer .-w.after .ip-2[data-v-a41b36d1] {
-  --top: 3 !important;
-  --left: 1 !important;
-  --width: 6 !important;
-  margin-top: 0 !important;
-  margin-bottom: 2rem !important;
-  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
-  font-size: clamp(0.9rem, 0.96vw, 1.02rem) !important;
-  line-height: 1.6 !important;
-  color: rgba(241, 234, 222, 0.65) !important;
-}
-
-footer .stone-3[data-v-a41b36d1] {
-  position: relative !important;
-  bottom: auto !important;
-  right: auto !important;
-  margin: 1.5rem 0 0 0 !important;
-  width: 145px !important;
-  max-width: 50% !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7) !important;
-  border: 1px solid rgba(241, 234, 222, 0.12) !important;
-  z-index: 50 !important;
-}
-footer .stone-3[data-v-a41b36d1] img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  border-radius: 8px !important;
 }
 
 /* Desktop Grid (12 columns) */
@@ -221,8 +250,21 @@ footer .stone-3[data-v-a41b36d1] img {
     width: clamp(140px, 11vw, 175px) !important;
     max-width: calc(var(--col) * 2 + var(--g-gap)) !important;
     transform: translate3d(0, calc(var(--vh, 1vh)*-8*var(--progress)), 0) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(241, 234, 222, 0.12) !important;
+    z-index: 50 !important;
+  }
+  footer .stone-3[data-v-a41b36d1] img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 8px !important;
   }
 }
+
 /* --- 4-Item Footer Navigation Rules --- */
 footer .-w.block nav a.contacts[data-v-a41b36d1] {
   display: none !important;
@@ -539,8 +581,8 @@ body:has(.people-page) {
   overflow-x: hidden !important;
 }
 
-/* 1. HERO SECTION (.c-welcome) */
-.c-welcome {
+/* 1. HERO SECTION (.people-page .c-welcome) */
+.people-page .c-welcome {
   background-color: #151415 !important;
   color: #ffffff !important;
   min-height: 80vh !important;
@@ -554,7 +596,7 @@ body:has(.people-page) {
   box-sizing: border-box !important;
 }
 
-.c-welcome .figure-sculpture {
+.people-page .c-welcome .figure-sculpture {
   position: absolute !important;
   inset: 0 !important;
   z-index: 1 !important;
@@ -565,7 +607,7 @@ body:has(.people-page) {
   align-items: center !important;
 }
 
-.c-welcome .figure-sculpture figure {
+.people-page .c-welcome .figure-sculpture figure {
   width: min(650px, 90vw) !important;
   height: min(750px, 80vh) !important;
   margin: 0 auto !important;
@@ -575,7 +617,7 @@ body:has(.people-page) {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.8) !important;
 }
 
-.c-welcome .figure-sculpture figure img {
+.people-page .c-welcome .figure-sculpture figure img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
@@ -583,7 +625,7 @@ body:has(.people-page) {
   filter: brightness(0.65) contrast(1.15) !important;
 }
 
-.c-welcome .figure-sculpture:after {
+.people-page .c-welcome .figure-sculpture:after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -591,7 +633,7 @@ body:has(.people-page) {
   pointer-events: none !important;
 }
 
-.c-welcome .-w {
+.people-page .c-welcome .-w {
   position: relative !important;
   z-index: 10 !important;
   width: 100% !important;
@@ -604,7 +646,7 @@ body:has(.people-page) {
   padding: 0 1.5rem !important;
 }
 
-.c-welcome .-w .tt-red {
+.people-page .c-welcome .-w .tt-red {
   display: block !important;
   font-family: var(--font-b-regular), "Cormorant Garamond", Georgia, serif !important;
   font-size: clamp(3.2rem, 8vw, 7.5rem) !important;
@@ -617,11 +659,11 @@ body:has(.people-page) {
   text-shadow: 0 4px 24px rgba(0, 0, 0, 0.7) !important;
 }
 
-.c-welcome .-w .tt-red:after {
+.people-page .c-welcome .-w .tt-red:after {
   display: none !important;
 }
 
-.c-welcome .-w .tt-1 {
+.people-page .c-welcome .-w .tt-1 {
   font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
   font-size: clamp(0.75rem, 0.9vw, 0.95rem) !important;
   letter-spacing: 0.22em !important;
@@ -630,7 +672,7 @@ body:has(.people-page) {
   margin-bottom: 0.6rem !important;
 }
 
-.c-welcome .-w .tt-2 {
+.people-page .c-welcome .-w .tt-2 {
   font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
   letter-spacing: 0.04em !important;
@@ -640,7 +682,7 @@ body:has(.people-page) {
   margin: 0 auto !important;
 }
 
-.c-welcome .people-welcome-path {
+.people-page .c-welcome .people-welcome-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -650,8 +692,8 @@ body:has(.people-page) {
   opacity: 0.25 !important;
 }
 
-/* 2. MAIN TWO-COLUMN CONTACT SECTION (.c-about) */
-.c-about {
+/* 2. MAIN TWO-COLUMN CONTACT SECTION (.people-page .c-about) */
+.people-page .c-about {
   background-color: #151415 !important;
   color: #f1eade !important;
   position: relative !important;
@@ -662,18 +704,18 @@ body:has(.people-page) {
 }
 
 /* Eliminate the problematic black mountain underlay mask */
-.c-about .underlay {
+.people-page .c-about .underlay {
   display: none !important;
   background-color: transparent !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
 
-.c-about .stone {
+.people-page .c-about .stone {
   display: none !important;
 }
 
-.c-about .people-about-path {
+.people-page .c-about .people-about-path {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -683,8 +725,8 @@ body:has(.people-page) {
   opacity: 0.12 !important;
 }
 
-/* Custom contact layout grid container */
-.c-about .-w {
+/* Unbind Obsidian's 12-column grid container */
+.people-page .c-about .-w {
   display: block !important;
   width: 100% !important;
   max-width: 1360px !important;
@@ -695,7 +737,7 @@ body:has(.people-page) {
   z-index: 10 !important;
 }
 
-.c-about .-w > * {
+.people-page .c-about .-w > * {
   grid-column: auto !important;
   grid-row: auto !important;
   width: 100% !important;
@@ -1182,7 +1224,7 @@ body:has(.people-page) {
 </style>
 <link rel="stylesheet" href="/_nuxt/shreeyog-contact.css">
 </head>
-<body  class="-imagine-possible"><div id="ImaginePossible"><!--[--><div class="vault"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"><symbol id="icon-2_none" viewBox="0 0 2 2"></symbol><symbol id="logo-string" viewBox="0 0 24 24"><path d="M10.8,4.9c.2.2.4.3.5.5l5.4,6.9,7.2,5.9-1.3,1.5-7.2-6-.2-.2-5.4-7c0,0-.1-.1-.2-.2-.4-.3-1.1-.3-1.4.2L1.6,15.1,0,13.9,6.6,5.4c1-1.3,2.9-1.5,4.2-.5ZM17.6,3l3,4-1.2.9-3-4,1.2-.9ZM20.6,1.5l3,4-1.2.9-3-4,1.2-.9Z"></path></symbol><symbol id="logo-fdda" viewBox="0 0 76 96"><path d="M45,62.5c1.5-.9,2.8-2.2,3.9-3.6h.6c1.1,0,2-.9,2-2s-.3-1.2-.8-1.6c.5-1.4.8-2.9.8-4.4,0-7.3-5.8-13.2-13-13.5V0h-1v37.5c-7.2.3-13,6.2-13,13.5s.3,3,.8,4.4c-.5.4-.8.9-.8,1.6,0,1.1.9,2,2,2h.6c1,1.4,2.4,2.7,3.9,3.6H0v1h30.1c-2.1,1.1-3.9,2.8-5.3,4.7-.2,0-.5-.2-.8-.2-1.1,0-2,.9-2,2s.3,1.2.8,1.6c-.8,2-1.3,4.1-1.3,6.4,0,8.9,7.1,16.2,16,16.5v1.5h1v-1.5c8.9-.3,16-7.5,16-16.5s-.5-4.4-1.3-6.4c.5-.4.8-.9.8-1.6,0-1.1-.9-2-2-2s-.5,0-.8.2c-1.4-1.9-3.2-3.5-5.3-4.7h30.1v-1h0c0,0-31,0-31,0ZM37.5,91.4c-7.2-.3-13-6.2-13-13.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0-7.3,5.8-13.2,13-13.5v26.9ZM37.5,61.4c-5.6-.3-10-4.9-10-10.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0-5.6,4.4-10.2,10-10.5v20.9ZM38.5,40.6c5.6.3,10,4.9,10,10.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0,5.6-4.4,10.2-10,10.5v-20.9ZM51.5,78s0,0,0,0h0c0,0,0,0,0,0,0,7.3-5.8,13.2-13,13.5v-26.9c7.2.3,13,6.2,13,13.5ZM44,6c1.7,0,3-1.3,3-3s-1.3-3-3-3-3,1.3-3,3,1.3,3,3,3ZM33,11c1.1,0,2-.9,2-2s-.9-2-2-2-2,.9-2,2,.9,2,2,2Z"></path></symbol><symbol id="icon-50_arrow-right" viewBox="0 0 50 50"><polygon points="38.4 11.7 37.6 12.3 47 24.5 2 24.5 2 25.5 46.9 25.5 37.6 36.7 38.4 37.3 48.6 25 38.4 11.7"></polygon></symbol><symbol id="icon-50_arrow-left" viewBox="0 0 50 50"><polygon points="48 24.5 3 24.5 12.4 12.3 11.6 11.7 1.4 25 11.6 37.3 12.4 36.7 3.1 25.5 48 25.5 48 24.5"></polygon></symbol><symbol id="ip" viewBox="0 0 118 14"><path d="M32.1,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM45.9,11h5.1v-.8h-4.1v-2.8h3.6v-.8h-3.6v-2.4h4.1v-.8h-5.1v7.7ZM4.8,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM14.2,7.3l-1.4-4h-1.2v7.7h1v-6l1.3,3.3h.9l1.3-3.3v6h1V3.3h-1.2l-1.4,4ZM20.4,3.3l-2.5,7.7h1l.6-2h3l.6,2h1l-2.5-7.7h-1.3ZM19.8,8.1l1.2-3.9,1.2,3.9h-2.5ZM27.7,7.9h2c0,1.7-.9,2.4-1.8,2.4s-1.9-1.2-1.9-3.1.6-3.1,1.9-3.1,1.6.8,1.7,1.9h1c-.2-1.7-1.2-2.8-2.7-2.8s-3,1.4-3,4,1.1,4,2.8,4,1.6-.4,1.9-1.1v1h1v-3.9h-2.9v.8ZM43.1,9.4l-3.1-6.1h-1.2v7.7h1v-6.1l3.1,6.1h1.2V3.3h-1v6.1ZM86.7,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM97.1,7c.8-.2,1.4-.9,1.4-1.8,0-1.2-.9-1.8-2.1-1.8h-2.9v7.7h2.9c1.6,0,2.5-1,2.5-2.1s-.7-1.7-1.8-1.9ZM94.5,4.1h1.7c.9,0,1.3.5,1.3,1.2s-.5,1.3-1.4,1.3h-1.7v-2.5ZM96.2,10.2h-1.8v-2.8h1.8c.9,0,1.6.6,1.6,1.3s-.7,1.4-1.6,1.4ZM101.6,3.3h-1v7.7h4.8v-.8h-3.8V3.3ZM62.4,3.3h-3.1v7.7h1v-3h2.1c1.3,0,2.3-.9,2.3-2.3s-1-2.3-2.3-2.3ZM62.3,7.1h-1.9v-3h1.9c.9,0,1.4.6,1.4,1.5s-.5,1.5-1.4,1.5ZM112.3,4.1v-.8h-5.1v7.7h5.1v-.8h-4.1v-2.8h3.6v-.8h-3.6v-2.4h4.1ZM68.8,3.2c-1.8,0-2.9,1.4-2.9,4s1.1,4,2.9,4,2.9-1.4,2.9-4-1.1-4-2.9-4ZM68.8,10.3c-1.3,0-1.8-1.1-1.8-3.1s.6-3.1,1.8-3.1,1.8,1.1,1.8,3.1-.6,3.1-1.8,3.1ZM76.6,6.8l-1.3-.4c-.9-.2-1.3-.5-1.3-1.2s.7-1.2,1.6-1.2,1.5.5,1.7,1.4h1c0-1.3-1.1-2.3-2.7-2.3s-2.7.9-2.7,2.1,1.1,1.8,2.1,2.1l1.3.3c.8.2,1.2.6,1.2,1.2,0,.9-.9,1.4-1.8,1.4s-1.9-.6-2-1.7h-1c0,1.4,1.2,2.5,3.1,2.5s2.9-.9,2.9-2.3-.7-1.7-2-2.1ZM83.4,6.8l-1.3-.4c-.9-.2-1.3-.5-1.3-1.2s.7-1.2,1.6-1.2,1.5.5,1.7,1.4h1c0-1.3-1.1-2.3-2.7-2.3s-2.7.9-2.7,2.1,1.1,1.8,2.1,2.1l1.3.3c.8.2,1.2.6,1.2,1.2,0,.9-.9,1.4-1.8,1.4s-1.9-.6-2-1.7h-1c0,1.4,1.2,2.5,3.1,2.5s2.9-.9,2.9-2.3-.7-1.7-2-2.1Z"></path></symbol><symbol id="icon-20_discord" viewBox="0 0 20 20"><path d="M12.6,3c-.2.3-.3.6-.5,1-1.4-.2-2.8-.2-4.1,0-.1-.3-.3-.7-.5-1-1.3.2-2.5.6-3.7,1.1C1.5,7.6.9,11,1.2,14.4c1.4,1,2.9,1.8,4.6,2.3.4-.5.7-1,1-1.6-.5-.2-1-.4-1.5-.7.1,0,.3-.2.4-.3,2.9,1.4,6.2,1.4,9.1,0,.1.1.2.2.4.3-.5.3-1,.5-1.5.7.3.5.6,1.1,1,1.6,1.6-.5,3.2-1.3,4.6-2.3.4-3.9-.6-7.2-2.7-10.2-1.2-.5-2.4-.9-3.7-1.1h0ZM7.1,12.3c-.9,0-1.6-.8-1.6-1.8s.7-1.8,1.6-1.8,1.6.8,1.6,1.8c0,1-.7,1.8-1.6,1.8ZM13.1,12.3c-.9,0-1.6-.8-1.6-1.8s.7-1.8,1.6-1.8,1.6.8,1.6,1.8c0,1-.7,1.8-1.6,1.8Z"></path></symbol><symbol id="icon-20_git" viewBox="0 0 20 20"><path d="M10,1C5,1,1,5.1,1,10.1s2.6,7.4,6.2,8.6c.4,0,.6-.2.6-.4s0-.9,0-1.7c-2.5.5-3-1.1-3-1.1-.4-1.1-1-1.3-1-1.3-.8-.6,0-.6,0-.6.9,0,1.4.9,1.4.9.8,1.4,2.1,1,2.6.8,0-.6.3-1,.6-1.2-2-.2-4.1-1-4.1-4.5s.4-1.8.9-2.4c0-.2-.4-1.2,0-2.4,0,0,.8-.2,2.5.9.7-.2,1.5-.3,2.3-.3.8,0,1.5.1,2.3.3,1.7-1.2,2.5-.9,2.5-.9.5,1.2.2,2.2,0,2.4.6.6.9,1.4.9,2.4,0,3.5-2.1,4.3-4.1,4.5.3.3.6.8.6,1.7,0,1.2,0,2.2,0,2.5s.2.5.6.4c3.6-1.2,6.2-4.6,6.2-8.6,0-5-4-9.1-9-9.1Z"></path></symbol><symbol id="icon-20_ko-fi" viewBox="0 0 20 20"><path d="M8.4,18c.2.2.5.3.8.3,0,0,1,0,1.3,0s1.4,0,1.4,0c.3,0,.6-.1.8-.3s.4-.5.4-.8l.7-8.3c-.3-.1-.7-.2-1-.2-.6,0-1.2.2-1.8.5-.7.3-1.4.7-2.4.7-.4,0-.8,0-1.2-.2l.7,7.5c0,.3.2.6.4.8ZM16.9,5.3v-.6c-.2-.5-.4-1-.9-1.1-.2,0-.3,0-.4-.2-.1-.1-.2-.3-.2-.5,0-.3,0-.6-.2-.9,0-.3,0-.6-.2-.8-.2-.3-.5-.5-.8-.7-.2,0-.3-.1-.5-.2-.8-.2-1.6-.3-2.4-.3-1,0-1.9,0-2.9,0-.7,0-1.5.2-2.2.4-.2,0-.5.2-.7.4-.2.3-.3.6-.1,1,.1.2.3.4.5.5.3.1.6.2.9.3.8.2,1.7.3,2.6.3,1,0,1.9,0,2.9,0,.2,0,.5,0,.7,0,.3,0,.5-.4.4-.7,0-.3-.4-.4-.7-.4,0,0,0,0-.1,0h0s-.3,0-.3,0c-.2,0-.4,0-.6,0-.5,0-.9,0-1.4,0-.5,0-.9,0-1.4,0-.2,0-.4,0-.6,0,0,0-.2,0-.3,0h0s0,0,0,0h0c-.2,0-.4,0-.6-.1,0,0,0,0,0,0s0,0,0,0,0,0,0,0c0,0,0,0,0,0,.2,0,.3,0,.5,0,0,0,.1,0,.2,0,.1,0,.2,0,.3,0,.9,0,1.8-.1,2.7-.1.4,0,.9,0,1.3,0,0,0,.2,0,.3,0,0,0,0,0,.1,0h0c.2,0,.4,0,.6.1.3,0,.7,0,.8.5,0,.1,0,.2,0,.4v.2s.2,1.1.2,1.1c0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0h0s0,0,0,0c-.1,0-.3,0-.4,0-.3,0-.5,0-.8,0-.5,0-1.1,0-1.6,0-.3,0-.6,0-.8,0-1.1,0-2.2,0-3.3-.2h-.4c0,0,0,0,0,0,0,0-.2,0-.2,0-.3,0-.5,0-.8-.1-.3,0-.6,0-.9.1-.2.1-.4.3-.5.6-.1.3-.2.6-.2.8,0,.3-.1.6-.1.9,0,.6.5,1.1,1.1,1.3.6.1,1.1.2,1.7.3,2.2.3,4.4.3,6.7.1.2,0,.4,0,.5,0,0,0,.1,0,.2,0,0,0,.1,0,.1,0,0,0,0,0,0,.2,0,0,0,.1,0,.2v.6c0,0-.4,3.5-.4,3.5-.1,1.2-.2,2.5-.4,3.7,0,.3,0,.7-.1,1,0,.3,0,.7,0,1,0,.5-.4.9-.9,1-.5.1-.9.2-1.4.2-.5,0-1,0-1.5,0-.5,0-1.2,0-1.6-.5-.4-.4-.4-1-.5-1.5,0-.7-.1-1.4-.2-2l-.4-3.8-.2-2.5h0c0-.4-.2-.7-.5-.7-.3,0-.6.3-.5.6l.2,1.8.4,3.8c.1,1.1.2,2.1.3,3.2,0,.2,0,.4,0,.6.1,1.1.9,1.7,1.9,1.9.6,0,1.2.1,1.8.1.8,0,1.5,0,2.3-.1,1.1-.2,1.9-1,2.1-2.2,0-.4,0-.7.1-1.1.1-1.2.2-2.3.3-3.5l.4-3.8.2-1.7c0,0,0-.2,0-.2,0,0,.1-.1.2-.1.3,0,.6-.2.8-.4.4-.4.4-.9.3-1.5ZM15.8,6c-.1.1-.3.2-.5.2-1.9.3-3.8.4-5.7.4-1.4,0-2.7-.2-4.1-.4-.1,0-.3,0-.4-.1-.2-.2,0-.6,0-.8,0-.2.1-.5.4-.5.4,0,.8.1,1.2.2.5,0,.9.1,1.4.2,1.9.2,3.9.2,5.9-.1.4,0,.7-.1,1.1-.2.3,0,.7-.2.8.2.1.2.1.5.1.8,0,.1,0,.2-.1.3Z"></path></symbol></svg></div><main class="page people-page" data-v-59f76b32><section class="c-welcome" string="progress" string-repeat string-id="people-welcome" string-self-disable string-enter-vp="top" string-exit-vp="top" data-header-color="dark" data-v-59f76b32 data-v-2c3bce60><div class="figure-sculpture" string-copy-from="people-welcome" data-v-2c3bce60><figure class="-fit" data-v-2c3bce60 data-v-ec47b9e2><img string="lazy" string-lazy="/images/shreeyog/projects/safalya-tower.webp" alt="Shreeyog Builders & Land Developers" data-v-ec47b9e2><!----></figure></div><div class="-w" data-v-2c3bce60 data-v-e764b164><!--[--><span class="-lrg tt-red" style="--dx:-0.25;--dy:1;" aria-hidden="true" string="split" string-split="char[random(0,10)]" string-copy-from="people-welcome" data-v-2c3bce60>Contact</span><p class="-up -m-mm tt-1 -tac" string="split" string-split="line" string-copy-from="people-welcome" data-v-2c3bce60>SHREEYOG BUILDERS &amp; LAND DEVELOPERS</p><p class="-up -m-mm tt-2 -tac" string="split" string-split="line" string-copy-from="people-welcome" data-v-2c3bce60>Rooted in Trust. Crafting residential landmarks across Nashik since 1992.</p><div class="cta -a-to-top" string string-copy-from="people-welcome" data-v-2c3bce60></div><!--]--></div><svg class="people-welcome-path" viewBox="0 0 1440 1080" preserveAspectRatio="none" string-copy-from="objects-welcome" data-v-2c3bce60><linearGradient id="people-welcome-path-gradient" x1="0" y1="0" x2="0" y2="1" data-v-2c3bce60><stop offset="0" stop-color="#f0e9dd" data-v-2c3bce60></stop><stop offset=".3" stop-color="#c6a76a" data-v-2c3bce60></stop><stop offset="0.6" stop-color="#f1eade" data-v-2c3bce60></stop></linearGradient><path fill="none" stroke="url(#people-welcome-path-gradient)" stroke-width="1" d="M958.7,0c445.2,409.9-349.8,259.6-441.8,512.4-92,252.7,638,77.4-63,375.7-701,298.3,950.8-555.6,675.8,191.9" vector-effect="non-scaling-stroke" data-v-2c3bce60></path></svg></section><section class="c-about" string string-repeat string-id="people-about" string-enter-vp="top" data-header-color="light" data-v-59f76b32 data-v-24d6f4e3><div class="-w" string="progress" data-v-24d6f4e3 data-v-e764b164><!--[--><div class="shreeyog-contact-two-column-suite" id="inquiry-form-section" data-v-24d6f4e3><div class="contact-dossier-column" data-v-24d6f4e3><div class="dossier-header-block" data-v-24d6f4e3><span class="dossier-eyebrow" data-v-24d6f4e3>NASHIK HEADQUARTERS</span><h2 class="dossier-company-title" data-v-24d6f4e3>Shreeyog Builders &amp; Land Developers</h2><p class="dossier-company-narrative" data-v-24d6f4e3>Since 1992, shaping residential spaces with a commitment to thoughtful planning, quality construction, and lasting value across Nashik.</p></div><div class="dossier-cards-stack" data-v-24d6f4e3><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>HEAD OFFICE</span><p class="dossier-card-value" data-v-24d6f4e3>101/102, Shreenath Enclave, Shreehari Kute Marg,<br data-v-24d6f4e3>Mumbai Naka, Nashik — 422 002, Maharashtra</p><a href="https://maps.google.com/?q=Mumbai+Naka+Nashik" target="_blank" rel="noopener noreferrer" class="dossier-directions-link" data-v-24d6f4e3><span data-v-24d6f4e3>Get Directions</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>DIRECT INQUIRIES &amp; SITE VISITS</span><p class="dossier-card-value dossier-phone-highlight" data-v-24d6f4e3><a href="tel:+919823534751" data-v-24d6f4e3>+91 98235 34751</a></p><div class="dossier-desk-list" data-v-24d6f4e3><span data-v-24d6f4e3>Office Desk: <strong data-v-24d6f4e3>0253 - 2579667</strong></span><span data-v-24d6f4e3>Direct Desk: <strong data-v-24d6f4e3>0253 - 2311112 / 2312638</strong></span></div></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>EMAIL ADVISORY</span><p class="dossier-card-value" data-v-24d6f4e3><a href="mailto:hello@shreeyogbuilders.com" data-v-24d6f4e3>hello@shreeyogbuilders.com</a></p></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>HOURS &amp; SITE VISITS</span><p class="dossier-card-value" data-v-24d6f4e3>Monday – Sunday: 10:00 AM – 7:00 PM</p><p class="dossier-card-subnote" data-v-24d6f4e3>Consultations &amp; escorted site visits available daily.</p></div></div><div class="dossier-footer-badge" data-v-24d6f4e3><span class="dossier-badge-title" data-v-24d6f4e3>B. M. KALE BUILDERS &amp; LAND DEVELOPERS</span><span class="dossier-badge-locations" data-v-24d6f4e3><span data-v-24d6f4e3>Key Landmark Locations:</span> Bodhale Nagar • Karmyogi Nagar • Tapovan Road • Gangapur Road • Khode Nagar</span></div></div><div class="contact-form-column" data-v-24d6f4e3><div class="contact-glass-card" data-v-24d6f4e3><div class="form-card-header" data-v-24d6f4e3><span class="form-card-eyebrow" data-v-24d6f4e3>CONNECT WITH US</span><h2 class="form-card-title" data-v-24d6f4e3>Schedule a Consultation</h2><p class="form-card-subtitle" data-v-24d6f4e3>Connect directly with our dedicated property advisory team in Nashik for project consultations, brochure requests, and private site visits.</p></div><form id="shreeyogContactForm" class="shreeyog-form-active" onsubmit="return false;" novalidate data-v-24d6f4e3><div class="form-grid-row form-grid-2col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactName" data-v-24d6f4e3>Full Name <span class="req-star" data-v-24d6f4e3>*</span></label><input type="text" id="contactName" name="name" placeholder="Enter your full name" required autocomplete="name" data-v-24d6f4e3 /><span class="field-error-msg" id="nameError" data-v-24d6f4e3></span></div><div class="form-field-unit" data-v-24d6f4e3><label for="contactPhone" data-v-24d6f4e3>Phone Number <span class="req-star" data-v-24d6f4e3>*</span></label><input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" data-v-24d6f4e3 /><span class="field-error-msg" id="phoneError" data-v-24d6f4e3></span></div></div><div class="form-grid-row form-grid-2col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactEmail" data-v-24d6f4e3>Email Address</label><input type="email" id="contactEmail" name="email" placeholder="name@example.com" autocomplete="email" data-v-24d6f4e3 /><span class="field-error-msg" id="emailError" data-v-24d6f4e3></span></div><div class="form-field-unit" data-v-24d6f4e3><label for="contactProject" data-v-24d6f4e3>Project of Interest</label><select id="contactProject" name="project" data-v-24d6f4e3><option value="All Ongoing Developments">All Ongoing Developments</option><option value="Shree Bramhand (Bodhle Nagar)">Shree Bramhand — Bodhle Nagar (2 &amp; 3 BHK)</option><option value="Shree Safalya (Karmyogi Nagar)">Shree Safalya — Karmyogi Nagar</option><option value="Shree Venkatesh Park (Khode Nagar)">Shree Venkatesh Park — Khode Nagar</option><option value="Shree Neelkanth">Shree Neelkanth</option><option value="Shree Malhar (Gangapur Road)">Shree Malhar — Gangapur Road</option><option value="Shree Nandan (Kathe Galli)">Shree Nandan — Kathe Galli</option><option value="Shree Pandurang (Tapovan Road)">Shree Pandurang — Tapovan Road</option><option value="General Consultation">General Property Consultation</option></select></div></div><div class="form-grid-row form-grid-1col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactMessage" data-v-24d6f4e3>Specific Requirements / Message</label><textarea id="contactMessage" name="message" rows="4" placeholder="Tell us what you are looking for (e.g. 2 BHK / 3 BHK, budget, preferred site visit date)..." data-v-24d6f4e3></textarea></div></div><div class="form-submit-block" data-v-24d6f4e3><button type="submit" id="contactSubmitBtn" class="contact-submit-action" data-v-24d6f4e3><span data-v-24d6f4e3>SUBMIT INQUIRY</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button></div><div id="contactFormSuccess" class="form-success-box" style="display: none;" data-v-24d6f4e3><div class="success-badge-icon" data-v-24d6f4e3><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><polyline points="20 6 9 17 4 12"></polyline></svg></div><h3 class="success-box-title" data-v-24d6f4e3>Thank You for Reaching Out</h3><p class="success-box-desc" id="successDetailText" data-v-24d6f4e3>Your consultation request has been recorded. Our property consultant will contact you promptly.</p><button type="button" id="resetContactFormBtn" class="reset-inquiry-btn" data-v-24d6f4e3>Submit Another Request</button></div></form></div></div></div><!--]--></div></section><section class="c-cta" style="display:none;" data-v-59f76b32 data-v-599117dc></section><footer class="page-footer" string="progress" string-self-disable string-id="main-footer-footer" string-enter-vp="bottom" string-exit-vp="bottom" data-v-59f76b32 data-v-a41b36d1><span class="underlay" data-v-a41b36d1></span><div class="-w block" data-v-a41b36d1 data-v-e764b164><!--[--><span class="-mm no-so-me" data-v-a41b36d1>No Social Medias</span><span class="-hp independent" data-v-a41b36d1>Building spaces that inspire better living, across generations.</span><span class="-h4 -m-h6 operating" data-v-a41b36d1><span data-v-a41b36d1>Rooted in Trust.</span><span data-v-a41b36d1>Built for Generations.</span></span><nav data-v-a41b36d1><a href="/" class="-h0 -mid-h1 -m-h2 -nl places" string="split" string-split="char" data-v-a41b36d1>Home</a><a href="/about" class="-h0 -mid-h1 -m-h2 -nl objects" string="split" string-split="char" data-v-a41b36d1>About</a><a href="/projects" class="-h0 -mid-h1 -m-h2 -nl about" string="split" string-split="char" data-v-a41b36d1>Projects</a><a href="/contact" class="-h0 -mid-h1 -m-h2 -nl people" string="split" string-split="char" data-v-a41b36d1>Contact</a></nav><span class="-m copy" data-v-a41b36d1>© <span data-v-a41b36d1>2026</span> Shreeyog. All Rights Reserved.</span><span class="-m expression" data-v-a41b36d1>Shreeyog Builders & Land Developers. Creating spaces with purpose since 1992.</span><!--]--></div><div class="-w after" data-v-a41b36d1 data-v-e764b164><!--[--><a href="/" class="-nl" string-copy-from="main-footer-index" data-v-a41b36d1><img src="/images/shreeyog/logo-hero.png" alt="Shreeyog Builders &amp; Land Developers" class="footer-shreeyog-brand-logo" data-v-a41b36d1></a><div class="ip-1 footer-centre-col" string-copy-from="main-footer-index" data-v-a41b36d1><span class="footer-shreeyog-title" data-v-a41b36d1>Shreeyog</span><span class="footer-shreeyog-sub" data-v-a41b36d1>Builders &amp; Land Developers</span><p class="footer-shreeyog-desc" data-v-a41b36d1>Building with trust, creating spaces for generations.</p></div><p class="-m ip-2" string-copy-from="main-footer-index" data-v-a41b36d1>Since 1992, Shreeyog has been shaping residential spaces with a commitment to thoughtful planning, quality construction and lasting relationships. Every project reflects our belief in building homes that stand the test of time.</p><!--]--></div><figure class="stone-3" string-copy-from="main-footer-footer" data-v-a41b36d1 data-v-ec47b9e2><img string="lazy" string-lazy="/images/shreeyog/projects/safalya-tower.webp" alt="Shreeyog Builders &amp; Land Developers" data-v-ec47b9e2><!----></figure></footer></main><!--[--><header class="" data-v-81ce8483><div class="-w" data-v-81ce8483 data-v-e764b164><!--[--><a href="/" class="-nl" data-v-81ce8483><img src="/images/shreeyog/logo-hero.png" alt="Shreeyog Builders &amp; Land Developers" class="shreeyog-brand-logo" data-v-81ce8483></a><!----><!--[--><!----><a href="/projects" class="button -p -m-m -reverse places" aria-label title data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>Projects</span><!--[--><!--]--></a><!--]--><span class="sep" data-v-81ce8483></span><!--[--><!----><a href="/about" class="button -p -m-m -reverse objects about" aria-label title data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>About</span><!--[--><!--]--></a><!--]--><!----><div class="menu-wrap" data-v-81ce8483><!--[--><button aria-label="" title="" class="menu button -p -m-m" data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>Menu</span><!--[--><span class="menu-icon" data-v-81ce8483 data-v-f52f19c3-s></span><!--]--></button><!----><!--]--></div><!--]--></div></header><!----><!----><!--]--><svg data-v-55c3b488><use href="#ip"></use></svg><div class="page-transition" style="--top-position:0;"><div class="g"><span style="--order:1;--order-back:4;"></span><span style="--order:2;--order-back:3;"></span><span style="--order:3;--order-back:2;"></span><span style="--order:4;--order-back:1;"></span></div><div class="t"><span class="sy-loader-wrap"><span class="sy-loader-row sy-loader-row-brand"><span class="sy-loader-brand" style="--order:1;">SHREEYOG</span></span><span class="sy-loader-row sy-loader-row-sub"><span class="sy-loader-sub" style="--order:2;">BUILDERS &amp; LAND DEVELOPERS</span></span><span class="sy-loader-row sy-loader-row-tag"><span class="sy-loader-tag" style="--order:3;">BUILDING LEGACIES SINCE 1992</span></span></span></div></div><div class="m-transition-underlay" style="--top-position:0;"></div><!----><!--]--></div><script type="application/json" id="__NUXT_DATA__" data-ssr="true">[["Reactive",1],{"data":2,"state":3,"_errors":4,"serverRendered":5,"path":6,"pinia":7},{},{},{},true,"/contact",{}]</script>
+<body  class="-imagine-possible"><div id="ImaginePossible"><!--[--><div class="vault"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"><symbol id="icon-2_none" viewBox="0 0 2 2"></symbol><symbol id="logo-string" viewBox="0 0 24 24"><path d="M10.8,4.9c.2.2.4.3.5.5l5.4,6.9,7.2,5.9-1.3,1.5-7.2-6-.2-.2-5.4-7c0,0-.1-.1-.2-.2-.4-.3-1.1-.3-1.4.2L1.6,15.1,0,13.9,6.6,5.4c1-1.3,2.9-1.5,4.2-.5ZM17.6,3l3,4-1.2.9-3-4,1.2-.9ZM20.6,1.5l3,4-1.2.9-3-4,1.2-.9Z"></path></symbol><symbol id="logo-fdda" viewBox="0 0 76 96"><path d="M45,62.5c1.5-.9,2.8-2.2,3.9-3.6h.6c1.1,0,2-.9,2-2s-.3-1.2-.8-1.6c.5-1.4.8-2.9.8-4.4,0-7.3-5.8-13.2-13-13.5V0h-1v37.5c-7.2.3-13,6.2-13,13.5s.3,3,.8,4.4c-.5.4-.8.9-.8,1.6,0,1.1.9,2,2,2h.6c1,1.4,2.4,2.7,3.9,3.6H0v1h30.1c-2.1,1.1-3.9,2.8-5.3,4.7-.2,0-.5-.2-.8-.2-1.1,0-2,.9-2,2s.3,1.2.8,1.6c-.8,2-1.3,4.1-1.3,6.4,0,8.9,7.1,16.2,16,16.5v1.5h1v-1.5c8.9-.3,16-7.5,16-16.5s-.5-4.4-1.3-6.4c.5-.4.8-.9.8-1.6,0-1.1-.9-2-2-2s-.5,0-.8.2c-1.4-1.9-3.2-3.5-5.3-4.7h30.1v-1h0c0,0-31,0-31,0ZM37.5,91.4c-7.2-.3-13-6.2-13-13.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0-7.3,5.8-13.2,13-13.5v26.9ZM37.5,61.4c-5.6-.3-10-4.9-10-10.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0-5.6,4.4-10.2,10-10.5v20.9ZM38.5,40.6c5.6.3,10,4.9,10,10.5,0,0,0,0,0,0h0c0,0,0,0,0,0,0,5.6-4.4,10.2-10,10.5v-20.9ZM51.5,78s0,0,0,0h0c0,0,0,0,0,0,0,7.3-5.8,13.2-13,13.5v-26.9c7.2.3,13,6.2,13,13.5ZM44,6c1.7,0,3-1.3,3-3s-1.3-3-3-3-3,1.3-3,3,1.3,3,3,3ZM33,11c1.1,0,2-.9,2-2s-.9-2-2-2-2,.9-2,2,.9,2,2,2Z"></path></symbol><symbol id="icon-50_arrow-right" viewBox="0 0 50 50"><polygon points="38.4 11.7 37.6 12.3 47 24.5 2 24.5 2 25.5 46.9 25.5 37.6 36.7 38.4 37.3 48.6 25 38.4 11.7"></polygon></symbol><symbol id="icon-50_arrow-left" viewBox="0 0 50 50"><polygon points="48 24.5 3 24.5 12.4 12.3 11.6 11.7 1.4 25 11.6 37.3 12.4 36.7 3.1 25.5 48 25.5 48 24.5"></polygon></symbol><symbol id="ip" viewBox="0 0 118 14"><path d="M32.1,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM45.9,11h5.1v-.8h-4.1v-2.8h3.6v-.8h-3.6v-2.4h4.1v-.8h-5.1v7.7ZM4.8,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM14.2,7.3l-1.4-4h-1.2v7.7h1v-6l1.3,3.3h.9l1.3-3.3v6h1V3.3h-1.2l-1.4,4ZM20.4,3.3l-2.5,7.7h1l.6-2h3l.6,2h1l-2.5-7.7h-1.3ZM19.8,8.1l1.2-3.9,1.2,3.9h-2.5ZM27.7,7.9h2c0,1.7-.9,2.4-1.8,2.4s-1.9-1.2-1.9-3.1.6-3.1,1.9-3.1,1.6.8,1.7,1.9h1c-.2-1.7-1.2-2.8-2.7-2.8s-3,1.4-3,4,1.1,4,2.8,4,1.6-.4,1.9-1.1v1h1v-3.9h-2.9v.8ZM43.1,9.4l-3.1-6.1h-1.2v7.7h1v-6.1l3.1,6.1h1.2V3.3h-1v6.1ZM86.7,4.1h2.1v6h-2.1v.8h5.2v-.8h-2.1v-6h2.1v-.8h-5.2v.8ZM97.1,7c.8-.2,1.4-.9,1.4-1.8,0-1.2-.9-1.8-2.1-1.8h-2.9v7.7h2.9c1.6,0,2.5-1,2.5-2.1s-.7-1.7-1.8-1.9ZM94.5,4.1h1.7c.9,0,1.3.5,1.3,1.2s-.5,1.3-1.4,1.3h-1.7v-2.5ZM96.2,10.2h-1.8v-2.8h1.8c.9,0,1.6.6,1.6,1.3s-.7,1.4-1.6,1.4ZM101.6,3.3h-1v7.7h4.8v-.8h-3.8V3.3ZM62.4,3.3h-3.1v7.7h1v-3h2.1c1.3,0,2.3-.9,2.3-2.3s-1-2.3-2.3-2.3ZM62.3,7.1h-1.9v-3h1.9c.9,0,1.4.6,1.4,1.5s-.5,1.5-1.4,1.5ZM112.3,4.1v-.8h-5.1v7.7h5.1v-.8h-4.1v-2.8h3.6v-.8h-3.6v-2.4h4.1ZM68.8,3.2c-1.8,0-2.9,1.4-2.9,4s1.1,4,2.9,4,2.9-1.4,2.9-4-1.1-4-2.9-4ZM68.8,10.3c-1.3,0-1.8-1.1-1.8-3.1s.6-3.1,1.8-3.1,1.8,1.1,1.8,3.1-.6,3.1-1.8,3.1ZM76.6,6.8l-1.3-.4c-.9-.2-1.3-.5-1.3-1.2s.7-1.2,1.6-1.2,1.5.5,1.7,1.4h1c0-1.3-1.1-2.3-2.7-2.3s-2.7.9-2.7,2.1,1.1,1.8,2.1,2.1l1.3.3c.8.2,1.2.6,1.2,1.2,0,.9-.9,1.4-1.8,1.4s-1.9-.6-2-1.7h-1c0,1.4,1.2,2.5,3.1,2.5s2.9-.9,2.9-2.3-.7-1.7-2-2.1ZM83.4,6.8l-1.3-.4c-.9-.2-1.3-.5-1.3-1.2s.7-1.2,1.6-1.2,1.5.5,1.7,1.4h1c0-1.3-1.1-2.3-2.7-2.3s-2.7.9-2.7,2.1,1.1,1.8,2.1,2.1l1.3.3c.8.2,1.2.6,1.2,1.2,0,.9-.9,1.4-1.8,1.4s-1.9-.6-2-1.7h-1c0,1.4,1.2,2.5,3.1,2.5s2.9-.9,2.9-2.3-.7-1.7-2-2.1Z"></path></symbol><symbol id="icon-20_discord" viewBox="0 0 20 20"><path d="M12.6,3c-.2.3-.3.6-.5,1-1.4-.2-2.8-.2-4.1,0-.1-.3-.3-.7-.5-1-1.3.2-2.5.6-3.7,1.1C1.5,7.6.9,11,1.2,14.4c1.4,1,2.9,1.8,4.6,2.3.4-.5.7-1,1-1.6-.5-.2-1-.4-1.5-.7.1,0,.3-.2.4-.3,2.9,1.4,6.2,1.4,9.1,0,.1.1.2.2.4.3-.5.3-1,.5-1.5.7.3.5.6,1.1,1,1.6,1.6-.5,3.2-1.3,4.6-2.3.4-3.9-.6-7.2-2.7-10.2-1.2-.5-2.4-.9-3.7-1.1h0ZM7.1,12.3c-.9,0-1.6-.8-1.6-1.8s.7-1.8,1.6-1.8,1.6.8,1.6,1.8c0,1-.7,1.8-1.6,1.8ZM13.1,12.3c-.9,0-1.6-.8-1.6-1.8s.7-1.8,1.6-1.8,1.6.8,1.6,1.8c0,1-.7,1.8-1.6,1.8Z"></path></symbol><symbol id="icon-20_git" viewBox="0 0 20 20"><path d="M10,1C5,1,1,5.1,1,10.1s2.6,7.4,6.2,8.6c.4,0,.6-.2.6-.4s0-.9,0-1.7c-2.5.5-3-1.1-3-1.1-.4-1.1-1-1.3-1-1.3-.8-.6,0-.6,0-.6.9,0,1.4.9,1.4.9.8,1.4,2.1,1,2.6.8,0-.6.3-1,.6-1.2-2-.2-4.1-1-4.1-4.5s.4-1.8.9-2.4c0-.2-.4-1.2,0-2.4,0,0,.8-.2,2.5.9.7-.2,1.5-.3,2.3-.3.8,0,1.5.1,2.3.3,1.7-1.2,2.5-.9,2.5-.9.5,1.2.2,2.2,0,2.4.6.6.9,1.4.9,2.4,0,3.5-2.1,4.3-4.1,4.5.3.3.6.8.6,1.7,0,1.2,0,2.2,0,2.5s.2.5.6.4c3.6-1.2,6.2-4.6,6.2-8.6,0-5-4-9.1-9-9.1Z"></path></symbol><symbol id="icon-20_ko-fi" viewBox="0 0 20 20"><path d="M8.4,18c.2.2.5.3.8.3,0,0,1,0,1.3,0s1.4,0,1.4,0c.3,0,.6-.1.8-.3s.4-.5.4-.8l.7-8.3c-.3-.1-.7-.2-1-.2-.6,0-1.2.2-1.8.5-.7.3-1.4.7-2.4.7-.4,0-.8,0-1.2-.2l.7,7.5c0,.3.2.6.4.8ZM16.9,5.3v-.6c-.2-.5-.4-1-.9-1.1-.2,0-.3,0-.4-.2-.1-.1-.2-.3-.2-.5,0-.3,0-.6-.2-.9,0-.3,0-.6-.2-.8-.2-.3-.5-.5-.8-.7-.2,0-.3-.1-.5-.2-.8-.2-1.6-.3-2.4-.3-1,0-1.9,0-2.9,0-.7,0-1.5.2-2.2.4-.2,0-.5.2-.7.4-.2.3-.3.6-.1,1,.1.2.3.4.5.5.3.1.6.2.9.3.8.2,1.7.3,2.6.3,1,0,1.9,0,2.9,0,.2,0,.5,0,.7,0,.3,0,.5-.4.4-.7,0-.3-.4-.4-.7-.4,0,0,0,0-.1,0h0s-.3,0-.3,0c-.2,0-.4,0-.6,0-.5,0-.9,0-1.4,0-.5,0-.9,0-1.4,0-.2,0-.4,0-.6,0,0,0-.2,0-.3,0h0s0,0,0,0h0c-.2,0-.4,0-.6-.1,0,0,0,0,0,0s0,0,0,0,0,0,0,0c0,0,0,0,0,0,.2,0,.3,0,.5,0,0,0,.1,0,.2,0,.1,0,.2,0,.3,0,.9,0,1.8-.1,2.7-.1.4,0,.9,0,1.3,0,0,0,.2,0,.3,0,0,0,0,0,.1,0h0c.2,0,.4,0,.6.1.3,0,.7,0,.8.5,0,.1,0,.2,0,.4v.2s.2,1.1.2,1.1c0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0h0s0,0,0,0c-.1,0-.3,0-.4,0-.3,0-.5,0-.8,0-.5,0-1.1,0-1.6,0-.3,0-.6,0-.8,0-1.1,0-2.2,0-3.3-.2h-.4c0,0,0,0,0,0,0,0-.2,0-.2,0-.3,0-.5,0-.8-.1-.3,0-.6,0-.9.1-.2.1-.4.3-.5.6-.1.3-.2.6-.2.8,0,.3-.1.6-.1.9,0,.6.5,1.1,1.1,1.3.6.1,1.1.2,1.7.3,2.2.3,4.4.3,6.7.1.2,0,.4,0,.5,0,0,0,.1,0,.2,0,0,0,.1,0,.1,0,0,0,0,0,0,.2,0,0,0,.1,0,.2v.6c0,0-.4,3.5-.4,3.5-.1,1.2-.2,2.5-.4,3.7,0,.3,0,.7-.1,1,0,.3,0,.7,0,1,0,.5-.4.9-.9,1-.5.1-.9.2-1.4.2-.5,0-1,0-1.5,0-.5,0-1.2,0-1.6-.5-.4-.4-.4-1-.5-1.5,0-.7-.1-1.4-.2-2l-.4-3.8-.2-2.5h0c0-.4-.2-.7-.5-.7-.3,0-.6.3-.5.6l.2,1.8.4,3.8c.1,1.1.2,2.1.3,3.2,0,.2,0,.4,0,.6.1,1.1.9,1.7,1.9,1.9.6,0,1.2.1,1.8.1.8,0,1.5,0,2.3-.1,1.1-.2,1.9-1,2.1-2.2,0-.4,0-.7.1-1.1.1-1.2.2-2.3.3-3.5l.4-3.8.2-1.7c0,0,0-.2,0-.2,0,0,.1-.1.2-.1.3,0,.6-.2.8-.4.4-.4.4-.9.3-1.5ZM15.8,6c-.1.1-.3.2-.5.2-1.9.3-3.8.4-5.7.4-1.4,0-2.7-.2-4.1-.4-.1,0-.3,0-.4-.1-.2-.2,0-.6,0-.8,0-.2.1-.5.4-.5.4,0,.8.1,1.2.2.5,0,.9.1,1.4.2,1.9.2,3.9.2,5.9-.1.4,0,.7-.1,1.1-.2.3,0,.7-.2.8.2.1.2.1.5.1.8,0,.1,0,.2-.1.3Z"></path></symbol></svg></div><main class="page people-page" data-v-59f76b32><section class="c-welcome" string="progress" string-repeat string-id="people-welcome" string-self-disable string-enter-vp="top" string-exit-vp="top" data-header-color="dark" data-v-59f76b32 data-v-2c3bce60><div class="figure-sculpture" string-copy-from="people-welcome" data-v-2c3bce60><figure class="-fit" data-v-2c3bce60 data-v-ec47b9e2><img string="lazy" string-lazy="/images/shreeyog/projects/safalya-tower.webp" alt="Shreeyog Builders & Land Developers" data-v-ec47b9e2><!----></figure></div><div class="-w" data-v-2c3bce60 data-v-e764b164><!--[--><span class="-lrg tt-red" style="--dx:-0.25;--dy:1;" aria-hidden="true" string="split" string-split="char[random(0,10)]" string-copy-from="people-welcome" data-v-2c3bce60>Contact</span><p class="-up -m-mm tt-1 -tac" string="split" string-split="line" string-copy-from="people-welcome" data-v-2c3bce60>SHREEYOG BUILDERS &amp; LAND DEVELOPERS</p><p class="-up -m-mm tt-2 -tac" string="split" string-split="line" string-copy-from="people-welcome" data-v-2c3bce60>Rooted in Trust. Crafting residential landmarks across Nashik since 1992.</p><div class="cta -a-to-top" string string-copy-from="people-welcome" data-v-2c3bce60></div><!--]--></div><svg class="people-welcome-path" viewBox="0 0 1440 1080" preserveAspectRatio="none" string-copy-from="objects-welcome" data-v-2c3bce60><linearGradient id="people-welcome-path-gradient" x1="0" y1="0" x2="0" y2="1" data-v-2c3bce60><stop offset="0" stop-color="#f0e9dd" data-v-2c3bce60></stop><stop offset=".3" stop-color="#c6a76a" data-v-2c3bce60></stop><stop offset="0.6" stop-color="#f1eade" data-v-2c3bce60></stop></linearGradient><path fill="none" stroke="url(#people-welcome-path-gradient)" stroke-width="1" d="M958.7,0c445.2,409.9-349.8,259.6-441.8,512.4-92,252.7,638,77.4-63,375.7-701,298.3,950.8-555.6,675.8,191.9" vector-effect="non-scaling-stroke" data-v-2c3bce60></path></svg></section><section class="c-about" string string-repeat string-id="people-about" string-enter-vp="top" data-header-color="light" data-v-59f76b32 data-v-24d6f4e3><div class="-w" string="progress" data-v-24d6f4e3 data-v-e764b164><!--[--><div class="shreeyog-contact-two-column-suite" id="inquiry-form-section" data-v-24d6f4e3><div class="contact-dossier-column" data-v-24d6f4e3><div class="dossier-header-block" data-v-24d6f4e3><span class="dossier-eyebrow" data-v-24d6f4e3>NASHIK HEADQUARTERS</span><h2 class="dossier-company-title" data-v-24d6f4e3>Shreeyog Builders &amp; Land Developers</h2><p class="dossier-company-narrative" data-v-24d6f4e3>Since 1992, shaping residential spaces with a commitment to thoughtful planning, quality construction, and lasting value across Nashik.</p></div><div class="dossier-cards-stack" data-v-24d6f4e3><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>HEAD OFFICE</span><p class="dossier-card-value" data-v-24d6f4e3>101/102, Shreenath Enclave, Shreehari Kute Marg,<br data-v-24d6f4e3>Mumbai Naka, Nashik — 422 002, Maharashtra</p><a href="https://maps.google.com/?q=Mumbai+Naka+Nashik" target="_blank" rel="noopener noreferrer" class="dossier-directions-link" data-v-24d6f4e3><span data-v-24d6f4e3>Get Directions</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>DIRECT INQUIRIES &amp; SITE VISITS</span><p class="dossier-card-value dossier-phone-highlight" data-v-24d6f4e3><a href="tel:+919823534751" data-v-24d6f4e3>+91 98235 34751</a></p><div class="dossier-desk-list" data-v-24d6f4e3><span data-v-24d6f4e3>Office Desk: <strong data-v-24d6f4e3>0253 - 2579667</strong></span><span data-v-24d6f4e3>Direct Desk: <strong data-v-24d6f4e3>0253 - 2311112 / 2312638</strong></span></div></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>EMAIL ADVISORY</span><p class="dossier-card-value" data-v-24d6f4e3><a href="mailto:hello@shreeyogbuilders.com" data-v-24d6f4e3>hello@shreeyogbuilders.com</a></p></div><div class="dossier-card" data-v-24d6f4e3><span class="dossier-card-label" data-v-24d6f4e3>HOURS &amp; SITE VISITS</span><p class="dossier-card-value" data-v-24d6f4e3>Monday – Sunday: 10:00 AM – 7:00 PM</p><p class="dossier-card-subnote" data-v-24d6f4e3>Consultations &amp; escorted site visits available daily.</p></div></div><div class="dossier-footer-badge" data-v-24d6f4e3><span class="dossier-badge-title" data-v-24d6f4e3>B. M. KALE BUILDERS &amp; LAND DEVELOPERS</span><span class="dossier-badge-locations" data-v-24d6f4e3><span data-v-24d6f4e3>Key Landmark Locations:</span> Bodhale Nagar • Karmyogi Nagar • Tapovan Road • Gangapur Road • Khode Nagar</span></div></div><div class="contact-form-column" data-v-24d6f4e3><div class="contact-glass-card" data-v-24d6f4e3><div class="form-card-header" data-v-24d6f4e3><span class="form-card-eyebrow" data-v-24d6f4e3>CONNECT WITH US</span><h2 class="form-card-title" data-v-24d6f4e3>Schedule a Consultation</h2><p class="form-card-subtitle" data-v-24d6f4e3>Connect directly with our dedicated property advisory team in Nashik for project consultations, brochure requests, and private site visits.</p></div><form id="shreeyogContactForm" class="shreeyog-form-active" novalidate data-v-24d6f4e3><div class="form-grid-row form-grid-2col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactName" data-v-24d6f4e3>Full Name <span class="req-star" data-v-24d6f4e3>*</span></label><input type="text" id="contactName" name="name" placeholder="Enter your full name" required autocomplete="name" data-v-24d6f4e3 /><span class="field-error-msg" id="nameError" data-v-24d6f4e3></span></div><div class="form-field-unit" data-v-24d6f4e3><label for="contactPhone" data-v-24d6f4e3>Phone Number <span class="req-star" data-v-24d6f4e3>*</span></label><input type="tel" id="contactPhone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" data-v-24d6f4e3 /><span class="field-error-msg" id="phoneError" data-v-24d6f4e3></span></div></div><div class="form-grid-row form-grid-2col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactEmail" data-v-24d6f4e3>Email Address</label><input type="email" id="contactEmail" name="email" placeholder="name@example.com" autocomplete="email" data-v-24d6f4e3 /><span class="field-error-msg" id="emailError" data-v-24d6f4e3></span></div><div class="form-field-unit" data-v-24d6f4e3><label for="contactProject" data-v-24d6f4e3>Project of Interest</label><select id="contactProject" name="project" data-v-24d6f4e3><option value="All Ongoing Developments">All Ongoing Developments</option><option value="Shree Bramhand (Bodhle Nagar)">Shree Bramhand — Bodhle Nagar (2 &amp; 3 BHK)</option><option value="Shree Safalya (Karmyogi Nagar)">Shree Safalya — Karmyogi Nagar</option><option value="Shree Venkatesh Park (Khode Nagar)">Shree Venkatesh Park — Khode Nagar</option><option value="Shree Neelkanth">Shree Neelkanth</option><option value="Shree Malhar (Gangapur Road)">Shree Malhar — Gangapur Road</option><option value="Shree Nandan (Kathe Galli)">Shree Nandan — Kathe Galli</option><option value="Shree Pandurang (Tapovan Road)">Shree Pandurang — Tapovan Road</option><option value="General Consultation">General Property Consultation</option></select></div></div><div class="form-grid-row form-grid-1col" data-v-24d6f4e3><div class="form-field-unit" data-v-24d6f4e3><label for="contactMessage" data-v-24d6f4e3>Specific Requirements / Message</label><textarea id="contactMessage" name="message" rows="4" placeholder="Tell us what you are looking for (e.g. 2 BHK / 3 BHK, budget, preferred site visit date)..." data-v-24d6f4e3></textarea></div></div><div class="form-submit-block" data-v-24d6f4e3><button type="submit" id="contactSubmitBtn" class="contact-submit-action" data-v-24d6f4e3><span data-v-24d6f4e3>SUBMIT INQUIRY</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button></div><div id="contactFormSuccess" class="form-success-box" style="display: none;" data-v-24d6f4e3><div class="success-badge-icon" data-v-24d6f4e3><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-v-24d6f4e3><polyline points="20 6 9 17 4 12"></polyline></svg></div><h3 class="success-box-title" data-v-24d6f4e3>Thank You for Reaching Out</h3><p class="success-box-desc" id="successDetailText" data-v-24d6f4e3>Your consultation request has been recorded. Our property consultant will contact you promptly.</p><button type="button" id="resetContactFormBtn" class="reset-inquiry-btn" data-v-24d6f4e3>Submit Another Request</button></div></form></div></div></div><!--]--></div></section><section class="c-cta" style="display:none;" data-v-59f76b32 data-v-599117dc></section><footer class="page-footer" string="progress" string-self-disable string-id="main-footer-footer" string-enter-vp="bottom" string-exit-vp="bottom" data-v-59f76b32 data-v-a41b36d1><span class="underlay" data-v-a41b36d1></span><div class="-w block" data-v-a41b36d1 data-v-e764b164><!--[--><span class="-mm no-so-me" data-v-a41b36d1>No Social Medias</span><span class="-hp independent" data-v-a41b36d1>Building spaces that inspire better living, across generations.</span><span class="-h4 -m-h6 operating" data-v-a41b36d1><span data-v-a41b36d1>Rooted in Trust.</span><span data-v-a41b36d1>Built for Generations.</span></span><nav data-v-a41b36d1><a href="/" class="-h0 -mid-h1 -m-h2 -nl places" string="split" string-split="char" data-v-a41b36d1>Home</a><a href="/about" class="-h0 -mid-h1 -m-h2 -nl objects" string="split" string-split="char" data-v-a41b36d1>About</a><a href="/projects" class="-h0 -mid-h1 -m-h2 -nl about" string="split" string-split="char" data-v-a41b36d1>Projects</a><a href="/contact" class="-h0 -mid-h1 -m-h2 -nl people" string="split" string-split="char" data-v-a41b36d1>Contact</a></nav><span class="-m copy" data-v-a41b36d1>© <span data-v-a41b36d1>2026</span> Shreeyog. All Rights Reserved.</span><span class="-m expression" data-v-a41b36d1>Shreeyog Builders & Land Developers. Creating spaces with purpose since 1992.</span><!--]--></div><div class="-w after" data-v-a41b36d1 data-v-e764b164><!--[--><a href="/" class="-nl" string-copy-from="main-footer-index" data-v-a41b36d1><img src="/images/shreeyog/logo-hero.png" alt="Shreeyog Builders &amp; Land Developers" class="footer-shreeyog-brand-logo" data-v-a41b36d1></a><div class="ip-1 footer-centre-col" string-copy-from="main-footer-index" data-v-a41b36d1><span class="footer-shreeyog-title" data-v-a41b36d1>Shreeyog</span><span class="footer-shreeyog-sub" data-v-a41b36d1>Builders &amp; Land Developers</span><p class="footer-shreeyog-desc" data-v-a41b36d1>Building with trust, creating spaces for generations.</p></div><p class="-m ip-2" string-copy-from="main-footer-index" data-v-a41b36d1>Since 1992, Shreeyog has been shaping residential spaces with a commitment to thoughtful planning, quality construction and lasting relationships. Every project reflects our belief in building homes that stand the test of time.</p><!--]--></div><figure class="stone-3" string-copy-from="main-footer-footer" data-v-a41b36d1 data-v-ec47b9e2><img string="lazy" string-lazy="/images/shreeyog/projects/safalya-tower.webp" alt="Shreeyog Builders &amp; Land Developers" data-v-ec47b9e2><!----></figure></footer></main><!--[--><header class="" data-v-81ce8483><div class="-w" data-v-81ce8483 data-v-e764b164><!--[--><a href="/" class="-nl" data-v-81ce8483><img src="/images/shreeyog/logo-hero.png" alt="Shreeyog Builders &amp; Land Developers" class="shreeyog-brand-logo" data-v-81ce8483></a><!----><!--[--><!----><a href="/projects" class="button -p -m-m -reverse places" aria-label title data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>Projects</span><!--[--><!--]--></a><!--]--><span class="sep" data-v-81ce8483></span><!--[--><!----><a href="/about" class="button -p -m-m -reverse objects about" aria-label title data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>About</span><!--[--><!--]--></a><!--]--><!----><div class="menu-wrap" data-v-81ce8483><!--[--><button aria-label="" title="" class="menu button -p -m-m" data-v-f52f19c3><span class="text -mm -up" string="split" string-split="char[center]" data-v-f52f19c3>Menu</span><!--[--><span class="menu-icon" data-v-81ce8483 data-v-f52f19c3-s></span><!--]--></button><!----><!--]--></div><!--]--></div></header><!----><!----><!--]--><svg data-v-55c3b488><use href="#ip"></use></svg><div class="page-transition" style="--top-position:0;"><div class="g"><span style="--order:1;--order-back:4;"></span><span style="--order:2;--order-back:3;"></span><span style="--order:3;--order-back:2;"></span><span style="--order:4;--order-back:1;"></span></div><div class="t"><span class="sy-loader-wrap"><span class="sy-loader-row sy-loader-row-brand"><span class="sy-loader-brand" style="--order:1;">SHREEYOG</span></span><span class="sy-loader-row sy-loader-row-sub"><span class="sy-loader-sub" style="--order:2;">BUILDERS &amp; LAND DEVELOPERS</span></span><span class="sy-loader-row sy-loader-row-tag"><span class="sy-loader-tag" style="--order:3;">BUILDING LEGACIES SINCE 1992</span></span></span></div></div><div class="m-transition-underlay" style="--top-position:0;"></div><!----><!--]--></div><script type="application/json" id="__NUXT_DATA__" data-ssr="true">[["Reactive",1],{"data":2,"state":3,"_errors":4,"serverRendered":5,"path":6,"pinia":7},{},{},{},true,"/contact",{}]</script>
 <script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script>
 <script>
 (function() {
@@ -1299,6 +1341,8 @@ body:has(.people-page) {
 </script>
 
 
+
+
 <script id="shreeyog-contact-form-script">
 (function() {
   function initContactForm() {
@@ -1413,6 +1457,8 @@ body:has(.people-page) {
   setInterval(initContactForm, 1000);
 })();
 </script>
+
+
 
 </body>
 </html>

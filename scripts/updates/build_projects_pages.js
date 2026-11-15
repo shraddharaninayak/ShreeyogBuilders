@@ -100,7 +100,7 @@ function renderGalleryCard(p, indexNum, totalCount, isWide = false) {
   const typologyText = p.typology || '';
 
   return `
-    <a href="/projects/${p.slug}" class="${cardClass}">
+    <a href="javascript:void(0)" data-project-href="/projects/${p.slug}" class="${cardClass}" aria-disabled="true">
       <div class="arch-card-media">
         <div class="arch-card-meta">
           <span class="arch-badge ${badgeClass}"><span class="status-dot"></span>${p.status}</span>
@@ -225,7 +225,7 @@ function buildHighlightedProjectsHtml() {
   const satellites = highlightedProjects.slice(1);
 
   const satelliteHtml = satellites.map((p, idx) => `
-    <a href="/projects/${p.slug}" class="satellite-card sat-${idx + 1}" data-index="${idx + 1}" title="${p.name}">
+    <a href="javascript:void(0)" data-project-href="/projects/${p.slug}" class="satellite-card sat-${idx + 1}" data-index="${idx + 1}" title="${p.name}">
       <img src="${p.mainImage}" alt="${p.name} - ${p.location}" loading="lazy">
       <div class="sat-overlay">
         <span class="sat-num">0${idx + 2}</span>
@@ -263,7 +263,7 @@ function buildHighlightedProjectsHtml() {
             <h3 class="featured-name" id="featName">${first.name}</h3>
             <p class="featured-desc" id="featDesc">${first.description}</p>
             <div class="featured-action-row">
-              <a href="/projects/${first.slug}" class="featured-detail-btn" id="featLink">
+              <a href="javascript:void(0)" data-project-href="/projects/${first.slug}" class="featured-detail-btn" id="featLink" aria-disabled="true">
                 <span>Explore Project</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -440,7 +440,7 @@ function buildProjectsPageHtml() {
         if (featCounter) featCounter.innerHTML = '<span>0' + (currentIdx + 1) + '</span> / 0' + items.length;
         if (featName) featName.textContent = p.name;
         if (featDesc) featDesc.textContent = p.description;
-        if (featLink) featLink.href = '/projects/' + p.slug;
+        if (featLink) { featLink.href = 'javascript:void(0)'; featLink.setAttribute('data-project-href', '/projects/' + p.slug); }
       }
 
       if (btnPrev && btnNext) {
@@ -452,6 +452,25 @@ function buildProjectsPageHtml() {
         if (e.key === 'ArrowLeft') renderSlide(currentIdx - 1);
         if (e.key === 'ArrowRight') renderSlide(currentIdx + 1);
       });
+
+      // Satellite click to switch featured showcase without navigation
+      document.querySelectorAll('.satellite-card').forEach((sat, i) => {
+        sat.addEventListener('click', (e) => {
+          e.preventDefault();
+          renderSlide(i + 1);
+        });
+      });
+
+      // Global click interceptor for all project explore links/cards
+      document.addEventListener('click', function(e) {
+        var card = e.target.closest('.arch-card, .featured-detail-btn, .arch-link');
+        if (card) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      }, true);
+
     })();
   </script>
 

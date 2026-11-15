@@ -2076,7 +2076,7 @@ header .-w a.-nl[data-v-81ce8483] {
 }
 
 .shreeyog-brand-logo {
-  height: clamp(34px, 3.8vw, 42px) !important;
+  height: clamp(48px, 4.8vw, 60px) !important;
   width: auto !important;
   max-width: 220px !important;
   object-fit: contain !important;
@@ -2393,7 +2393,7 @@ header .-w [data-v-f52f19c3].request {
     padding: 12px 18px !important;
   }
   .shreeyog-brand-logo {
-    height: 34px !important;
+    height: 38px !important;
   }
 }
 
@@ -2816,7 +2816,7 @@ header .-w [data-v-f52f19c3].request {
     padding: 12px 18px !important;
   }
   .shreeyog-brand-logo {
-    height: 34px !important;
+    height: 38px !important;
   }
 }
 
@@ -3250,6 +3250,6 @@ header .-w [data-v-f52f19c3].request {
     padding: 12px 18px !important;
   }
   .shreeyog-brand-logo {
-    height: 34px !important;
+    height: 38px !important;
   }
 }
