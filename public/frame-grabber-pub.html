@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<video id="v" src="http://localhost:3000/homepage.mp4" muted playsinline></video>
+<canvas id="c"></canvas>
+<script>
+  const v = document.getElementById('v');
+  const c = document.getElementById('c');
+  const ctx = c.getContext('2d');
+
+  v.onloadedmetadata = async () => {
+    c.width = v.videoWidth || 1280;
+    c.height = v.videoHeight || 720;
+    const duration = v.duration;
+    console.log('Video duration:', duration);
+    const step = 2.0;
+    let idx = 0;
+    for (let t = 0; t <= duration; t += step) {
+      await new Promise(resolve => {
+        v.currentTime = t;
+        v.onseeked = async () => {
+          ctx.drawImage(v, 0, 0, c.width, c.height);
+          await fetch('http://localhost:3006/save-frame', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              frameIndex: idx++,
+              timeSec: t,
+              duration: duration,
+              image: c.toDataURL('image/jpeg', 0.85),
+              done: (t + step > duration)
+            })
+          });
+          resolve();
+        };
+      });
+    }
+  };
+</script>
+</body>
+</html>
+  

@@ -1,0 +1,32 @@
+"COMPLETED / TASK_COMPLETED
+
+### Reference Video (`references/homepage.mp4`) Full Frame & Animation Analysis
+
+With HTTP Range requests enabled on the server, video seeking and frame capture now work reliably across the entire 16.0-second video duration. Below is the detailed breakdown of the visual components, transitions, and animations from 0.0s to 16.0s.
+
+---
+
+### Important Scope Note Regarding Hero & Places Sections
+In this specific 16-second screen recording (`reference-homepage.mp4` / `inspect-homepage-video.html`):
+- The recording begins at **0.0s directly in the Objects section**.
+- The preceding **Hero / Welcome** and **Places carousel** sections are located above this in the full website scroll hierarchy, but are **not captured in this 16s recording clip**. The clip documents the page from Objects downwards to the Footer.
+
+---
+
+### Step-by-Step Breakdown Across Timestamps (0s to 16s)
+
+#### 1. Timestamp 0.0s – 2.0s: Objects Section (Card 1/4)
+- **Visible Section**: "Objects" section (`The Obsidian Assembly`).
+- **Active Card**: `(V) The Fox Spirit` (counter: `1/4`).
+- **Layout & Typography**:
+  - Top navigation bar: Left logo `The Obsidian Assembly` and tagline `Imagine Possible`; center pill switches `PLACES` and `OBJECTS` (active); right `SEND REQUEST` and menu hamburger button.
+  - Left copy: `"THESE ITEMS ARE FORMED WITHIN THE PLACES THEMSELVES."` and below: `"Once completed, they leave their point of origin and circulate independently."`
+  - Right copy: `"EACH ORIGINATES ON SITE, SHAPED BY MATERIAL, PROCESS, AND CIRCUMSTANCE."`
+  - Subtle circular compass line enclosing the counter `1/4`.
+  - Bottom right pill button: `EXPLORE OBJECTS •`.
+- **Card Animation / Movement**:
+  - Centered rounded card displaying a 3D matte ceramic white fox figurine with a bronze/gold leaf necklace.
+  - A card stack effect is visible underneath: the top and bottom rims of preceding/subsequent cards peek out behind the center card, showing a stacked deck layout.
+
+#### 2. Timestamp
+<truncated 6561 bytes>

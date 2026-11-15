@@ -1,0 +1,21 @@
+{
+  "name": "shreeyog-web",
+  "version": "1.0.0",
+  "description": "Shreeyog Builders & Land Developers official website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "shreeyog",
+    "builders",
+    "real-estate",
+    "nashik"
+  ],
+  "author": "Shreeyog Builders & Land Developers",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}

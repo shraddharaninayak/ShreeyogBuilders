@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video Inspector</title>
+  <style>
+    body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; }
+    video { width: 900px; max-width: 100%; border: 2px solid #555; }
+    .controls { margin: 15px 0; display: flex; gap: 10px; align-items: center; }
+    button { padding: 8px 16px; cursor: pointer; background: #333; color: #fff; border: 1px solid #777; border-radius: 4px; }
+    button:hover { background: #555; }
+    #timeDisplay { font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Reference Screen Recording: project page.mp4</h1>
+  <div class="controls">
+    <button onclick="seek(0)">0s</button>
+    <button onclick="seek(3)">3s</button>
+    <button onclick="seek(7)">7s</button>
+    <button onclick="seek(12)">12s</button>
+    <button onclick="seek(18)">18s</button>
+    <button onclick="seek(25)">25s</button>
+    <button onclick="seek(35)">35s</button>
+    <button onclick="seek(45)">45s</button>
+    <span id="timeDisplay">0.0s</span>
+  </div>
+  <video id="v" src="/project-page.mp4" controls autoplay muted playsinline></video>
+  <script>
+    const v = document.getElementById('v');
+    const td = document.getElementById('timeDisplay');
+    v.ontimeupdate = () => {
+      td.textContent = v.currentTime.toFixed(1) + 's / ' + v.duration.toFixed(1) + 's';
+    };
+    function seek(t) {
+      v.currentTime = t;
+    }
+  </script>
+</body>
+</html>

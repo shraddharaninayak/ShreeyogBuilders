@@ -1,0 +1,422 @@
+
+/* Shreeyog Project Locations Interactive Map CSS */
+.c-places-after {
+  position: relative !important;
+}
+.c-places-after .figure-map::after {
+  display: none !important;
+  background-image: none !important;
+}
+.c-places-after .figure-map figure {
+  display: none !important;
+}
+.c-places-after .places-after-path {
+  z-index: 1 !important;
+}
+.shreeyog-map-wrapper {
+  grid-area: 1 / 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 800px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+}
+.shreeyog-map-svg {
+  width: 100% !important;
+  max-width: 1050px !important;
+  height: 100% !important;
+  max-height: 850px !important;
+  display: block !important;
+  pointer-events: auto !important;
+  overflow: visible !important;
+}
+.shreeyog-marker-group {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.shreeyog-marker-group:hover,
+.shreeyog-marker-group.is-active {
+  transform: scale(1.15) !important;
+}
+.shreeyog-marker-group .marker-core {
+  transition: fill 0.3s ease, stroke 0.3s ease !important;
+}
+.shreeyog-marker-group:hover .marker-core,
+.shreeyog-marker-group.is-active .marker-core {
+  fill: #ff5113 !important;
+  stroke: #ffffff !important;
+}
+.shreeyog-marker-group .marker-pulse-outer {
+  animation: syPulseRing 2.4s infinite ease-out !important;
+  transform-origin: center !important;
+}
+.shreeyog-marker-group .marker-pulse-inner {
+  animation: syPulseRing 2.4s infinite 0.6s ease-out !important;
+  transform-origin: center !important;
+}
+@keyframes syPulseRing {
+  0% { r: 5.5px; opacity: 0.8; }
+  100% { r: 24px; opacity: 0; }
+}
+.shreeyog-marker-group .marker-label {
+  transition: fill 0.3s ease, font-weight 0.3s ease !important;
+}
+.shreeyog-marker-group:hover .marker-label,
+.shreeyog-marker-group.is-active .marker-label {
+  fill: #7b5136 !important;
+  font-weight: 700 !important;
+}
+
+/* Floating Detail Popover Card */
+.shreeyog-map-popup {
+  position: absolute !important;
+  bottom: 80px !important;
+  right: 60px !important;
+  background: rgba(241, 234, 222, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(123, 81, 54, 0.28) !important;
+  border-radius: 4px !important;
+  padding: 22px 26px !important;
+  width: 320px !important;
+  max-width: 90vw !important;
+  box-shadow: 0 16px 36px rgba(21, 20, 21, 0.12), 0 2px 6px rgba(123, 81, 54, 0.08) !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.shreeyog-map-popup .popup-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 8px !important;
+}
+.shreeyog-map-popup .popup-tag {
+  font-family: var(--font-b-1), "Inter", sans-serif !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #7b5136 !important;
+  font-weight: 600 !important;
+}
+.shreeyog-map-popup .popup-pin-icon {
+  font-size: 0.85rem !important;
+  color: #7b5136 !important;
+}
+.shreeyog-map-popup .popup-title {
+  font-family: var(--font-t-1), "Voyage-Regular", Georgia, serif !important;
+  font-size: 1.55rem !important;
+  color: #151415 !important;
+  margin: 0 0 6px 0 !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+}
+.shreeyog-map-popup .popup-desc {
+  font-family: var(--font-b-1), "Inter", sans-serif !important;
+  font-size: 0.82rem !important;
+  color: #4a4542 !important;
+  line-height: 1.4 !important;
+  margin: 0 0 14px 0 !important;
+}
+.shreeyog-map-popup .popup-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 10px !important;
+  border-top: 1px solid rgba(123, 81, 54, 0.15) !important;
+  font-family: var(--font-b-1), "Inter", sans-serif !important;
+  font-size: 0.72rem !important;
+  color: #7b5136 !important;
+}
+.shreeyog-map-popup .popup-status {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-weight: 500 !important;
+}
+.shreeyog-map-popup .popup-status-dot {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background-color: #ff5113 !important;
+  display: inline-block !important;
+}
+
+/* Passthrough click events on empty text areas to map */
+.c-places-after .-w {
+  pointer-events: none !important;
+}
+.c-places-after .-w a,
+.c-places-after .-w button {
+  pointer-events: auto !important;
+}
+
+
+/* --- Shreeyog Connection Section Enhancements --- */
+.s-wrapper .c-connection .-w .title[data-v-f3038ea5] {
+  font-size: clamp(2.8rem, 6.8vw, 8.2rem) !important;
+  letter-spacing: -0.02em;
+}
+.s-wrapper .c-connection .-w .article[data-v-f3038ea5] {
+  margin-left: calc(min(var(--large), 8.2rem) * -2.4) !important;
+}
+.s-wrapper .c-connection .-w figure[data-v-f3038ea5] {
+  width: min(220px, 16vw) !important;
+  max-width: 240px !important;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+.s-wrapper .c-connection .-w figure img[data-v-ec47b9e2] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 6px;
+}
+.connection-figure .-w figure img[data-v-ec47b9e2] {
+  object-position: center 45% !important;
+}
+
+
+/* --- Shreeyog Philosophy Brand Statement (More Than Spaces. A Way of Living.) --- */
+.s-wrapper .c-connection .-w[string-id="connection-description-w"],
+.s-wrapper .c-connection .-w[data-v-f3038ea5]:last-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: clamp(5rem, 8vw, 8.5rem) var(--g-margin) clamp(5.5rem, 9vw, 9.5rem) var(--g-margin) !important;
+  min-height: auto !important;
+  grid-template-rows: none !important;
+  position: relative !important;
+  z-index: 50 !important;
+  background-color: transparent !important;
+}
+
+.shreeyog-philosophy-card[data-v-f3038ea5] {
+  width: 100% !important;
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.shreeyog-philosophy-card .philosophy-label[data-v-f3038ea5] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: clamp(0.72rem, 0.92vw, 0.85rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.28em !important;
+  text-transform: uppercase !important;
+  color: #8c6a51 !important;
+  margin-bottom: clamp(1.4rem, 2.5vw, 2.4rem) !important;
+  opacity: 0.95 !important;
+}
+
+.shreeyog-philosophy-card .philosophy-heading[data-v-f3038ea5] {
+  font-family: var(--font-t-1), "OTJubilee-Platinum", Georgia, serif !important;
+  font-size: clamp(2.4rem, 4.8vw, 4.2rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.015em !important;
+  color: var(--c-black, #1a1918) !important;
+  margin: 0 0 clamp(1.4rem, 2.5vw, 2.2rem) 0 !important;
+  text-align: center !important;
+}
+
+.shreeyog-philosophy-card .philosophy-line[data-v-f3038ea5] {
+  display: block !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.shreeyog-philosophy-card .philosophy-paragraph[data-v-f3038ea5] {
+  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: rgba(26, 25, 24, 0.76) !important;
+  max-width: 660px !important;
+  margin: 0 auto clamp(2rem, 3.2vw, 3rem) auto !important;
+  text-align: center !important;
+  text-wrap: balance !important;
+}
+
+.shreeyog-philosophy-card .philosophy-tagline[data-v-f3038ea5] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: clamp(0.68rem, 0.85vw, 0.78rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+  color: #7b5136 !important;
+  opacity: 0.88 !important;
+  position: relative !important;
+  padding-top: clamp(1.4rem, 2.2vw, 2rem) !important;
+}
+
+.shreeyog-philosophy-card .philosophy-tagline[data-v-f3038ea5]::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 44px !important;
+  height: 1px !important;
+  background-color: rgba(123, 81, 54, 0.35) !important;
+}
+
+@media (max-width: 640px) {
+  .shreeyog-philosophy-card .philosophy-line[data-v-f3038ea5] {
+    white-space: normal !important;
+  }
+}
+
+
+/* --- Smooth Transitions after Removing Updates & Admission --- */
+.s-wrapper .c-connection .-w[string-id="connection-description-w"],
+.s-wrapper .c-connection .-w[data-v-f3038ea5]:last-child {
+  padding-bottom: clamp(3.5rem, 6vw, 6rem) !important;
+}
+.c-people[data-v-95ef3e57] {
+  margin-top: 0 !important;
+  padding-bottom: clamp(3.5rem, 6vw, 5.5rem) !important;
+}
+footer.page-footer[data-v-a41b36d1] {
+  padding-top: clamp(3.5rem, 6vw, 5.5rem) !important;
+}
+
+.c-people{display:none!important;visibility:hidden!important;height:0!important;margin:0!important;padding:0!important;overflow:hidden!important;pointer-events:none!important}
+
+/* --- Shreeyog The Art of Living Building Cards --- */
+.c-objects .-w .sequence .object-wrapper figure {
+  aspect-ratio: 1200 / 1600 !important;
+  border-radius: .4rem !important;
+  overflow: hidden !important;
+}
+.c-objects .-w .sequence .object-wrapper figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+
+/* ==========================================================================
+   SHREEYOG THE ART OF LIVING - ANIMATED BUILDING CARDS & VISUAL FLOW
+   ========================================================================== */
+
+/* 1. Ensure building card images are always rendered, visible, and contain-fit */
+.c-objects .-w .sequence .object-wrapper figure,
+.c-objects .-w .sequence .object-wrapper .object-holder figure,
+.c-objects .-w .sequence.-sequence-cards .object-wrapper figure,
+.c-objects .-w .sequence.-sequence-cards .object-wrapper .object-holder figure {
+  opacity: 1 !important;
+  visibility: visible !important;
+  border-radius: 0.4rem !important;
+  overflow: hidden !important;
+  display: block !important;
+  background-color: transparent !important;
+  aspect-ratio: 1200 / 1600 !important;
+}
+
+.c-objects .-w .sequence .object-wrapper figure img,
+.c-objects .-w .sequence .object-wrapper .object-holder figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+}
+
+/* 2. Shuffling sequence cards: 3D perspective stack during sticky-container-2 */
+.c-objects .-w .sequence.-sequence-cards .object-wrapper {
+  opacity: 1 !important;
+  visibility: visible !important;
+  scale: calc(1 - abs(var(--sequence-order, 0))/8) !important;
+  transform: translateZ(0) scale(1) !important;
+  translate: 0 calc(var(--sequence-order, 0) * var(--vh, 1vh) * 12) !important;
+  z-index: calc(20 - abs(var(--sequence-order, 0))) !important;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s ease !important;
+}
+
+/* 3. Headlines and narrative in sticky-container-2: ALWAYS visible and readable */
+.c-objects .-w .sticky-container-2 .sticky,
+.c-objects .-w .sticky-container-2:not(.-inview) .sticky {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.c-objects .-w .sticky-container-2 .sticky .tt-1,
+.c-objects .-w .sticky-container-2 .sticky .tt-2,
+.c-objects .-w .sticky-container-2 .sticky .tt-3,
+.c-objects .-w .sticky-container-2 .sticky .button-wrap,
+.c-objects .-w .sticky-container-2 .sticky .sequesnce-nav {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Responsive adjustment for sticky container height: eliminate dead empty scrolling */
+.c-objects .-w .sticky-container-2 {
+  height: calc(var(--vh, 1vh) * 320) !important;
+}
+
+@media (max-width: 1024px) {
+  .c-objects .-w .sticky-container-2 {
+    height: calc(var(--vh, 1vh) * 220) !important;
+  }
+  .c-objects .-w .sequence {
+    --width: 12 !important;
+  }
+  .c-objects .-w .sequence .object-wrapper {
+    --left: 2 !important;
+    --width: 8 !important;
+    justify-self: center !important;
+  }
+  .c-objects .-w .sticky-container-2 .sticky .tt-1 {
+    --top: 1 !important;
+    --width: 10 !important;
+    font-size: 1.1rem !important;
+  }
+  .c-objects .-w .sticky-container-2 .sticky .tt-2 {
+    --top: 2 !important;
+    --width: 10 !important;
+    font-size: 0.95rem !important;
+  }
+  .c-objects .-w .sticky-container-2 .sticky .tt-3 {
+    --top: 3 !important;
+    --width: 10 !important;
+    font-size: 0.85rem !important;
+  }
+  .c-objects .-w .sticky-container-2 .sticky .button-wrap {
+    --top: 5 !important;
+    --left: 2 !important;
+    --width: 8 !important;
+    justify-content: center !important;
+  }
+}
+
+/* 4. Connection Section (Living room interior & philosophy card) */
+.connection-figure .-w figure,
+.connection-figure .-w figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
