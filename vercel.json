@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/places/(.*)", "destination": "/projects", "permanent": true },
+    { "source": "/places", "destination": "/projects", "permanent": true },
+    { "source": "/objects/(.*)", "destination": "/projects", "permanent": true },
+    { "source": "/objects", "destination": "/projects", "permanent": true },
+    { "source": "/services/(.*)", "destination": "/projects", "permanent": true },
+    { "source": "/services", "destination": "/projects", "permanent": true },
+    { "source": "/people/(.*)", "destination": "/about", "permanent": true },
+    { "source": "/people", "destination": "/about", "permanent": true }
+  ]
+}

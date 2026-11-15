@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  const parsedUrl = url.parse(req.url);
+  const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost:3000'}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
 
   // Clean redirects for legacy reference routes to Shreeyog routes
@@ -113,6 +113,15 @@ const server = http.createServer((req, res) => {
       });
 
       const stream = fs.createReadStream(filePath, { start, end });
+      stream.on('error', (err) => {
+        if (!res.headersSent) {
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Stream Error: ' + err.message);
+        }
+      });
+      res.on('close', () => {
+        stream.destroy();
+      });
       stream.pipe(res);
     } else {
       res.writeHead(200, {
@@ -125,14 +134,41 @@ const server = http.createServer((req, res) => {
       });
 
       const stream = fs.createReadStream(filePath);
+      stream.on('error', (err) => {
+        if (!res.headersSent) {
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Stream Error: ' + err.message);
+        }
+      });
+      res.on('close', () => {
+        stream.destroy();
+      });
       stream.pipe(res);
     }
   } catch (err) {
-    res.writeHead(500, { 'Content-Type': 'text/plain' });
-    res.end('500 Server Error: ' + err.message);
+    if (!res.headersSent) {
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('500 Server Error: ' + err.message);
+    }
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+server.on('error', (err) => {
+  console.error('HTTP Server error:', err);
 });
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception caught:', err.message);
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('Unhandled Rejection caught:', reason);
+});
+
+if (process.env.VERCEL !== '1') {
+  server.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}/`);
+  });
+}
+
+module.exports = server;
