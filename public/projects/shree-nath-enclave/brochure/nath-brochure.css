@@ -1,0 +1,343 @@
+/* ==========================================================================
+   SHREE NATH ENCLAVE — DIGITAL PROJECT BROCHURE
+   Luxury Corporate & Residential Landmark Design System
+   ========================================================================== */
+
+:root {
+  --ne-dark-950: #060a12;
+  --ne-dark-900: #0a111e;
+  --ne-dark-850: #0f192c;
+  --ne-dark-800: #14233c;
+
+  --ne-gold-300: #f5e3be;
+  --ne-gold-400: #e2c589;
+  --ne-gold-500: #c5a467;
+  --ne-gold-600: #ab8b4e;
+
+  --ne-white: #ffffff;
+  --ne-text-light: #f1f5f9;
+  --ne-text-dim: #94a3b8;
+
+  --sidebar-w: 290px;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', -apple-system, sans-serif;
+  --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--ne-dark-950);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--ne-dark-950);
+  display: flex;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.brochure-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-w);
+  background: linear-gradient(180deg, #070d18 0%, #0d1728 100%);
+  border-right: 1px solid rgba(197, 164, 103, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.2rem 1.6rem;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  margin-bottom: 2rem;
+}
+
+.sidebar-brand__logo {
+  max-width: 175px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sidebar-brand__location {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ne-gold-400);
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-brand__name {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--ne-white);
+  line-height: 1.15;
+}
+
+.sidebar-brand__desc {
+  font-size: 0.78rem;
+  color: var(--ne-text-dim);
+  margin-top: 0.25rem;
+}
+
+.sidebar-nav {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.sidebar-nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.sidebar-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.62rem 0.85rem;
+  color: var(--ne-text-dim);
+  text-decoration: none;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.sidebar-nav__link:hover, .sidebar-nav__link.active {
+  background: rgba(197, 164, 103, 0.12);
+  color: var(--ne-gold-300);
+  border-left-color: var(--ne-gold-400);
+}
+
+.sidebar-nav__num {
+  font-size: 0.68rem;
+  color: var(--ne-gold-500);
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(197, 164, 103, 0.15);
+  padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-btn-return {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  color: var(--ne-text-dim);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.sidebar-btn-return:hover {
+  color: var(--ne-gold-400);
+}
+
+.sidebar-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--ne-gold-400) 0%, var(--ne-gold-600) 100%);
+  color: #070d18;
+  font-weight: 600;
+  border: none;
+}
+
+/* Main Area */
+.brochure-main-area {
+  margin-left: var(--sidebar-w);
+  width: calc(100% - var(--sidebar-w));
+  min-height: 100vh;
+}
+
+.brochure-section {
+  padding: 5.5rem 5rem;
+  border-bottom: 1px solid rgba(197, 164, 103, 0.12);
+}
+
+.brochure-section--dark {
+  background-color: var(--ne-dark-900);
+  color: var(--ne-text-light);
+}
+
+.brochure-section--elevated {
+  background: linear-gradient(180deg, var(--ne-dark-850) 0%, var(--ne-dark-900) 100%);
+  color: var(--ne-text-light);
+}
+
+.section-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ne-gold-400);
+  margin-bottom: 0.85rem;
+  display: inline-block;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  color: var(--ne-white);
+  margin-bottom: 1.15rem;
+}
+
+.section-desc {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--ne-text-dim);
+  max-width: 780px;
+  margin-bottom: 2.5rem;
+}
+
+.overview-hero {
+  padding: 5.5rem 5rem;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.overview-title {
+  font-family: var(--font-serif);
+  font-size: 3.75rem;
+  color: var(--ne-white);
+  margin-bottom: 0.6rem;
+}
+
+.overview-subtitle {
+  font-size: 1.25rem;
+  color: var(--ne-gold-400);
+  font-family: var(--font-serif);
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.overview-tagline {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ne-text-dim);
+  margin-bottom: 2.2rem;
+}
+
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(15, 25, 44, 0.7);
+  border: 1px solid rgba(197, 164, 103, 0.2);
+  border-radius: 8px;
+}
+
+.overview-stat-val {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--ne-gold-400);
+  font-weight: 600;
+}
+
+.overview-stat-lbl {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--ne-text-dim);
+  margin-top: 0.25rem;
+}
+
+.overview-image-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(197, 164, 103, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+}
+
+.overview-image-card img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-grid-3 img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 164, 103, 0.25);
+}
+
+.feature-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-box {
+  background: rgba(15, 25, 44, 0.6);
+  border: 1px solid rgba(197, 164, 103, 0.2);
+  border-radius: 8px;
+  padding: 1.6rem 1.4rem;
+}
+
+.feature-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--ne-white);
+  margin-bottom: 0.4rem;
+}
+
+.feature-box p {
+  font-size: 0.85rem;
+  color: var(--ne-text-dim);
+  line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+  .brochure-section { padding: 4rem 2.5rem; }
+  .overview-grid, .gallery-grid-3, .feature-grid-3 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .brochure-sidebar { display: none; }
+  .brochure-main-area { margin-left: 0; width: 100%; }
+}

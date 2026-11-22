@@ -21,6 +21,7 @@ const MIME_TYPES = {
   '.woff2': 'font/woff2',
   '.mp4': 'video/mp4',
   '.webm': 'video/webm',
+  '.pdf': 'application/pdf',
   '.txt': 'text/plain; charset=utf-8'
 };
 
@@ -60,6 +61,11 @@ const server = http.createServer((req, res) => {
   // Check if directory
   try {
     if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+      if (!pathname.endsWith('/')) {
+        res.writeHead(301, { 'Location': pathname + '/' + (parsedUrl.search || '') });
+        res.end();
+        return;
+      }
       filePath = path.join(filePath, 'index.html');
     }
   } catch (e) {}

@@ -228,6 +228,40 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Floating Project Logo in Top-Right Corner of Featured Image Card */
+.featured-card-logo {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.featured-card-logo img {
+  width: auto !important;
+  height: 40px !important;
+  max-width: 145px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75)) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.85));
+  transform: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 768px) {
+  .featured-card-logo {
+    top: 1rem;
+    right: 1rem;
+  }
+  .featured-card-logo img {
+    height: 30px !important;
+    max-width: 115px !important;
+  }
+}
+
 .status-ongoing {
   background: rgba(123, 81, 54, 0.4);
   border: 1px solid rgba(198, 167, 106, 0.4);
@@ -1374,6 +1408,41 @@
   text-transform: uppercase;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+
+.arch-meta-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Floating Project Logo in Top-Right Corner of Project Cards */
+.arch-card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.arch-card-logo img {
+  width: auto !important;
+  height: 38px !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85));
+  transition: transform 0.4s ease;
+}
+
+.arch-card:hover .arch-card-logo img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .arch-card-logo img {
+    height: 28px !important;
+    max-width: 105px !important;
+  }
 }
 
 .badge-completed {

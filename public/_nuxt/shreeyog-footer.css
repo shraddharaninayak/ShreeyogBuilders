@@ -1,0 +1,252 @@
+/* ==========================================================================
+   SHREEYOG UNIVERSAL FOOTER STYLESHEET
+   Ensures consistent 4-element branding footer across every page:
+   [1] Official Shreeyog Logo
+   [2] Centre Column (Title, Subtitle, Trust Tagline)
+   [3] Right Column (Company Heritage Intro)
+   [4] Far Right Column (Architectural Building Image)
+   ========================================================================== */
+
+/* 1. Reset / Neutralize Scroll-Progress Opacity & Shift */
+footer.page-footer .-w.after > *,
+footer .-w.after > *,
+footer .-w.after[data-v-a41b36d1] > * {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+/* 2. Base Footer & Underlay Styles */
+footer.page-footer {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #0e0d0c !important;
+  color: #f1eade !important;
+}
+
+/* Ensure the upper cream block is styled nicely */
+footer.page-footer .-w.block {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* 3. Branding Elements Typography & Layout */
+.footer-shreeyog-brand-logo {
+  width: clamp(145px, 14vw, 195px) !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: brightness(1.18) contrast(1.12) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6)) !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.footer-shreeyog-brand-logo:hover {
+  opacity: 0.9 !important;
+}
+
+.footer-shreeyog-title {
+  font-family: var(--font-t-1), "OTJubilee-Platinum", Georgia, serif !important;
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem) !important;
+  font-weight: 400 !important;
+  color: #f1eade !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 0 0.35rem 0 !important;
+  display: block !important;
+}
+
+.footer-shreeyog-sub {
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: clamp(0.7rem, 1.1vw, 0.82rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #c49a6c !important;
+  margin: 0 0 0.85rem 0 !important;
+  display: block !important;
+  white-space: normal !important;
+}
+
+.footer-shreeyog-desc {
+  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+  font-size: clamp(0.92rem, 1.2vw, 1.05rem) !important;
+  line-height: 1.55 !important;
+  color: rgba(241, 234, 222, 0.78) !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* 4. Desktop Layout (min-width: 1024px) */
+@media (min-width: 1024px) {
+  footer.page-footer {
+    padding-top: var(--large, 80px) !important;
+  }
+
+  footer.page-footer .-w.after,
+  footer .-w.after {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr) !important;
+    column-gap: var(--g-gap, 24px) !important;
+    row-gap: 0 !important;
+    align-items: flex-start !important;
+    padding-top: var(--h1, 48px) !important;
+    padding-bottom: calc(var(--p, 24px) * 2.2) !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: calc(100% - var(--g-margin, 40px) * 2) !important;
+    margin: 0 auto !important;
+  }
+
+  footer.page-footer .-w.after a.-nl,
+  footer .-w.after a.-nl {
+    grid-column: 1 / span 3 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    pointer-events: all !important;
+    margin: 0 !important;
+  }
+
+  footer.page-footer .-w.after .footer-centre-col,
+  footer .-w.after .ip-1.footer-centre-col {
+    grid-column: 4 / span 4 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin: 0 !important;
+  }
+
+  footer.page-footer .-w.after .ip-2,
+  footer .-w.after .ip-2 {
+    grid-column: 8 / span 3 !important;
+    grid-row: 1 !important;
+    display: block !important;
+    font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+    font-size: clamp(0.88rem, 1.1vw, 0.98rem) !important;
+    line-height: 1.65 !important;
+    color: rgba(241, 234, 222, 0.72) !important;
+    margin: 0 !important;
+  }
+
+  footer.page-footer .stone-3,
+  footer .stone-3 {
+    position: absolute !important;
+    bottom: calc(var(--p, 24px) * 1.5) !important;
+    right: var(--g-margin, 40px) !important;
+    margin: 0 !important;
+    width: clamp(140px, 11vw, 175px) !important;
+    max-width: calc(var(--col, 80px) * 2 + var(--g-gap, 24px)) !important;
+    aspect-ratio: 400 / 560 !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(241, 234, 222, 0.12) !important;
+    z-index: 50 !important;
+    display: block !important;
+    transform: none !important;
+  }
+
+  footer.page-footer .stone-3 img,
+  footer .stone-3 img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 8px !important;
+  }
+}
+
+/* 5. Mobile & Tablet Layout (< 1024px) */
+@media (max-width: 1023px) {
+  footer.page-footer {
+    padding-top: clamp(2.5rem, 5vw, 3.5rem) !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+  }
+
+  footer.page-footer .-w.after,
+  footer .-w.after {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding-top: clamp(1.75rem, 4vw, 2.5rem) !important;
+    padding-bottom: 0 !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    margin: 0 var(--g-margin, 16px) !important;
+    width: auto !important;
+    max-width: calc(100% - var(--g-margin, 16px) * 2) !important;
+  }
+
+  footer.page-footer .-w.after a.-nl,
+  footer .-w.after a.-nl {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    pointer-events: all !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    width: auto !important;
+  }
+
+  footer.page-footer .-w.after .footer-centre-col,
+  footer .-w.after .ip-1.footer-centre-col {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  footer.page-footer .-w.after .ip-2,
+  footer .-w.after .ip-2 {
+    margin-top: 0 !important;
+    margin-bottom: 1.75rem !important;
+    font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+    font-size: clamp(0.88rem, 2.7vw, 1.0rem) !important;
+    line-height: 1.65 !important;
+    color: rgba(241, 234, 222, 0.72) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  footer.page-footer .stone-3,
+  footer .stone-3 {
+    position: relative !important;
+    transform: none !important;
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 var(--g-margin, 16px) clamp(2.5rem, 6vw, 3.5rem) var(--g-margin, 16px) !important;
+    width: clamp(160px, 48vw, 220px) !important;
+    max-width: calc(100% - var(--g-margin, 16px) * 2) !important;
+    aspect-ratio: 400 / 560 !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(241, 234, 222, 0.16) !important;
+    display: block !important;
+    z-index: 20 !important;
+  }
+
+  footer.page-footer .stone-3 img,
+  footer .stone-3 img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 11px !important;
+    filter: brightness(1.04) contrast(1.04) !important;
+  }
+}
