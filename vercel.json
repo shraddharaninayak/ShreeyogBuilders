@@ -9,6 +9,33 @@
     { "source": "/services/(.*)", "destination": "/projects", "permanent": true },
     { "source": "/services", "destination": "/projects", "permanent": true },
     { "source": "/people/(.*)", "destination": "/about", "permanent": true },
-    { "source": "/people", "destination": "/about", "permanent": true }
+    { "source": "/people", "destination": "/about", "permanent": true },
+
+    { "source": "/brochures/shree-bramhand.pdf", "destination": "/brochures/shree-bramhand-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-bramhand/Shree-Bramhand-Brochure.pdf", "destination": "/brochures/shree-bramhand-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-bramhand/brochure/Shree-Bramhand-Brochure.pdf", "destination": "/brochures/shree-bramhand-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-bramhand/brochure/brochure.pdf", "destination": "/brochures/shree-bramhand-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-vishwa.pdf", "destination": "/brochures/shree-vishwa-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vishwa/Shree-Vishwa-Brochure.pdf", "destination": "/brochures/shree-vishwa-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vishwa/brochure/Shree-Vishwa-Brochure.pdf", "destination": "/brochures/shree-vishwa-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vishwa/brochure/brochure.pdf", "destination": "/brochures/shree-vishwa-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-safalya.pdf", "destination": "/brochures/shree-safalya-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-safalya/Shree-Safalya-Brochure.pdf", "destination": "/brochures/shree-safalya-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-safalya/brochure/Shree-Safalya-Brochure.pdf", "destination": "/brochures/shree-safalya-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-safalya/brochure/brochure.pdf", "destination": "/brochures/shree-safalya-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-samruddhi-park.pdf", "destination": "/brochures/shree-samruddhi-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-samruddhi-park/Shree-Samruddhi-Park.pdf", "destination": "/brochures/shree-samruddhi-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-samruddhi-park/brochure/Shree-Samruddhi-Park.pdf", "destination": "/brochures/shree-samruddhi-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-samruddhi-park/brochure/brochure.pdf", "destination": "/brochures/shree-samruddhi-park-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-venkatesh-park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/brochures/shree-venkatesh.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-venkatesh-park/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-venkatesh-park/brochure/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-venkatesh/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true }
   ]
 }

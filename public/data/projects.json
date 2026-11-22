@@ -54,7 +54,9 @@
       "MahaRERA Registered P51600030062",
       "Panoramic views of city and green horizons",
       "Vastu-compliant spatial planning"
-    ]
+    ],
+    "brochurePdf": "/brochures/shree-bramhand-brochure.pdf",
+    "brochureUrl": "/projects/shree-bramhand/brochure"
   },
   {
     "id": 2,
@@ -106,7 +108,9 @@
       "Proximity to reputed schools and hospitals",
       "100% completed with ready possession",
       "High capital appreciation precinct"
-    ]
+    ],
+    "brochurePdf": "/brochures/shree-vishwa-brochure.pdf",
+    "brochureUrl": "/projects/shree-vishwa/brochure"
   },
   {
     "id": 3,
@@ -158,7 +162,9 @@
       "Unobstructed views of Nashik's green hills",
       "Bespoke interior layout customizations",
       "World-class building maintenance standards"
-    ]
+    ],
+    "brochurePdf": "/brochures/shree-safalya-brochure.pdf",
+    "brochureUrl": "/projects/shree-safalya/brochure"
   },
   {
     "id": 4,
@@ -203,7 +209,9 @@
       "Heart of Nashik at Mumbai Naka junction",
       "Corporate address of Shreeyog Builders",
       "Established commercial hub with sustained footfall"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": "/projects/shree-nath-enclave/brochure"
   },
   {
     "id": 5,
@@ -249,7 +257,9 @@
       "Peaceful residential sanctuary",
       "Close to Nashik Road railway station",
       "100% occupied with active resident society"
-    ]
+    ],
+    "brochurePdf": "/brochures/shree-samruddhi-park-brochure.pdf",
+    "brochureUrl": "/projects/shree-samruddhi-park/brochure"
   },
   {
     "id": 6,
@@ -294,7 +304,9 @@
       "Tranquil residential location",
       "Close to spiritual and cultural landmarks",
       "High rental yield and capital appreciation"
-    ]
+    ],
+    "brochurePdf": "/brochures/shree-venkatesh-park-brochure.pdf",
+    "brochureUrl": "/projects/shree-venkatesh-park/brochure"
   },
   {
     "id": 7,
@@ -337,7 +349,9 @@
       "Established Indira Nagar neighborhood",
       "Immediate possession",
       "Zero dead-space interior layouts"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 8,
@@ -375,7 +389,9 @@
       "Prime residential street",
       "Peaceful low-noise surroundings",
       "Long-term structural warranty"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 9,
@@ -413,7 +429,9 @@
       "Govind Nagar central location",
       "Quiet residential lane",
       "100% occupied with contented families"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 10,
@@ -451,7 +469,9 @@
       "Walk-to-everything College Road address",
       "High rental demand asset",
       "Excellent lifestyle amenities nearby"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 11,
@@ -485,7 +505,9 @@
       "Historic and spiritual Panchavati precinct",
       "Peaceful atmosphere",
       "Generous family layouts"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 12,
@@ -518,7 +540,9 @@
       "Rapid highway access",
       "Close to major transit hubs",
       "Sound investment value"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 13,
@@ -557,7 +581,9 @@
       "Rapidly developing residential corridor",
       "Proximity to medical colleges and transit routes",
       "Attractive pre-completion pricing"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 14,
@@ -591,7 +617,9 @@
       "Premier residential enclave",
       "High natural illumination in all rooms",
       "Assured on-time handover"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   },
   {
     "id": 15,
@@ -630,6 +658,8 @@
       "Close to scenic Gangapur backwaters and vineyards",
       "Clean air and tranquil environs",
       "Shreeyog's proven build quality"
-    ]
+    ],
+    "brochurePdf": null,
+    "brochureUrl": null
   }
 ]

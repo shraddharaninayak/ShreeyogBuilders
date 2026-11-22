@@ -56,6 +56,42 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Brochure PDF redirects
+  const brochureRedirects = {
+    '/brochures/shree-bramhand.pdf': '/brochures/shree-bramhand-brochure.pdf',
+    '/projects/shree-bramhand/Shree-Bramhand-Brochure.pdf': '/brochures/shree-bramhand-brochure.pdf',
+    '/projects/shree-bramhand/brochure/Shree-Bramhand-Brochure.pdf': '/brochures/shree-bramhand-brochure.pdf',
+    '/projects/shree-bramhand/brochure/brochure.pdf': '/brochures/shree-bramhand-brochure.pdf',
+
+    '/brochures/shree-vishwa.pdf': '/brochures/shree-vishwa-brochure.pdf',
+    '/projects/shree-vishwa/Shree-Vishwa-Brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
+    '/projects/shree-vishwa/brochure/Shree-Vishwa-Brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
+    '/projects/shree-vishwa/brochure/brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
+
+    '/brochures/shree-safalya.pdf': '/brochures/shree-safalya-brochure.pdf',
+    '/projects/shree-safalya/Shree-Safalya-Brochure.pdf': '/brochures/shree-safalya-brochure.pdf',
+    '/projects/shree-safalya/brochure/Shree-Safalya-Brochure.pdf': '/brochures/shree-safalya-brochure.pdf',
+    '/projects/shree-safalya/brochure/brochure.pdf': '/brochures/shree-safalya-brochure.pdf',
+
+    '/brochures/shree-samruddhi-park.pdf': '/brochures/shree-samruddhi-park-brochure.pdf',
+    '/projects/shree-samruddhi-park/Shree-Samruddhi-Park.pdf': '/brochures/shree-samruddhi-park-brochure.pdf',
+    '/projects/shree-samruddhi-park/brochure/Shree-Samruddhi-Park.pdf': '/brochures/shree-samruddhi-park-brochure.pdf',
+    '/projects/shree-samruddhi-park/brochure/brochure.pdf': '/brochures/shree-samruddhi-park-brochure.pdf',
+
+    '/brochures/shree-venkatesh-park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/brochures/shree-venkatesh.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/projects/shree-venkatesh-park/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/projects/shree-venkatesh-park/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/projects/shree-venkatesh/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf'
+  };
+
+  if (brochureRedirects[pathname]) {
+    res.writeHead(301, { 'Location': brochureRedirects[pathname] });
+    res.end();
+    return;
+  }
+
   let filePath = path.join(PUBLIC_DIR, pathname);
 
   // Check if directory
