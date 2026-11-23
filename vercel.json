@@ -51,6 +51,7 @@
     { "source": "/projects/shree-samruddhi-park/brochure", "destination": "/projects/shree-samruddhi-park/brochure/", "permanent": true },
     { "source": "/projects/shree-venkatesh-park/brochure", "destination": "/projects/shree-venkatesh-park/brochure/", "permanent": true },
     { "source": "/projects/shree-malhar/brochure", "destination": "/projects/shree-malhar/brochure/", "permanent": true },
+    { "source": "/projects/shree-nandan/brochure", "destination": "/projects/shree-nandan/brochure/", "permanent": true },
 
     { "source": "/brochures/shree-nath-enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-nath-enclave/Shree-Nath-Enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
@@ -75,6 +76,12 @@
     { "source": "/projects/shree-malhar/Shree-Malhar.pdf", "destination": "/brochures/shree-malhar-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-malhar/Shree-Malhar-Brochure.pdf", "destination": "/brochures/shree-malhar-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-malhar/brochure/Shree-Malhar-Brochure.pdf", "destination": "/brochures/shree-malhar-brochure.pdf", "permanent": true },
-    { "source": "/projects/shree-malhar/brochure/brochure.pdf", "destination": "/brochures/shree-malhar-brochure.pdf", "permanent": true }
+    { "source": "/projects/shree-malhar/brochure/brochure.pdf", "destination": "/brochures/shree-malhar-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-nandan.pdf", "destination": "/brochures/shree-nandan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nandan/Shree-Nandan.pdf", "destination": "/brochures/shree-nandan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nandan/Shree-Nandan-Brochure.pdf", "destination": "/brochures/shree-nandan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nandan/brochure/Shree-Nandan-Brochure.pdf", "destination": "/brochures/shree-nandan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nandan/brochure/brochure.pdf", "destination": "/brochures/shree-nandan-brochure.pdf", "permanent": true }
   ]
 }

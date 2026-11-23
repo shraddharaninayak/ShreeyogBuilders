@@ -592,37 +592,43 @@ module.exports = [
     "id": 14,
     "name": "Shree Nandan",
     "slug": "shree-nandan",
-    "location": "Indira Nagar, Nashik",
+    "location": "Near Trikoni Garden, Kathe Galli, Nashik",
     "status": "Ongoing",
     "featured": false,
-    "typology": "Contemporary 2 & 3 BHK Apartments",
-    "rera": "Ongoing Project",
-    "mainImage": "/images/shreeyog/projects/shakuntal.webp",
+    "typology": "2 & 3 BHK Luxurious Residences",
+    "rera": "P51600032910",
+    "logo": "/images/shreeyog/logos/shree-nandan-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-nandan.webp",
     "gallery": [
-      "/images/shreeyog/projects/shakuntal.webp",
-      "/images/shreeyog/interiors/master-bedroom.webp"
+      "/images/shreeyog/slider/shree-nandan.webp",
+      "/projects/shree-nandan/brochure/assets/page-1.webp",
+      "/projects/shree-nandan/brochure/assets/terrace-amenity-1.jpg",
+      "/projects/shree-nandan/brochure/assets/plan-typical.webp",
+      "/projects/shree-nandan/brochure/assets/plan-terrace.webp"
     ],
-    "tagline": "Smart Urban Architecture in Desirable Indira Nagar",
-    "description": "An ongoing development crafted with clean geometric facades, spacious living rooms, and private balconies overlooking verdant streetscapes in Indira Nagar.",
-    "overview": "Engineered to deliver exceptional space optimization, natural ventilation, and low maintenance overheads for modern urban families.",
+    "tagline": "Happiness Forever — Elevate Your Lifestyle",
+    "description": "Situated near Trikoni Garden at Kathe Galli, Nashik, Shree Nandan offers premium 2 & 3 BHK apartments minutes away from Dwarka Circle, with rooftop yoga, green gym, community stage, and net metering.",
+    "overview": "A premium residential landmark bringing together generational comfort, Vastu-compliant layouts, an active rooftop sky sanctuary, and zero common light bills with solar net metering.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Advanced RCC frame with aerated autoclaved concrete blocks for superior insulation."
+        "detail": "Earthquake resistant RCC framework with natural red soil bricks and eco light blocks."
       }
     ],
     "amenities": [
-      "Rooftop Solar Water Heating Provision",
-      "Dual Elevators with Automatic Rescue Device",
-      "Video Intercom Security"
+      "Rooftop Terrace Yoga & Open Green Gym",
+      "Community Celebration Stage",
+      "Indoor Activity Hall (13'8\" x 13'8\")",
+      "Rooftop Solar Net Metering (Zero Common Light Bill)",
+      "Automatic 6-Person Lift with Genset Backup"
     ],
     "highlights": [
-      "Premier residential enclave",
-      "High natural illumination in all rooms",
-      "Assured on-time handover"
+      "Near Trikoni Garden & Dwarka Circle",
+      "A & B Wing 2 & 3 BHK Residences",
+      "30+ Turnkey Fixtures & Complete Curtains"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-nandan-brochure.pdf",
+    "brochureUrl": "/projects/shree-nandan/brochure/"
   },
   {
     "id": 15,
