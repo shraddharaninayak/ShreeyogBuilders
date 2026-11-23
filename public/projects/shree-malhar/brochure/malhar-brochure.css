@@ -682,6 +682,78 @@ body {
   font-weight: 600;
 }
 
+/* Terrace Amenities Grid */
+.terrace-amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.terrace-amenity-card {
+  background: #ffffff;
+  border: 1px solid var(--sm-border-light);
+  padding: 1.2rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terrace-amenity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.terrace-amenity-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.terrace-amenity-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  margin: 0.4rem 0 0.2rem;
+  color: var(--sm-text-dark);
+}
+
+.terrace-amenity-desc {
+  font-size: 0.8rem;
+  color: var(--sm-text-muted);
+  line-height: 1.45;
+}
+
+/* Parking Features Grid */
+.parking-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.parking-feature-card {
+  background: var(--sm-bg-subtle);
+  padding: 1.2rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.parking-feature-card:hover {
+  transform: translateY(-2px);
+}
+
+.parking-feature-title {
+  font-family: var(--font-serif);
+  color: var(--sm-text-dark);
+  margin-bottom: 0.4rem;
+}
+
+.parking-feature-desc {
+  font-size: 0.88rem;
+  color: var(--sm-text-body);
+  line-height: 1.5;
+}
+
 /* ==========================================================================
    7. COMPLETE 32 SPECIFICATIONS GRID
    ========================================================================== */
@@ -1057,6 +1129,18 @@ body {
     gap: 1rem;
   }
 
+  .terrace-amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .parking-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
   .plan-details-table {
     display: block;
     width: 100%;
@@ -1128,5 +1212,38 @@ body {
     max-height: 380px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
+  }
+
+  .terrace-amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+  }
+
+  .terrace-amenity-card {
+    padding: 0.9rem 0.6rem;
+  }
+
+  .terrace-amenity-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .terrace-amenity-title {
+    font-size: 0.88rem;
+    margin: 0.25rem 0 0.2rem;
+    line-height: 1.25;
+  }
+
+  .terrace-amenity-desc {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 380px) {
+  .terrace-amenities-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 }
