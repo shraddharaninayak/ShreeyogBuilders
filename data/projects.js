@@ -628,41 +628,59 @@ module.exports = [
     "id": 15,
     "name": "Shree Malhar",
     "slug": "shree-malhar",
-    "location": "Gangapur Road Extension, Nashik",
+    "location": "Savarkar Nagar, Gangapur Road, Nashik",
     "status": "Ongoing",
     "featured": false,
-    "typology": "Nature-Side Premium Residences",
-    "rera": "Ongoing Project",
-    "mainImage": "/images/shreeyog/projects/chintan.webp",
+    "typology": "3 BHK Luxurious Flats",
+    "rera": "P51600048639",
+    "logo": "/images/shreeyog/logos/shree-malhar-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-malhar.webp",
     "gallery": [
-      "/images/shreeyog/projects/chintan.webp",
-      "/images/shreeyog/interiors/private-balcony.webp"
+      "/images/shreeyog/slider/shree-malhar.webp",
+      "/projects/shree-malhar/brochure/assets/page-1.webp",
+      "/projects/shree-malhar/brochure/assets/axonometric-view.webp",
+      "/projects/shree-malhar/brochure/assets/plan-typical.webp",
+      "/projects/shree-malhar/brochure/assets/plan-terrace.webp"
     ],
-    "tagline": "Quiet Hill-View Sanctuary Near Gangapur Backwaters",
-    "description": "Nestled near the scenic Gangapur Road extension, Shree Malhar offers tranquil living framed by open skies, gentle breezes, and lush surroundings.",
-    "overview": "A nature-centric ongoing residential project designed for peace of mind, wholesome living, and enduring structural excellence.",
+    "tagline": "The Rhythm of the Delighted Life",
+    "description": "Nestled near the scenic Gangapur Road in Savarkar Nagar behind Vishwas Bank, Shree Malhar offers exclusive 3 BHK luxurious flats with only 2 residences per floor, 4 private balconies, 2-car covered parking, and rooftop terrace amenities.",
+    "overview": "A signature boutique residential landmark designed with only two homes per floor, offering complete privacy, triple-sided ventilation, dedicated 2-car covered parking, and an active rooftop leisure sky deck.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "RCC framed structure built for maximum longevity."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake resistant RCC framed structure engineered with high-grade eco light blocks / red soil brick masonry."
       },
       {
-        "category": "Balconies",
-        "detail": "Deep cantilevered viewing balconies with anti-skid tiles."
+        "category": "Flooring & Dado",
+        "detail": "800mm x 800mm premium vitrified tile flooring across all rooms; full-height designer ceramic wall dado in all toilets."
+      },
+      {
+        "category": "Kitchen & Storage",
+        "detail": "L-shape / parallel granite kitchen platform with stainless steel trolleys, crockery unit, and separate enclosed store room."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Double-side laminated main and bedroom doors with heavy-duty M.S. safety gate; three-track anodized sliding windows with mosquito nets."
+      },
+      {
+        "category": "Electrical & Utilities",
+        "detail": "Concealed wiring with modular switches, geysers in all toilets, inverter provision, false ceiling in hall, and EV charging points."
       }
     ],
     "amenities": [
-      "Landscaped Green Lawn with Walking Path",
-      "Terrace Stargazing Deck",
-      "Solar Water Heating Integration",
-      "CCTV Surveillance"
+      "Separate 2 Covered Car Parkings Per Residence",
+      "Rooftop Terrace with Yoga Space, Green Gym & Party Deck",
+      "Solar Net Metering for Common Area Lighting",
+      "8-Passenger High-Speed Automatic Elevator with Battery Backup",
+      "24/7 CCTV Surveillance & Gated Security with Watchman Cabin",
+      "Dual Water Supply with Separate Borewell Flushing Tank"
     ],
     "highlights": [
-      "Close to scenic Gangapur backwaters and vineyards",
-      "Clean air and tranquil environs",
-      "Shreeyog's proven build quality"
+      "Prime location behind Vishwas Bank, Savarkar Nagar, Gangapur Road",
+      "Only 2 flats per floor for supreme privacy and quiet living",
+      "4 expansive private balconies ensuring cross ventilation"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-malhar-brochure.pdf",
+    "brochureUrl": "/projects/shree-malhar/brochure/"
   }
 ];

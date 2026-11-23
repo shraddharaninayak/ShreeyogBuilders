@@ -106,7 +106,13 @@ const server = http.createServer((req, res) => {
     '/projects/shree-pandurang/Shree-Pandurag.pdf': '/brochures/shree-pandurang-brochure.pdf',
     '/projects/shree-pandurang/Shree-Pandurang-Brochure.pdf': '/brochures/shree-pandurang-brochure.pdf',
     '/projects/shree-pandurang/brochure/Shree-Pandurang-Brochure.pdf': '/brochures/shree-pandurang-brochure.pdf',
-    '/projects/shree-pandurang/brochure/brochure.pdf': '/brochures/shree-pandurang-brochure.pdf'
+    '/projects/shree-pandurang/brochure/brochure.pdf': '/brochures/shree-pandurang-brochure.pdf',
+
+    '/brochures/shree-malhar.pdf': '/brochures/shree-malhar-brochure.pdf',
+    '/projects/shree-malhar/Shree-Malhar.pdf': '/brochures/shree-malhar-brochure.pdf',
+    '/projects/shree-malhar/Shree-Malhar-Brochure.pdf': '/brochures/shree-malhar-brochure.pdf',
+    '/projects/shree-malhar/brochure/Shree-Malhar-Brochure.pdf': '/brochures/shree-malhar-brochure.pdf',
+    '/projects/shree-malhar/brochure/brochure.pdf': '/brochures/shree-malhar-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {
