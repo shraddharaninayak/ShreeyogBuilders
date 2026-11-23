@@ -56,7 +56,7 @@ module.exports = [
       "Vastu-compliant spatial planning"
     ],
     "brochurePdf": "/brochures/shree-bramhand-brochure.pdf",
-    "brochureUrl": "/projects/shree-bramhand/brochure"
+    "brochureUrl": "/projects/shree-bramhand/brochure/"
   },
   {
     "id": 2,
@@ -110,7 +110,7 @@ module.exports = [
       "High capital appreciation precinct"
     ],
     "brochurePdf": "/brochures/shree-vishwa-brochure.pdf",
-    "brochureUrl": "/projects/shree-vishwa/brochure"
+    "brochureUrl": "/projects/shree-vishwa/brochure/"
   },
   {
     "id": 3,
@@ -164,7 +164,7 @@ module.exports = [
       "World-class building maintenance standards"
     ],
     "brochurePdf": "/brochures/shree-safalya-brochure.pdf",
-    "brochureUrl": "/projects/shree-safalya/brochure"
+    "brochureUrl": "/projects/shree-safalya/brochure/"
   },
   {
     "id": 4,
@@ -212,7 +212,7 @@ module.exports = [
     ],
     "logo": "/images/shreeyog/logos/shree-nath-enclave-logo.png",
     "brochurePdf": "/brochures/shree-nath-enclave-brochure.pdf",
-    "brochureUrl": "/projects/shree-nath-enclave/brochure"
+    "brochureUrl": "/projects/shree-nath-enclave/brochure/"
   },
   {
     "id": 5,
@@ -260,7 +260,7 @@ module.exports = [
       "100% occupied with active resident society"
     ],
     "brochurePdf": "/brochures/shree-samruddhi-park-brochure.pdf",
-    "brochureUrl": "/projects/shree-samruddhi-park/brochure"
+    "brochureUrl": "/projects/shree-samruddhi-park/brochure/"
   },
   {
     "id": 6,
@@ -307,7 +307,7 @@ module.exports = [
       "High rental yield and capital appreciation"
     ],
     "brochurePdf": "/brochures/shree-venkatesh-park-brochure.pdf",
-    "brochureUrl": "/projects/shree-venkatesh-park/brochure"
+    "brochureUrl": "/projects/shree-venkatesh-park/brochure/"
   },
   {
     "id": 7,
@@ -353,7 +353,7 @@ module.exports = [
     ],
     "logo": "/images/shreeyog/logos/shree-neelkanth-logo-transparent.png",
     "brochurePdf": "/brochures/shree-neelkanth-brochure.pdf",
-    "brochureUrl": "/projects/shree-neelkanth/brochure"
+    "brochureUrl": "/projects/shree-neelkanth/brochure/"
   },
   {
     "id": 8,

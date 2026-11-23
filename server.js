@@ -67,6 +67,8 @@ const server = http.createServer((req, res) => {
     '/projects/shree-vishwa/Shree-Vishwa-Brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
     '/projects/shree-vishwa/brochure/Shree-Vishwa-Brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
     '/projects/shree-vishwa/brochure/brochure.pdf': '/brochures/shree-vishwa-brochure.pdf',
+    '/projects/shree-viswa/brochure': '/projects/shree-vishwa/brochure/',
+    '/projects/shree-viswa/brochure/': '/projects/shree-vishwa/brochure/',
 
     '/brochures/shree-safalya.pdf': '/brochures/shree-safalya-brochure.pdf',
     '/projects/shree-safalya/Shree-Safalya-Brochure.pdf': '/brochures/shree-safalya-brochure.pdf',
@@ -84,7 +86,7 @@ const server = http.createServer((req, res) => {
     '/projects/shree-venkatesh-park/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
     '/projects/shree-venkatesh/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
     '/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
-    '/projects/shree-venkatesh/brochure': '/projects/shree-venkatesh-park/brochure',
+    '/projects/shree-venkatesh/brochure': '/projects/shree-venkatesh-park/brochure/',
     '/projects/shree-venkatesh/brochure/': '/projects/shree-venkatesh-park/brochure/',
 
     '/brochures/shree-nath-enclave.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
