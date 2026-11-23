@@ -36,6 +36,27 @@
     { "source": "/projects/shree-venkatesh-park/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-venkatesh-park/brochure/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-venkatesh/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
-    { "source": "/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true }
+    { "source": "/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf", "destination": "/brochures/shree-venkatesh-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-venkatesh/brochure", "destination": "/projects/shree-venkatesh-park/brochure", "permanent": true },
+    { "source": "/projects/shree-venkatesh/brochure/(.*)", "destination": "/projects/shree-venkatesh-park/brochure/$1", "permanent": true },
+
+    { "source": "/brochures/shree-nath-enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nath-enclave/Shree-Nath-Enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nath-enclave/Shree-Nath-Enclave-Brochure.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nath-enclave/brochure/Shree-Nath-Enclave-Brochure.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nath-enclave/brochure/brochure.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-neelkanth.pdf", "destination": "/brochures/shree-neelkanth-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-neelkanth/Shree-NeelKanth.pdf", "destination": "/brochures/shree-neelkanth-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-neelkanth/Shree-Neelkanth-Brochure.pdf", "destination": "/brochures/shree-neelkanth-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-neelkanth/brochure/Shree-Neelkanth-Brochure.pdf", "destination": "/brochures/shree-neelkanth-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-neelkanth/brochure/brochure.pdf", "destination": "/brochures/shree-neelkanth-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-pandurang.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-pandurang/Shree-Pandurang.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-pandurang/Shree-Pandurag.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-pandurang/Shree-Pandurang-Brochure.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-pandurang/brochure/Shree-Pandurang-Brochure.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-pandurang/brochure/brochure.pdf", "destination": "/brochures/shree-pandurang-brochure.pdf", "permanent": true }
   ]
 }

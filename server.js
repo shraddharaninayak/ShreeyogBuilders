@@ -83,7 +83,28 @@ const server = http.createServer((req, res) => {
     '/projects/shree-venkatesh-park/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
     '/projects/shree-venkatesh-park/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
     '/projects/shree-venkatesh/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
-    '/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf'
+    '/projects/shree-venkatesh/brochure/Shree-Venkatesh-Park.pdf': '/brochures/shree-venkatesh-park-brochure.pdf',
+    '/projects/shree-venkatesh/brochure': '/projects/shree-venkatesh-park/brochure',
+    '/projects/shree-venkatesh/brochure/': '/projects/shree-venkatesh-park/brochure/',
+
+    '/brochures/shree-nath-enclave.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
+    '/projects/shree-nath-enclave/Shree-Nath-Enclave.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
+    '/projects/shree-nath-enclave/Shree-Nath-Enclave-Brochure.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
+    '/projects/shree-nath-enclave/brochure/Shree-Nath-Enclave-Brochure.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
+    '/projects/shree-nath-enclave/brochure/brochure.pdf': '/brochures/shree-nath-enclave-brochure.pdf',
+
+    '/brochures/shree-neelkanth.pdf': '/brochures/shree-neelkanth-brochure.pdf',
+    '/projects/shree-neelkanth/Shree-NeelKanth.pdf': '/brochures/shree-neelkanth-brochure.pdf',
+    '/projects/shree-neelkanth/Shree-Neelkanth-Brochure.pdf': '/brochures/shree-neelkanth-brochure.pdf',
+    '/projects/shree-neelkanth/brochure/Shree-Neelkanth-Brochure.pdf': '/brochures/shree-neelkanth-brochure.pdf',
+    '/projects/shree-neelkanth/brochure/brochure.pdf': '/brochures/shree-neelkanth-brochure.pdf',
+
+    '/brochures/shree-pandurang.pdf': '/brochures/shree-pandurang-brochure.pdf',
+    '/projects/shree-pandurang/Shree-Pandurang.pdf': '/brochures/shree-pandurang-brochure.pdf',
+    '/projects/shree-pandurang/Shree-Pandurag.pdf': '/brochures/shree-pandurang-brochure.pdf',
+    '/projects/shree-pandurang/Shree-Pandurang-Brochure.pdf': '/brochures/shree-pandurang-brochure.pdf',
+    '/projects/shree-pandurang/brochure/Shree-Pandurang-Brochure.pdf': '/brochures/shree-pandurang-brochure.pdf',
+    '/projects/shree-pandurang/brochure/brochure.pdf': '/brochures/shree-pandurang-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {

@@ -210,7 +210,8 @@
       "Corporate address of Shreeyog Builders",
       "Established commercial hub with sustained footfall"
     ],
-    "brochurePdf": null,
+    "logo": "/images/shreeyog/logos/shree-nath-enclave-logo.png",
+    "brochurePdf": "/brochures/shree-nath-enclave-brochure.pdf",
     "brochureUrl": "/projects/shree-nath-enclave/brochure"
   },
   {
@@ -350,8 +351,9 @@
       "Immediate possession",
       "Zero dead-space interior layouts"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-neelkanth-logo-transparent.png",
+    "brochurePdf": "/brochures/shree-neelkanth-brochure.pdf",
+    "brochureUrl": "/projects/shree-neelkanth/brochure"
   },
   {
     "id": 8,

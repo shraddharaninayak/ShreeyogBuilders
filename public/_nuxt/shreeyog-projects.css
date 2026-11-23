@@ -497,6 +497,36 @@
     width: 190px;
     height: 140px;
   }
+
+  .sat-6 {
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 190px;
+    height: 140px;
+  }
+
+  .sat-7 {
+    top: 26%;
+    left: 2%;
+    width: 200px;
+    height: 150px;
+  }
+
+  .sat-8 {
+    top: 26%;
+    right: 2%;
+    width: 200px;
+    height: 150px;
+  }
+
+  .completed-stage {
+    min-height: 840px;
+  }
+
+  .ongoing-stage {
+    min-height: 780px;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1277,7 +1307,8 @@
   max-width: 680px;
 }
 
-/* Gallery Wrapper */
+/* Gallery Wrapper & Showcase Grid */
+.projects-grid-container,
 .arch-gallery-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1285,6 +1316,226 @@
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+/* --------------------------------------------------------------------------
+   PROJECTS SHOWCASE GRID (COMPLETED & ONGOING SECTIONS)
+   Exact replica of Highlighted Projects card design & visual presentation
+   -------------------------------------------------------------------------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.8rem, 2.5vw, 2.6rem);
+  width: 100%;
+}
+
+@media (min-width: 680px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-grid-card {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--sy-card-bg, #1c1b1c);
+  border: 1px solid var(--sy-card-border, rgba(123, 81, 54, 0.22));
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 0.4s ease,
+              box-shadow 0.5s ease;
+}
+
+.project-grid-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(198, 167, 106, 0.55);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.85), 0 0 30px rgba(196, 154, 108, 0.15);
+}
+
+.project-grid-card .featured-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #0d0d0d;
+}
+
+.project-grid-card .featured-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-grid-card:hover .featured-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.project-grid-card .featured-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(21, 20, 21, 0.05) 0%, rgba(21, 20, 21, 0.3) 60%, rgba(21, 20, 21, 0.7) 100%);
+  pointer-events: none;
+}
+
+.project-grid-card .featured-status-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.project-grid-card .featured-card-logo {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.project-grid-card .featured-card-logo img {
+  width: auto !important;
+  height: 38px !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.9));
+  transform: none !important;
+  transition: transform 0.4s ease !important;
+}
+
+.project-grid-card:hover .featured-card-logo img {
+  transform: scale(1.04) !important;
+}
+
+@media (max-width: 768px) {
+  .project-grid-card .featured-card-logo {
+    top: 1rem;
+    right: 1rem;
+  }
+  .project-grid-card .featured-card-logo img {
+    height: 30px !important;
+    max-width: 110px !important;
+  }
+}
+
+.project-grid-card .featured-info {
+  padding: 1.5rem 1.75rem 1.85rem 1.75rem;
+  background: linear-gradient(180deg, rgba(28, 27, 28, 0.96) 0%, rgba(21, 20, 21, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+.project-grid-card .featured-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project-grid-card .featured-location {
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sy-gold, #c6a76a);
+}
+
+.project-grid-card .featured-counter {
+  font-family: var(--font-t-1), "Voyage", Georgia, serif;
+  font-size: 1.05rem;
+  color: rgba(241, 234, 222, 0.55);
+}
+
+.project-grid-card .featured-counter span {
+  color: var(--sy-cream, #f1eade);
+  font-weight: 500;
+}
+
+.project-grid-card .featured-name {
+  font-family: var(--font-t-1), "Voyage", "OTJubilee-Platinum", Georgia, serif;
+  font-size: clamp(1.65rem, 2.2vw, 2.3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--sy-cream, #f1eade);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.project-grid-card:hover .featured-name {
+  color: #ffffff;
+}
+
+.project-grid-card .featured-desc {
+  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(241, 234, 222, 0.72);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.project-grid-card .featured-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(123, 81, 54, 0.2);
+}
+
+.project-grid-card .featured-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sy-cream, #f1eade);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--sy-trans, all 0.4s ease);
+}
+
+.project-grid-card:hover .featured-detail-btn {
+  color: var(--sy-gold, #c6a76a);
+  transform: translateX(4px);
+}
+
+.project-grid-card:hover .featured-detail-btn svg {
+  stroke: var(--sy-gold, #c6a76a);
 }
 
 /* Asymmetrical Suite Grids */

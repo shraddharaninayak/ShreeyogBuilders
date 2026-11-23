@@ -210,7 +210,8 @@ module.exports = [
       "Corporate address of Shreeyog Builders",
       "Established commercial hub with sustained footfall"
     ],
-    "brochurePdf": null,
+    "logo": "/images/shreeyog/logos/shree-nath-enclave-logo.png",
+    "brochurePdf": "/brochures/shree-nath-enclave-brochure.pdf",
     "brochureUrl": "/projects/shree-nath-enclave/brochure"
   },
   {
@@ -350,8 +351,9 @@ module.exports = [
       "Immediate possession",
       "Zero dead-space interior layouts"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-neelkanth-logo-transparent.png",
+    "brochurePdf": "/brochures/shree-neelkanth-brochure.pdf",
+    "brochureUrl": "/projects/shree-neelkanth/brochure"
   },
   {
     "id": 8,
@@ -548,42 +550,43 @@ module.exports = [
     "id": 13,
     "name": "Shree Pandurang",
     "slug": "shree-pandurang",
-    "location": "Adgaon / Highway Corridor, Nashik",
+    "location": "Opp. Podar School, Tapovan Road, Nashik",
     "status": "Ongoing",
     "featured": false,
-    "typology": "Emerging Corridor Modern Residences",
-    "rera": "Ongoing Project",
-    "mainImage": "/images/shreeyog/buildings/aerial-view.webp",
+    "typology": "2 & 3 BHK Luxurious Residences",
+    "rera": "P51600080259",
+    "logo": "/images/shreeyog/logos/shree-pandurang-logo-transparent.png",
+    "mainImage": "/images/shreeyog/slider/shree-pandurang.webp",
     "gallery": [
-      "/images/shreeyog/buildings/aerial-view.webp",
-      "/images/shreeyog/interiors/living-room.webp"
+      "/images/shreeyog/slider/shree-pandurang.webp",
+      "/images/shreeyog/buildings/shree-pandurang-day.webp"
     ],
-    "tagline": "Forward-Thinking Living Along Nashik's New Growth Axis",
-    "description": "Currently under development in the high-growth Adgaon corridor, Shree Pandurang is engineered with modern smart-home provisions and expansive open spaces.",
-    "overview": "A contemporary development bringing Shreeyog's 30+ year trust to the rapidly expanding medical, educational, and transit hub of eastern Nashik.",
+    "tagline": "Forward-Thinking Living Along Tapovan Road",
+    "description": "Situated opposite Podar International School, Shree Pandurang is engineered with modern architecture, earthquake-resistant RCC, expansive sit-out balconies, and rooftop sky wellness amenities.",
+    "overview": "A contemporary development bringing Shreeyog's 30+ year trust to the thriving Tapovan Road residential corridor of Nashik.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Latest seismic-compliant RCC framework."
+        "detail": "Earthquake-resistant RCC framework with red brick masonry."
       },
       {
         "category": "Sustainability",
-        "detail": "Rainwater harvesting and solar common-area lighting."
+        "detail": "Solar Net Metering common-area lighting and rainwater harvesting."
       }
     ],
     "amenities": [
-      "Landscaped Children's Play Park",
-      "Senior Citizen Sitting Pavilions",
-      "Modern High-Speed Elevators",
-      "EV Charging Infrastructure Provisions"
+      "Open Air Green Gym & Rooftop Yoga Deck",
+      "Senior Citizen Sitting Gazebo",
+      "Automatic 6-Passenger Elevator with Backup",
+      "Solar Net Metering (Zero Common Light Bill)"
     ],
     "highlights": [
-      "Rapidly developing residential corridor",
-      "Proximity to medical colleges and transit routes",
-      "Attractive pre-completion pricing"
+      "Fronting 9.00-meter wide roadway",
+      "Opposite Podar International School",
+      "MahaRERA Registered P51600080259"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-pandurang-brochure.pdf",
+    "brochureUrl": "/projects/shree-pandurang/brochure/"
   },
   {
     "id": 14,

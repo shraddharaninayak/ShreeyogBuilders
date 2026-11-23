@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shree Nath Enclave — Digital Project Brochure | Shreeyog Builders</title>
-  <meta name="description" content="Explore Shree Nath Enclave by Shreeyog Builders. Commercial & Premium Residential Landmark in Mumbai Naka, Nashik. The Historic Home of Shreeyog Headquarters." />
+  <meta name="description" content="Explore Shree Nath Enclave by Shreeyog Builders. Commercial & Premium Landmark in Mumbai Naka, Nashik featuring modern office spaces, high-speed elevator, and Shreeyog Corporate Headquarters." />
   
-  <link rel="icon" type="image/svg+xml" href="/images/shreeyog/logo-mark.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,24 +16,65 @@
 </head>
 <body>
 
-  <aside class="brochure-sidebar">
+  <!-- FIXED LEFT SIDEBAR -->
+  <aside class="brochure-sidebar" id="brochureSidebar">
+    <button type="button" class="sidebar-close-btn" id="sidebarClose" aria-label="Close Navigation">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
     <div class="sidebar-brand">
-      <a href="/projects" title="Back to Shreeyog Projects">
-        <img src="/images/shreeyog/logo-hero.png" alt="Shreeyog Builders Logo" class="sidebar-brand__logo" />
+      <a href="/projects" class="sidebar-brand__logo-wrap" title="Back to Shreeyog Projects">
+        <img src="assets/logo.png" alt="Shree Nath Enclave Logo" class="sidebar-brand__logo" />
       </a>
       <div class="sidebar-brand__location">Mumbai Naka, Nashik</div>
       <div class="sidebar-brand__name">Shree Nath Enclave</div>
-      <p class="sidebar-brand__desc">Corporate Headquarters &amp; Landmark Suites</p>
+      <p class="sidebar-brand__desc">Corporate Headquarters &amp; Exclusive Office Spaces</p>
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav" aria-label="Brochure Sections">
       <ul class="sidebar-nav__list">
-        <li><a href="#overview" class="sidebar-nav__link active"><span class="sidebar-nav__num">01</span><span>Overview &amp; Heritage</span></a></li>
-        <li><a href="#headquarters" class="sidebar-nav__link"><span class="sidebar-nav__num">02</span><span>Corporate Headquarters</span></a></li>
-        <li><a href="#architecture" class="sidebar-nav__link"><span class="sidebar-nav__num">03</span><span>Architecture &amp; Spaces</span></a></li>
-        <li><a href="#gallery" class="sidebar-nav__link"><span class="sidebar-nav__num">04</span><span>Project Gallery</span></a></li>
-        <li><a href="#specifications" class="sidebar-nav__link"><span class="sidebar-nav__num">05</span><span>Specifications</span></a></li>
-        <li><a href="#location" class="sidebar-nav__link"><span class="sidebar-nav__num">06</span><span>Location &amp; Map</span></a></li>
+        <li class="sidebar-nav__item">
+          <a href="#overview" class="sidebar-nav__link active">
+            <span class="sidebar-nav__num">01</span>
+            <span class="sidebar-nav__text">Overview &amp; Heritage</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#legacy" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">02</span>
+            <span class="sidebar-nav__text">Vision &amp; Reputation</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#architecture" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">03</span>
+            <span class="sidebar-nav__text">Architecture &amp; Spaces</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#floor-plans" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">04</span>
+            <span class="sidebar-nav__text">Master Floor Plans</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#specifications" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">05</span>
+            <span class="sidebar-nav__text">Specifications</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#location" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">06</span>
+            <span class="sidebar-nav__text">Location &amp; Map</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#credentials" class="sidebar-nav__link">
+            <span class="sidebar-nav__num">07</span>
+            <span class="sidebar-nav__text">Leadership &amp; Team</span>
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -42,100 +83,487 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         <span>&larr; Return to Projects</span>
       </a>
-      <a href="/contact" class="sidebar-action-btn">
-        <span>Inquire Now</span>
-      </a>
+      <div class="sidebar-actions">
+        <a href="/brochures/shree-nath-enclave-brochure.pdf" target="_blank" rel="noopener noreferrer" download="Shree Nath Enclave Brochure.pdf" class="sidebar-action-btn sidebar-action-btn--outline" title="Download Official PDF Brochure">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download PDF</span>
+        </a>
+        <button type="button" class="sidebar-action-btn sidebar-action-btn--primary" data-open-enquiry>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Schedule Visit</span>
+        </button>
+      </div>
     </div>
   </aside>
 
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- MAIN BROCHURE CONTENT AREA -->
   <main class="brochure-main-area">
 
+    <!-- Mobile Topbar -->
+    <header class="brochure-topbar">
+      <img src="assets/logo.png" alt="Shree Nath Enclave" class="brochure-topbar__logo" />
+      <button type="button" class="brochure-topbar__toggle" id="sidebarToggle" aria-label="Open Navigation">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <span>Menu</span>
+      </button>
+    </header>
+
+    <!-- SECTION 01: OVERVIEW -->
     <section class="overview-hero brochure-section--dark" id="overview">
       <div class="overview-grid">
-        <div>
-          <div style="display:inline-flex; align-items:center; gap:0.5rem; padding:0.35rem 0.9rem; background:rgba(197,164,103,0.12); border:1px solid rgba(197,164,103,0.28); border-radius:50px; font-size:0.72rem; text-transform:uppercase; color:var(--ne-gold-300); margin-bottom:1.5rem;">
-            <span style="width:6px; height:6px; border-radius:50%; background:#22c55e;"></span>
-            <span>Completed Landmark &bull; Shreeyog Corporate Home</span>
+        <div class="overview-content">
+          <div class="hero-status-pill">
+            <span class="hero-status-dot"></span>
+            <span>Completed Landmark &bull; Corporate Headquarters</span>
           </div>
           <h1 class="overview-title">Shree Nath Enclave</h1>
-          <div class="overview-subtitle">Mumbai Naka, Nashik</div>
+          <div class="overview-subtitle">Corporate Headquarters &amp; Exclusive Office Spaces</div>
           <p class="overview-tagline">
-            “The historic corporate headquarters of Shreeyog Builders &amp; Land Developers alongside city-center premium residential suites, standing as a testament to enduring construction integrity.”
+            “Spaces for your future... Welcomes you in the new way of your commercial world! A landmark office complex strategically situated in Nashik's flourishing business corridor.”
           </p>
 
           <div class="overview-stats">
-            <div><div class="overview-stat-val">Corporate HQ</div><div class="overview-stat-lbl">Shreeyog Office</div></div>
-            <div><div class="overview-stat-val">Mumbai Naka</div><div class="overview-stat-lbl">City Center Hub</div></div>
-            <div><div class="overview-stat-val">Since Inception</div><div class="overview-stat-lbl">Trusted Legacy</div></div>
+            <div class="overview-stat-box">
+              <div class="overview-stat-val">B + G + 4</div>
+              <div class="overview-stat-lbl">Commercial Floors</div>
+            </div>
+            <div class="overview-stat-box">
+              <div class="overview-stat-val">Mumbai Naka</div>
+              <div class="overview-stat-lbl">Central Business Hub</div>
+            </div>
+            <div class="overview-stat-box">
+              <div class="overview-stat-val">Basement &amp; G</div>
+              <div class="overview-stat-lbl">Ample Parking</div>
+            </div>
+            <div class="overview-stat-box">
+              <div class="overview-stat-val">Since 1992</div>
+              <div class="overview-stat-lbl">Shreeyog Heritage</div>
+            </div>
           </div>
 
-          <div style="display:flex; gap:1.2rem;">
-            <a href="/contact" class="sidebar-action-btn" style="padding:0.85rem 1.8rem;">Schedule Consultation</a>
-            <a href="/projects" class="sidebar-action-btn" style="padding:0.85rem 1.8rem; background:transparent; color:var(--ne-gold-400); border:1px solid rgba(197,164,103,0.4);">View All Projects</a>
+          <div class="overview-cta-group">
+            <a href="/brochures/shree-nath-enclave-brochure.pdf" target="_blank" rel="noopener noreferrer" download="Shree Nath Enclave Brochure.pdf" class="sidebar-action-btn sidebar-action-btn--primary" style="width: auto; padding: 0.8rem 1.6rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Brochure (PDF)</span>
+            </a>
+            <button type="button" class="sidebar-action-btn sidebar-action-btn--outline" style="width: auto; padding: 0.8rem 1.6rem;" data-open-enquiry>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Inquire Office Spaces</span>
+            </button>
           </div>
         </div>
 
-        <div class="overview-image-card">
-          <img src="/images/shreeyog/buildings/contemporary-avenue.webp" alt="Shree Nath Enclave Architectural Elevation" />
+        <div class="overview-media">
+          <div class="overview-frame" data-zoomable title="Click to view full architectural perspective">
+            <img src="assets/images/elevation-hero.jpg" alt="Shree Nath Enclave 3D Architectural Elevation" />
+            <div class="overview-badge-floating">Architectural Elevation</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="brochure-section brochure-section--elevated" id="headquarters">
-      <div class="section-tag">Corporate Seat</div>
-      <h2 class="section-title">The Seat of Shreeyog Leadership</h2>
+    <!-- SECTION 02: LEGACY & REPUTATION -->
+    <section class="brochure-section brochure-section--elevated" id="legacy">
+      <div class="legacy-grid">
+        <div>
+          <span class="section-tag">Heritage &amp; Excellence</span>
+          <h2 class="section-title">Built on Trust, Crafted for Growth</h2>
+          <p class="section-desc">
+            Since 1992, Shreeyog Builders and Land Developers has delivered distinguished landmarks across Nashik. Understanding professional and customer needs is what has driven us to create commercial complexes equipped with real amenities that add lasting value.
+          </p>
+
+          <div class="legacy-quote-card">
+            <p class="legacy-quote-text">
+              “SHREENATH ENCLAVE is a complete office space complex strategically located in a flourishing commercial area. Planned to offer exceptional potential for business, artistic elevation, and comfort for every client.”
+            </p>
+            <div class="legacy-quote-author">Kale B. M. &amp; Shinde A. N. &bull; Founders, Shreeyog Builders</div>
+          </div>
+        </div>
+
+        <div>
+          <ul class="legacy-features-list">
+            <li class="legacy-feature-item">
+              <div class="legacy-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <div class="legacy-feature-title">Corporate Headquarters Seat</div>
+                <p class="legacy-feature-desc">Chosen as the permanent corporate head office (Suites 101/102) of Shreeyog Builders &amp; Land Developers, exemplifying supreme construction standards.</p>
+              </div>
+            </li>
+            <li class="legacy-feature-item">
+              <div class="legacy-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div>
+                <div class="legacy-feature-title">Flourishing Commercial Vicinity</div>
+                <p class="legacy-feature-desc">Nestled on Shrihari Kute Marg behind Archit Centre, right at Mumbai Naka junction with immediate highway and central transit access.</p>
+              </div>
+            </li>
+            <li class="legacy-feature-item">
+              <div class="legacy-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              </div>
+              <div>
+                <div class="legacy-feature-title">Dual Level Dedicated Parking</div>
+                <p class="legacy-feature-desc">Ample demarcated parking space provided across both basement and ground floor levels with vehicle ramp mobility for all offices.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: ARCHITECTURE & AMENITIES -->
+    <section class="brochure-section brochure-section--dark" id="architecture">
+      <span class="section-tag">Business Infrastructure</span>
+      <h2 class="section-title">Designed for Contemporary Commerce</h2>
       <p class="section-desc">
-        Located along Shreehari Kute Marg at Mumbai Naka, Shree Nath Enclave houses the corporate headquarters of Shreeyog Builders &amp; Land Developers (Suites 101/102). From here, the visionary journey of transforming Nashik's architectural skyline is directed.
+        A signature commercial landmark offering high-speed vertical connectivity, dedicated private terraces, and flexible executive suites tailored for professionals, consultants, and enterprises.
       </p>
 
-      <div class="feature-grid-3">
-        <div class="feature-box">
-          <h4>Commercial-Grade Structure</h4>
-          <p>Engineered with robust RCC columns, high load-bearing capacity, and textured permanent weather-resistant exterior elevation.</p>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+          </div>
+          <h3 class="amenity-title">High-Speed Automatic Elevator</h3>
+          <p class="amenity-desc">State-of-the-art 1.80m x 1.80m passenger elevator connecting basement, ground, and all four commercial floors with battery backup.</p>
         </div>
-        <div class="feature-box">
-          <h4>Prime Retail &amp; Office Presence</h4>
-          <p>Combines active commercial storefronts and executive corporate suites on the lower levels with secluded, secure residences above.</p>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="amenity-title">Dual Level Parking &amp; Ramp</h3>
+          <p class="amenity-desc">Expansive basement and ground-level demarcated parking bays with a dedicated vehicle ramp, guaranteeing parking ease for staff and visitors.</p>
         </div>
-        <div class="feature-box">
-          <h4>Central City Convenience</h4>
-          <p>Instant proximity to Mahamarg Bus Stand, Mumbai Naka junction, leading banks, commercial centers, and healthcare institutions.</p>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+          </div>
+          <h3 class="amenity-title">Executive Attached Toilets</h3>
+          <p class="amenity-desc">Every office suite includes private 5'0"x7'0" attached toilet facilities with concealed plumbing and premium marble door frames.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="amenity-title">Private Executive Terraces</h3>
+          <p class="amenity-desc">Select suites on upper floors boast expansive attached open terraces (up to 27'0"x6'0") offering scenic skyline views and fresh-air break-out areas.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="amenity-title">Wide Circulation Lobbies</h3>
+          <p class="amenity-desc">Generous 5'4" to 6'0" wide bright entrance foyers, corridors, and staircase landings engineered for smooth professional foot traffic.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="amenity-title">Concealed Electrification</h3>
+          <p class="amenity-desc">High-grade copper wiring with modular switches, internet and telephone conduit provisions, and commercial distribution boards.</p>
         </div>
       </div>
     </section>
 
-    <section class="brochure-section brochure-section--dark" id="gallery">
-      <div class="section-tag">Visual Showcase</div>
-      <h2 class="section-title">Project Gallery</h2>
+    <!-- SECTION 04: MASTER FLOOR PLANS -->
+    <section class="brochure-section brochure-section--elevated" id="floor-plans">
+      <span class="section-tag">Architectural Blueprints</span>
+      <h2 class="section-title">Floor Plans &amp; Office Configurations</h2>
       <p class="section-desc">
-        A glimpse into the architectural presence and finished spaces of Shree Nath Enclave.
+        Explore detailed floor-by-floor layouts for Basement, Ground Floor, First &amp; Second Floors, and Third &amp; Fourth Floors. Click any blueprint to inspect with full-screen zoom.
       </p>
 
-      <div class="gallery-grid-3">
-        <img src="/images/shreeyog/buildings/contemporary-avenue.webp" alt="Facade Elevation" />
-        <img src="/images/shreeyog/projects/residential-complex.webp" alt="Building Complex" />
-        <img src="/images/shreeyog/interiors/residential-lounge.webp" alt="Executive Lounge" />
+      <div class="plans-container">
+        <div class="plans-tabs">
+          <button type="button" class="tab-btn active" data-tab="tab-basement-ground">Basement &amp; Ground Floor</button>
+          <button type="button" class="tab-btn" data-tab="tab-first-second">1st &amp; 2nd Floor Plans</button>
+          <button type="button" class="tab-btn" data-tab="tab-third-fourth">3rd &amp; 4th Floor Plans</button>
+        </div>
+
+        <!-- TAB 1: BASEMENT & GROUND -->
+        <div class="tab-panel active" id="tab-basement-ground">
+          <div class="plan-card">
+            <div class="plan-frame" data-zoomable title="Click to Zoom Blueprint">
+              <img src="assets/images/plan-basement-ground.jpg" alt="Shree Nath Enclave Basement and Ground Floor Plans" />
+              <div class="plan-overlay-zoom">
+                <span class="zoom-indicator-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Click to Zoom Full Blueprint</span>
+                </span>
+              </div>
+            </div>
+            <div class="plan-info-bar">
+              <div>
+                <div class="plan-info-title">Basement &amp; Ground Floor Mobility Layout</div>
+                <div class="plan-info-desc">Dedicated vehicle ramp, ample parking slots, 1.80m x 1.80m lift lobby, and commercial frontage</div>
+              </div>
+              <a href="/brochures/shree-nath-enclave-brochure.pdf" target="_blank" rel="noopener noreferrer" download="Shree Nath Enclave Brochure.pdf" class="sidebar-action-btn sidebar-action-btn--outline" style="width: auto; padding: 0.5rem 1rem;">
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: FIRST & SECOND -->
+        <div class="tab-panel" id="tab-first-second">
+          <div class="plan-card">
+            <div class="plan-frame" data-zoomable title="Click to Zoom Blueprint">
+              <img src="assets/images/plan-first-second.jpg" alt="Shree Nath Enclave First and Second Floor Plans" />
+              <div class="plan-overlay-zoom">
+                <span class="zoom-indicator-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Click to Zoom Full Blueprint</span>
+                </span>
+              </div>
+            </div>
+            <div class="plan-info-bar">
+              <div>
+                <div class="plan-info-title">1st &amp; 2nd Floor Executive Suites (Offices 101–108 &amp; 201–208)</div>
+                <div class="plan-info-desc">Spacious offices from 13'2"x24'3" up to 26'5"x29'2", attached 5'0"x7'0" executive toilets, and terrace sit-outs</div>
+              </div>
+              <a href="/brochures/shree-nath-enclave-brochure.pdf" target="_blank" rel="noopener noreferrer" download="Shree Nath Enclave Brochure.pdf" class="sidebar-action-btn sidebar-action-btn--outline" style="width: auto; padding: 0.5rem 1rem;">
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: THIRD & FOURTH -->
+        <div class="tab-panel" id="tab-third-fourth">
+          <div class="plan-card">
+            <div class="plan-frame" data-zoomable title="Click to Zoom Blueprint">
+              <img src="assets/images/plan-third-fourth.jpg" alt="Shree Nath Enclave Third and Fourth Floor Plans" />
+              <div class="plan-overlay-zoom">
+                <span class="zoom-indicator-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Click to Zoom Full Blueprint</span>
+                </span>
+              </div>
+            </div>
+            <div class="plan-info-bar">
+              <div>
+                <div class="plan-info-title">3rd &amp; 4th Floor Premium Terrace Suites (Offices 301–308 &amp; 401–408)</div>
+                <div class="plan-info-desc">Executive suites with expansive attached private open terraces (up to 27'0"x6'0" and 20'10"x9'2")</div>
+              </div>
+              <a href="/brochures/shree-nath-enclave-brochure.pdf" target="_blank" rel="noopener noreferrer" download="Shree Nath Enclave Brochure.pdf" class="sidebar-action-btn sidebar-action-btn--outline" style="width: auto; padding: 0.5rem 1rem;">
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- SECTION 05: SPECIFICATIONS -->
+    <section class="brochure-section brochure-section--dark" id="specifications">
+      <span class="section-tag">Material Excellence</span>
+      <h2 class="section-title">Amenities &amp; Technical Specifications</h2>
+      <p class="section-desc">
+        Engineered according to rigorous commercial specifications for lasting durability, safety, and modern corporate productivity.
+      </p>
+
+      <div class="spec-grid">
+        <div class="spec-card">
+          <div class="spec-cat">Structure</div>
+          <h3 class="spec-title">RCC Framework</h3>
+          <p class="spec-desc">Earthquake-resistant reinforced concrete frame structure engineered to high safety standards and commercial load ratings.</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-cat">Masonry</div>
+          <h3 class="spec-title">Brickwork &amp; Walls</h3>
+          <p class="spec-desc">External walls 6" thick and internal partition walls 4.5" thick quality brickwork providing superior acoustic isolation.</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-cat">Painting &amp; Finish</div>
+          <h3 class="spec-title">Exterior &amp; Interior</h3>
+          <p class="spec-desc">Double coat external plaster with weather-resistant semi-acrylic paint; smooth Neeru finish internal plaster with Asian Oil Bound Distemper.</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-cat">Flooring</div>
+          <h3 class="spec-title">Vitrified Surfaces</h3>
+          <p class="spec-desc">Premium quality 2½’ x 2½’ vitrified tiles across all office floors, lobbies, and circulation corridors.</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-cat">Windows &amp; Doors</div>
+          <h3 class="spec-title">Aluminum &amp; Lamination</h3>
+          <p class="spec-desc">3-track powder-coated aluminium sliding windows with mosquito net, M. S. safety grill, and marble frames; laminated main doors with brass fittings.</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-cat">Plumbing &amp; Electrical</div>
+          <h3 class="spec-title">Concealed Systems</h3>
+          <p class="spec-desc">Concealed electrification for all office suites with telephone points; PVC toilet doors with marble frames and concealed branded sanitary plumbing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: LOCATION & CONNECTIVITY -->
     <section class="brochure-section brochure-section--elevated" id="location">
-      <div class="section-tag">Strategic Hub</div>
-      <h2 class="section-title">Mumbai Naka, Nashik</h2>
+      <div class="location-grid">
+        <div class="location-map-wrap" data-zoomable title="Click to view enlarged location plan">
+          <img src="assets/images/location-map.jpg" alt="Shree Nath Enclave Mumbai Naka Strategic Location Map" />
+        </div>
+
+        <div>
+          <span class="section-tag">Prime Commercial Hub</span>
+          <h2 class="section-title">Strategic Mumbai Naka Connectivity</h2>
+          <p class="section-desc">
+            Positioned along Shrihari Kute Marg behind Archit Centre, Shree Nath Enclave stands at the premier commercial intersection of Nashik, placing your business at the heart of civic and transport convenience.
+          </p>
+
+          <ul class="location-landmarks">
+            <li class="landmark-item">
+              <div class="landmark-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+              </div>
+              <div>
+                <div class="landmark-title">Mumbai - Agra Highway (NH 3) &amp; Mumbai Naka</div>
+                <div class="landmark-dist">Immediate 1-minute access for interstate &amp; city-wide transit</div>
+              </div>
+            </li>
+            <li class="landmark-item">
+              <div class="landmark-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+              </div>
+              <div>
+                <div class="landmark-title">Mahamarg Bus Stand &amp; Sandeep Hotel</div>
+                <div class="landmark-dist">2 Minutes walking &bull; Major public transit hub</div>
+              </div>
+            </li>
+            <li class="landmark-item">
+              <div class="landmark-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="landmark-title">Income Tax Office &amp; L.I.C. Office</div>
+                <div class="landmark-dist">Immediate walking vicinity &bull; Prime government &amp; financial district</div>
+              </div>
+            </li>
+            <li class="landmark-item">
+              <div class="landmark-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="landmark-title">CBS Central Bus Station &amp; Trimbak Road</div>
+                <div class="landmark-dist">5 Minutes transit &bull; Connecting to all Nashik city commercial centers</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: LEADERSHIP & CONSULTANTS -->
+    <section class="brochure-section brochure-section--dark" id="credentials">
+      <span class="section-tag">Project Credentials</span>
+      <h2 class="section-title">Leadership &amp; Advisory Team</h2>
       <p class="section-desc">
-        101 / 102, 'Shreenath Enclave', Shreehari Kute Marg, Near Sandeep Hotel, Mumbai Naka, Nashik - 422 002.
+        A legacy project developed with uncompromising standards by veteran builders and recognized consultants.
       </p>
 
-      <div style="background:rgba(15,25,44,0.7); border:1px solid rgba(197,164,103,0.25); border-radius:8px; padding:2rem; max-width:600px;">
-        <h4 style="font-family:var(--font-serif); font-size:1.35rem; color:var(--ne-gold-300); margin-bottom:0.6rem;">Contact Headquarters</h4>
-        <p style="font-size:0.9rem; color:var(--ne-text-dim); line-height:1.6; margin-bottom:0.5rem;">
-          Phone: +91 253 2310351<br/>
-          Mobile: +91 94225 14151 / +91 94221 44151<br/>
-          Website: www.shreeyogbuilders.com | Email: shreeyog51@gmail.com
-        </p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-role">Architect</div>
+          <div class="team-name">Ar. Umesh Bagul</div>
+          <div class="team-contact">Phone: 0253 - 2579667</div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-role">R.C.C. Designer</div>
+          <div class="team-name">Prasanna Bhore</div>
+          <div class="team-contact">Phone: 0253 - 2313180</div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-role">Legal Advisor</div>
+          <div class="team-name">Adv. Subodh M. Shah</div>
+          <div class="team-contact">Phone: 0253 - 2312638</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(197, 164, 103, 0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.2rem;">
+        <div>
+          <div style="font-size: 0.88rem; color: #f1f5f9; font-weight: 500; margin-bottom: 0.25rem;">Shreeyog Builders &amp; Land Developers &bull; Since 1992</div>
+          <div style="font-size: 0.82rem; color: #94a3b8;">Site Address: Shrihari Kute Marg, Behind Archit Centre, Mumbai Naka, Nashik - 422 002.</div>
+          <div style="font-size: 0.82rem; color: #94a3b8;">Corporate Headquarters: Suites 101/102, Shree Nath Enclave, Mumbai Naka, Nashik.</div>
+        </div>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="/projects" class="sidebar-action-btn sidebar-action-btn--outline" style="width: auto; padding: 0.65rem 1.4rem;">Back to Projects</a>
+          <button type="button" class="sidebar-action-btn sidebar-action-btn--primary" style="width: auto; padding: 0.65rem 1.4rem;" data-open-enquiry>Inquire Office Spaces</button>
+        </div>
       </div>
     </section>
 
   </main>
 
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Enlarged View">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    </div>
+  </div>
+
+  <!-- ENQUIRY MODAL -->
+  <div class="enquiry-modal" id="enquiryModal">
+    <div class="enquiry-card">
+      <button type="button" class="enquiry-close" id="enquiryClose" aria-label="Close Dialog">&times;</button>
+      <h3 class="enquiry-title">Inquire Office Spaces</h3>
+      <p class="enquiry-subtitle">Shree Nath Enclave &bull; Corporate Commercial Hub at Mumbai Naka, Nashik</p>
+
+      <form class="enquiry-form" id="enquiryForm">
+        <input type="hidden" name="project" value="Shree Nath Enclave" />
+
+        <div class="form-group">
+          <label for="leadName">Your Full Name</label>
+          <input type="text" id="leadName" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" name="phone" placeholder="+91 98765 43210" required />
+        </div>
+
+        <div class="form-group">
+          <label for="leadConfig">Interested Commercial Space</label>
+          <select id="leadConfig" name="config">
+            <option value="Executive Office Suite">Executive Office Suite (1st/2nd Floor)</option>
+            <option value="Terrace Office Suite">Terrace Office Suite (3rd/4th Floor)</option>
+            <option value="Commercial Ground Unit">Commercial Ground Unit</option>
+            <option value="Corporate Space">Entire Floor / Corporate Space</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="leadMessage">Message / Specific Requirements</label>
+          <textarea id="leadMessage" name="message" rows="3" placeholder="Tell us about your business or space requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="enquiry-submit-btn">Submit Inquiry</button>
+      </form>
+
+      <div class="enquiry-success-msg" id="enquirySuccess">
+        <h4>Thank You for Your Inquiry</h4>
+        <p>Your request for Shree Nath Enclave has been received. Our commercial advisory team will contact you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Presentation Script -->
+  <script src="nath-brochure.js"></script>
 </body>
 </html>
