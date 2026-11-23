@@ -24,10 +24,25 @@ footer.page-footer {
   color: #f1eade !important;
 }
 
-/* Ensure the upper cream block is styled nicely */
-footer.page-footer .-w.block {
+/* Ensure the upper cream block is styled nicely with the 12-column grid layout */
+footer.page-footer .-w.block,
+footer .-w.block[data-v-e764b164] {
+  grid-column-gap: var(--g-gap) !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(var(--g-columns, 12), 1fr) !important;
+  grid-template-rows: repeat(var(--rows, 1), var(--rows-height, auto)) !important;
+  margin: 0 var(--g-margin) !important;
   position: relative !important;
   z-index: 10 !important;
+}
+
+footer.page-footer .-w.block > *,
+footer .-w.block[data-v-e764b164] > * {
+  grid-column-end: calc(var(--left, 1) + var(--width, 1)) !important;
+  grid-column-start: var(--left, 1) !important;
+  grid-row-end: calc(var(--top, 1) + var(--height, 1)) !important;
+  grid-row-start: var(--top, 1) !important;
 }
 
 /* 3. Branding Elements Typography & Layout */
