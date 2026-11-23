@@ -1053,14 +1053,57 @@ body {
   }
 
   .specs-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .plan-details-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .plan-tabs-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .plan-tab-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  .hero-actions-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    min-height: 44px;
   }
 }
 
 @media (max-width: 640px) {
+  .hero-section {
+    padding: 2.8rem 1.1rem;
+  }
+
+  .brochure-section {
+    padding: 2.8rem 1.1rem;
+  }
+
   .hero-highlights-grid {
     grid-template-columns: 1fr;
     gap: 0.8rem;
+    padding: 1rem;
   }
 
   .axon-points-grid,
@@ -1069,13 +1112,21 @@ body {
   .specs-grid,
   .awards-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .section-title {
     font-size: 1.75rem;
+  }
+
+  .hero-media-img {
+    height: auto;
+    max-height: 380px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
   }
 }

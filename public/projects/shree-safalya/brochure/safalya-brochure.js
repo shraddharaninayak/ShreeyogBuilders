@@ -37,10 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetSec = document.querySelector(targetId);
         if (targetSec) {
           e.preventDefault();
+          closeSidebar();
           targetSec.scrollIntoView({ behavior: 'smooth' });
-          if (window.innerWidth <= 860) {
-            closeSidebar();
-          }
         }
       }
     });
