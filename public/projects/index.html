@@ -16,6 +16,26 @@
 <script>
     document.documentElement.classList.add('-loaded', '-ready');
     document.documentElement.style.overflowY = 'auto';
+
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+      if (a.target && a.target !== '_self') return;
+
+      try {
+        var targetUrl = new URL(href, window.location.origin);
+        if (targetUrl.origin === window.location.origin) {
+          if (targetUrl.pathname !== window.location.pathname || targetUrl.search !== window.location.search) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            window.location.href = targetUrl.href;
+          }
+        }
+      } catch (err) {}
+    }, true);
+
     window.addEventListener('DOMContentLoaded', function() {
       document.documentElement.classList.add('-loaded', '-ready');
       document.documentElement.style.overflowY = 'auto';
@@ -103,7 +123,7 @@
 </div>
 </a>
 <a class="satellite-card sat-3" data-index="3" data-project-href="/projects/shree-nath-enclave/brochure/" href="/projects/shree-nath-enclave/brochure/" title="Shree Nath Enclave">
-<img alt="Shree Nath Enclave - Mumbai Naka, Nashik" loading="lazy" src="/images/shreeyog/buildings/contemporary-avenue.webp"/>
+<img alt="Shree Nath Enclave - Mumbai Naka, Nashik" loading="lazy" src="/images/shreeyog/slider/shree-nath-enclave.webp"/>
 <div class="sat-overlay">
 <span class="sat-num">04</span>
 <span class="sat-name">Shree Nath Enclave</span>
@@ -225,7 +245,7 @@
 </div>
 </a>
 <a class="satellite-card sat-8" data-index="6" data-project-href="/projects/shree-nath-enclave/brochure/" href="/projects/shree-nath-enclave/brochure/" title="Shree Nath Enclave">
-<img alt="Shree Nath Enclave - Mumbai Naka, Nashik" loading="lazy" src="/images/shreeyog/buildings/contemporary-avenue.webp"/>
+<img alt="Shree Nath Enclave - Mumbai Naka, Nashik" loading="lazy" src="/images/shreeyog/slider/shree-nath-enclave.webp"/>
 <div class="sat-overlay">
 <span class="sat-num">07</span>
 <span class="sat-name">Shree Nath Enclave</span>
@@ -372,7 +392,7 @@
         {"name":"Shree Bramhand","slug":"shree-bramhand","location":"Bodhle Nagar, Nashik","status":"Ongoing","logo":"/images/shreeyog/logos/shree-bramhand-logo-transparent.png","mainImage":"/images/shreeyog/slider/shree-bramhand.webp","description":"Shree Bramhand stands as a premier residential landmark in Bodhle Nagar, Nashik. Featuring expansive 2 and 3 BHK luxury residences, the project blends architectural sophistication with generous natural ventilation, premium terrace leisure decks, and state-of-the-art security.","brochure":"/projects/shree-bramhand/brochure/"},
         {"name":"Shree Vishwa","slug":"shree-vishwa","location":"Pathardi Phata, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-vishwa-logo.png","mainImage":"/images/shreeyog/slider/shree-viswa.webp","description":"Located at the coveted southern junction of Pathardi Phata, Shree Vishwa is a benchmark residential community providing effortless transit to Mumbai and Pune while offering secluded, tranquil family residences surrounded by landscaped gardens.","brochure":"/projects/shree-vishwa/brochure/"},
         {"name":"Shree Safalya","slug":"shree-safalya","location":"Karmyogi Nagar, Nashik","status":"Ongoing","logo":"/images/shreeyog/logos/shree-safalya-logo.png","mainImage":"/images/shreeyog/slider/shree-safalya.webp","description":"Live Ultra, Live Opulent. Shree Safalya stands as a premier G+14 level residential tower of prestige in Karmyogi Nagar, Nashik. Featuring expansive 3 & 4 BHK Opulent Homes, 2 & 3 BHK XL Homes, 5 & 6 BHK Duplex Penthouses, lofty 11-foot clear ceilings, and 20,000+ sq. ft. of dedicated amenities.","brochure":"/projects/shree-safalya/brochure/"},
-        {"name":"Shree Nath Enclave","slug":"shree-nath-enclave","location":"Mumbai Naka, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-nath-enclave-logo.png","mainImage":"/images/shreeyog/buildings/contemporary-avenue.webp","description":"A prominent urban development located along Shreehari Kute Marg at Mumbai Naka. Shree Nath Enclave houses the corporate headquarters of Shreeyog Builders & Land Developers alongside premium city-center residential suites.","brochure":"/projects/shree-nath-enclave/brochure/"},
+        {"name":"Shree Nath Enclave","slug":"shree-nath-enclave","location":"Mumbai Naka, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-nath-enclave-logo.png","mainImage":"/images/shreeyog/slider/shree-nath-enclave.webp","description":"A prominent urban development located along Shreehari Kute Marg at Mumbai Naka. Shree Nath Enclave houses the corporate headquarters of Shreeyog Builders & Land Developers alongside premium city-center residential suites.","brochure":"/projects/shree-nath-enclave/brochure/"},
         {"name":"Shree Samruddhi Park","slug":"shree-samruddhi-park","location":"Karmyogi Nagar, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-samruddhi-park-logo.png","mainImage":"/images/shreeyog/slider/shree-samruddhi-park.webp","description":"A crest of comfort and an abode of pleasure. Shree Samruddhi Park in Karmyogi Nagar features 2 & 3 BHK premium homes with superior red soil brick masonry, spacious sit-out balconies, and a dedicated rooftop leisure terrace with yoga space, green gym, and gazebo.","brochure":"/projects/shree-samruddhi-park/brochure/"},
         {"name":"Shree Venkatesh Park","slug":"shree-venkatesh","location":"Karmyogi Nagar, Nashik","status":"Ongoing","logo":"/images/shreeyog/logos/shree-venkatesh-park-logo.png","mainImage":"/images/shreeyog/slider/shree-venkatesh.webp","description":"सर्वोत्तम जीवनशैलीचा सुखद अनुभव. Shree Venkatesh Park fronts an 18.00-meter wide road in Karmyogi Nagar, offering 2 & 3 BHK luxurious flats, two high-speed elevators, 10'0\"x6'0\" sit-out balconies, and an active rooftop terrace with yoga lawn and green gym.","brochure":"/projects/shree-venkatesh-park/brochure/"}
       ];
@@ -385,7 +405,7 @@
         {"name":"Shree Padma","slug":"shree-padma","location":"Indira Nagar, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-padma-logo.png","mainImage":"/images/shreeyog/slider/shree-padma.webp","description":"Situated in prime Indira Nagar opposite Cambridge School, Shree Padma offers 2 & 3 BHK premium homes across Wings A, B, and C with stilt covered parking, modern elevators, solar water heating, and a peaceful garden community.","brochure":"/projects/shree-padma/brochure/","brochurePdf":"/brochures/shree-padma-brochure.pdf"},
         {"name":"Shree Anant","slug":"shree-anant","location":"Indira Nagar, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-anant-logo.png","mainImage":"/images/shreeyog/slider/shree-anant.webp","description":"Situated in prime Indira Nagar opposite LIC Colony, Shree Anant offers 2 & 3 BHK luxurious homes built with natural red soil bricks, solar net metering, and a private celebration terrace.","brochure":"/projects/shree-anant/brochure/","brochurePdf":"/brochures/shree-anant-brochure.pdf"},
         {"name":"Shree Niwas","slug":"shree-niwas","location":"Indira Nagar, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-niwas-logo.png","mainImage":"/images/shreeyog/slider/shree-niwas.webp","description":"Situated in prime Indira Nagar opposite LIC Colony, Shree Niwas offers 12 exclusive 2 & 3 BHK luxurious flats built with natural red soil bricks, rooftop solar net-metering, campus play garden, and a private celebration terrace.","brochure":"/projects/shree-niwas/brochure/","brochurePdf":"/brochures/shree-niwas-brochure.pdf"},
-        {"name":"Shree Nath Enclave","slug":"shree-nath-enclave","location":"Mumbai Naka, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-nath-enclave-logo.png","mainImage":"/images/shreeyog/buildings/contemporary-avenue.webp","description":"A prominent urban development located along Shreehari Kute Marg at Mumbai Naka. Shree Nath Enclave houses the corporate headquarters of Shreeyog Builders & Land Developers alongside premium city-center suites.","brochure":"/projects/shree-nath-enclave/brochure/"},
+        {"name":"Shree Nath Enclave","slug":"shree-nath-enclave","location":"Mumbai Naka, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-nath-enclave-logo.png","mainImage":"/images/shreeyog/slider/shree-nath-enclave.webp","description":"A prominent urban development located along Shreehari Kute Marg at Mumbai Naka. Shree Nath Enclave houses the corporate headquarters of Shreeyog Builders & Land Developers alongside premium city-center suites.","brochure":"/projects/shree-nath-enclave/brochure/"},
         {"name":"Shree Navashakti","slug":"shree-navshakti","location":"Bhabha Nagar, Nashik","status":"Completed","logo":"/images/shreeyog/logos/shree-navshakti-logo.png","mainImage":"/images/shreeyog/slider/shree-navshakti.webp","description":"Situated at Navshakti Chowk opposite Dr. Homi Bhabha Garden, Shree Navashakti offers 2 & 3 BHK luxurious homes built with natural red soil bricks, rooftop solar net-metering, celebration party terrace, and turnkey move-in kit.","brochure":"/projects/shree-navashakti/brochure/","brochurePdf":"/brochures/shree-navashakti-brochure.pdf"},
         {"name":"Shree Swarup","slug":"shree-swarup","location":"Dwarka, Nashik","status":"Completed","logo":null,"mainImage":"/images/shreeyog/projects/residential-complex.webp","description":"Designed for families on the go, Shree Swarup offers rapid connectivity to the Pune and Mumbai highway corridors, industrial zones, and the central city.","brochure":null}
       ];

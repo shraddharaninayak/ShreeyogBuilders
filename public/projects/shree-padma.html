@@ -16,10 +16,36 @@
 <script>
     document.documentElement.classList.add('-loaded', '-ready');
     document.documentElement.style.overflowY = 'auto';
+
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+      if (a.target && a.target !== '_self') return;
+
+      try {
+        var targetUrl = new URL(href, window.location.origin);
+        if (targetUrl.origin === window.location.origin) {
+          if (targetUrl.pathname !== window.location.pathname || targetUrl.search !== window.location.search) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            window.location.href = targetUrl.href;
+          }
+        }
+      } catch (err) {}
+    }, true);
+
     window.addEventListener('DOMContentLoaded', function() {
       document.documentElement.classList.add('-loaded', '-ready');
       document.documentElement.style.overflowY = 'auto';
-      document.body && (document.body.style.overflowY = 'auto');
+      if (document.body) document.body.style.overflowY = 'auto';
+      var hdr = document.querySelector('header');
+      if (hdr) {
+        hdr.style.opacity = '1';
+        hdr.style.visibility = 'visible';
+        hdr.style.pointerEvents = 'all';
+      }
     });
   </script>
 <link href="/_nuxt/shreeyog-footer.css" rel="stylesheet"/>
@@ -257,5 +283,6 @@
 </div>
 </footer>
 
+<script defer="" src="/_nuxt/shreeyog-navbar.js"></script>
 </body>
 </html>

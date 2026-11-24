@@ -1860,6 +1860,22 @@ header .-w[data-v-81ce8483] {
   pointer-events: all !important;
 }
 
+/* Detail page main container and nav bar padding to avoid header collision */
+.page-detail-main {
+  padding-top: calc(var(--h1, 4rem) + var(--mm, 0.8rem) + 3rem) !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.detail-nav-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 2rem !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
 /* Scrolling is ALWAYS permitted on html and body */
 html,
 body,

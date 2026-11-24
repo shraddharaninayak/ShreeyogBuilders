@@ -176,7 +176,7 @@ module.exports = [
     "highlightOrder": 4,
     "typology": "Commercial & Premium Residential Landmark",
     "rera": "Completed Landmark",
-    "mainImage": "/images/shreeyog/buildings/contemporary-avenue.webp",
+    "mainImage": "/images/shreeyog/slider/shree-nath-enclave.webp",
     "gallery": [
       "/images/shreeyog/buildings/contemporary-avenue.webp",
       "/images/shreeyog/projects/residential-complex.webp",

@@ -171,9 +171,10 @@ const server = http.createServer((req, res) => {
   } catch (e) {}
 
   // If path has no extension and doesn't exist, check for [path]/index.html or [path].html
-  if (!path.extname(filePath)) {
-    const dirIndex = path.join(filePath, 'index.html');
-    const htmlFile = filePath + '.html';
+  const cleanPath = filePath.replace(/[/\\]+$/, '');
+  if (!path.extname(cleanPath)) {
+    const dirIndex = path.join(cleanPath, 'index.html');
+    const htmlFile = cleanPath + '.html';
     if (fs.existsSync(dirIndex)) {
       filePath = dirIndex;
     } else if (fs.existsSync(htmlFile)) {

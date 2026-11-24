@@ -1,7 +1,50 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html class="-loaded -ready" lang="en">
 <head><meta charset="utf-8"/>
+<script>
+  (function() {
+    document.documentElement.classList.add('-loaded', '-ready');
+    document.documentElement.style.overflowY = 'auto';
+    if (document.body) document.body.style.overflowY = 'auto';
+
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+      if (a.target && a.target !== '_self') return;
+
+      try {
+        var targetUrl = new URL(href, window.location.origin);
+        if (targetUrl.origin === window.location.origin) {
+          if (targetUrl.pathname !== window.location.pathname || targetUrl.search !== window.location.search) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            window.location.href = targetUrl.href;
+          }
+        }
+      } catch (err) {}
+    }, true);
+
+    window.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.classList.add('-loaded', '-ready');
+      document.documentElement.style.overflowY = 'auto';
+      if (document.body) document.body.style.overflowY = 'auto';
+      var hdr = document.querySelector('header');
+      if (hdr) {
+        hdr.style.opacity = '1';
+        hdr.style.visibility = 'visible';
+        hdr.style.pointerEvents = 'all';
+      }
+      var pt = document.querySelector('.page-transition');
+      if (pt) {
+        pt.style.display = 'none';
+        pt.style.pointerEvents = 'none';
+      }
+    });
+  })();
+</script>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Contact &amp; Consultations | Shreeyog Builders &amp; Land Developers</title>
 <meta content="#151415" name="theme-color"/>

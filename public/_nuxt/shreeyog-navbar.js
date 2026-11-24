@@ -5,6 +5,35 @@
 (function() {
   'use strict';
 
+  // -------------------------------------------------------------
+  // Instant Ready State & Clean Native Navigation Controller
+  // Guarantees immediate page rendering and prevents SPA router hijacking
+  // -------------------------------------------------------------
+  try {
+    document.documentElement.classList.add('-loaded', '-ready');
+    document.documentElement.style.overflowY = 'auto';
+    if (document.body) document.body.style.overflowY = 'auto';
+  } catch (e) {}
+
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+    if (a.target && a.target !== '_self') return;
+
+    try {
+      var targetUrl = new URL(href, window.location.origin);
+      if (targetUrl.origin === window.location.origin) {
+        if (targetUrl.pathname !== window.location.pathname || targetUrl.search !== window.location.search) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          window.location.href = targetUrl.href;
+        }
+      }
+    } catch (err) {}
+  }, true);
+
   function initNavbar() {
     var header = document.querySelector('header');
     if (!header) return;
