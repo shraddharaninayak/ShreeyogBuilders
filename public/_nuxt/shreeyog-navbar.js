@@ -51,16 +51,15 @@
         header.classList.remove('-scrolled-up');
         header.classList.remove('-scrolled-down');
         updateHeroScrollState(0);
-      } else if (diff < -2) {
-        // Scrolling UP: Turn solid black with crisp high contrast
-        header.classList.remove('-at-top');
-        header.classList.remove('-scrolled-down');
-        header.classList.add('-scrolled-up');
-      } else if (diff > 2) {
-        // Scrolling DOWN: Preserve intended transparent appearance
+      } else {
+        // Scrolled state: Preserve consistent transparent navbar appearance across all pages
         header.classList.remove('-at-top');
         header.classList.remove('-scrolled-up');
-        header.classList.add('-scrolled-down');
+        if (diff > 2) {
+          header.classList.add('-scrolled-down');
+        } else if (diff < -2) {
+          header.classList.remove('-scrolled-down');
+        }
       }
 
       updateHeroScrollState(currentScrollY);

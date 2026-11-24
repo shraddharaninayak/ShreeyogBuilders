@@ -116,6 +116,40 @@
     { "source": "/projects/shree-navshakti/Shree-Navshakti.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-navshakti/Shree-Navshakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-navshakti/brochure/Shree-Navshakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
-    { "source": "/projects/shree-navshakti/brochure/brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true }
+    { "source": "/projects/shree-navshakti/brochure/brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+
+    { "source": "/projects/shree-kala/brochure", "destination": "/projects/shree-kala/brochure/", "permanent": true },
+    { "source": "/brochures/shree-kala.pdf", "destination": "/brochures/shree-kala-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-kala/Shree-Kala.pdf", "destination": "/brochures/shree-kala-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-kala/Shree-Kala-Brochure.pdf", "destination": "/brochures/shree-kala-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-kala/brochure/Shree-Kala-Brochure.pdf", "destination": "/brochures/shree-kala-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-kala/brochure/brochure.pdf", "destination": "/brochures/shree-kala-brochure.pdf", "permanent": true },
+
+    { "source": "/projects/shree-nakshatra/brochure", "destination": "/projects/shree-nakshatra/brochure/", "permanent": true },
+    { "source": "/brochures/shree-nakshatra.pdf", "destination": "/brochures/shree-nakshatra-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nakshatra/Shree-Nakshatra.pdf", "destination": "/brochures/shree-nakshatra-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nakshatra/Shree-Nakshatra-Brochure.pdf", "destination": "/brochures/shree-nakshatra-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nakshatra/brochure/Shree-Nakshatra-Brochure.pdf", "destination": "/brochures/shree-nakshatra-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-nakshatra/brochure/brochure.pdf", "destination": "/brochures/shree-nakshatra-brochure.pdf", "permanent": true },
+
+    { "source": "/projects/shree-vrundavan/brochure", "destination": "/projects/shree-vrundavan/brochure/", "permanent": true },
+    { "source": "/brochures/shree-vrundavan.pdf", "destination": "/brochures/shree-vrundavan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vrundavan/Shree-Vrundavan.pdf", "destination": "/brochures/shree-vrundavan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vrundavan/Shree-Vrundavan-Brochure.pdf", "destination": "/brochures/shree-vrundavan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vrundavan/brochure/Shree-Vrundavan-Brochure.pdf", "destination": "/brochures/shree-vrundavan-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vrundavan/brochure/brochure.pdf", "destination": "/brochures/shree-vrundavan-brochure.pdf", "permanent": true },
+
+    { "source": "/projects/shree-vithal-park/brochure", "destination": "/projects/shree-vithal-park/brochure/", "permanent": true },
+    { "source": "/brochures/shree-vithal-park.pdf", "destination": "/brochures/shree-vithal-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vithal-park/Shree-Vithal-Park.pdf", "destination": "/brochures/shree-vithal-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vithal-park/Shree-Vithal-Park-Brochure.pdf", "destination": "/brochures/shree-vithal-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vithal-park/brochure/Shree-Vithal-Park-Brochure.pdf", "destination": "/brochures/shree-vithal-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-vithal-park/brochure/brochure.pdf", "destination": "/brochures/shree-vithal-park-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-shakuntal/brochure", "destination": "/projects/shree-shakuntal/brochure/", "permanent": true },
+    { "source": "/brochures/shree-shakuntal.pdf", "destination": "/brochures/shree-shakuntal-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-shakuntal/Shree-Shakuntal.pdf", "destination": "/brochures/shree-shakuntal-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-shakuntal/Shree-Shakuntal-Brochure.pdf", "destination": "/brochures/shree-shakuntal-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-shakuntal/brochure/Shree-Shakuntal-Brochure.pdf", "destination": "/brochures/shree-shakuntal-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-shakuntal/brochure/brochure.pdf", "destination": "/brochures/shree-shakuntal-brochure.pdf", "permanent": true }
   ]
 }

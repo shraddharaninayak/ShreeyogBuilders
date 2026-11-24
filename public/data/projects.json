@@ -56,7 +56,8 @@
       "Vastu-compliant spatial planning"
     ],
     "brochurePdf": "/brochures/shree-bramhand-brochure.pdf",
-    "brochureUrl": "/projects/shree-bramhand/brochure"
+    "brochureUrl": "/projects/shree-bramhand/brochure/",
+    "logo": "/images/shreeyog/logos/shree-bramhand-logo-transparent.png"
   },
   {
     "id": 2,
@@ -110,7 +111,8 @@
       "High capital appreciation precinct"
     ],
     "brochurePdf": "/brochures/shree-vishwa-brochure.pdf",
-    "brochureUrl": "/projects/shree-vishwa/brochure"
+    "brochureUrl": "/projects/shree-vishwa/brochure/",
+    "logo": "/images/shreeyog/logos/shree-vishwa-logo.png"
   },
   {
     "id": 3,
@@ -164,7 +166,8 @@
       "World-class building maintenance standards"
     ],
     "brochurePdf": "/brochures/shree-safalya-brochure.pdf",
-    "brochureUrl": "/projects/shree-safalya/brochure"
+    "brochureUrl": "/projects/shree-safalya/brochure/",
+    "logo": "/images/shreeyog/logos/shree-safalya-logo.png"
   },
   {
     "id": 4,
@@ -178,7 +181,7 @@
     "rera": "Completed Landmark",
     "mainImage": "/images/shreeyog/slider/shree-nath-enclave.webp",
     "gallery": [
-      "/images/shreeyog/slider/shree-nath-enclave.webp",
+      "/images/shreeyog/buildings/contemporary-avenue.webp",
       "/images/shreeyog/projects/residential-complex.webp",
       "/images/shreeyog/interiors/residential-lounge.webp"
     ],
@@ -212,7 +215,7 @@
     ],
     "logo": "/images/shreeyog/logos/shree-nath-enclave-logo.png",
     "brochurePdf": "/brochures/shree-nath-enclave-brochure.pdf",
-    "brochureUrl": "/projects/shree-nath-enclave/brochure"
+    "brochureUrl": "/projects/shree-nath-enclave/brochure/"
   },
   {
     "id": 5,
@@ -260,7 +263,8 @@
       "100% occupied with active resident society"
     ],
     "brochurePdf": "/brochures/shree-samruddhi-park-brochure.pdf",
-    "brochureUrl": "/projects/shree-samruddhi-park/brochure"
+    "brochureUrl": "/projects/shree-samruddhi-park/brochure/",
+    "logo": "/images/shreeyog/logos/shree-samruddhi-park-logo.png"
   },
   {
     "id": 6,
@@ -307,7 +311,8 @@
       "High rental yield and capital appreciation"
     ],
     "brochurePdf": "/brochures/shree-venkatesh-park-brochure.pdf",
-    "brochureUrl": "/projects/shree-venkatesh-park/brochure"
+    "brochureUrl": "/projects/shree-venkatesh-park/brochure/",
+    "logo": "/images/shreeyog/logos/shree-venkatesh-park-logo.png"
   },
   {
     "id": 7,
@@ -353,163 +358,258 @@
     ],
     "logo": "/images/shreeyog/logos/shree-neelkanth-logo-transparent.png",
     "brochurePdf": "/brochures/shree-neelkanth-brochure.pdf",
-    "brochureUrl": "/projects/shree-neelkanth/brochure"
+    "brochureUrl": "/projects/shree-neelkanth/brochure/"
   },
   {
     "id": 8,
     "name": "Shree Padma",
     "slug": "shree-padma",
-    "location": "Gangapur Road, Nashik",
+    "location": "Opp. Cambridge School, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Boutique Residential Enclave",
+    "typology": "2 & 3 BHK Premium Flats (Wings A, B & C)",
     "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/projects/nisarg.webp",
+    "mainImage": "/images/shreeyog/slider/shree-padma.webp",
     "gallery": [
-      "/images/shreeyog/projects/nisarg.webp",
-      "/images/shreeyog/interiors/living-room.webp"
+      "/images/shreeyog/slider/shree-padma.webp",
+      "/projects/shree-padma/brochure/assets/page-3.webp",
+      "/projects/shree-padma/brochure/assets/page-4.webp",
+      "/projects/shree-padma/brochure/assets/page-5.webp"
     ],
-    "tagline": "Exclusive Low-Density Living in Gangapur Road",
-    "description": "A private boutique residential development designed for discerning homeowners who prioritize quiet community living in an upscale residential quarter.",
-    "overview": "Completed to rigorous structural standards, Shree Padma showcases timeless exterior design and enduring interior finishes.",
+    "tagline": "A place where creates the Fragrance of Happiness...",
+    "description": "Located directly opposite Cambridge School in prime Indira Nagar, Shree Padma features multi-wing 2 & 3 BHK premium residences across Wings A, B, and C with stilt parking, solar water heating, and manicured garden surroundings.",
+    "overview": "Conceived around enduring family relationships and peaceful community living, Shree Padma combines earthquake-resistant structural engineering, cross-ventilated unit layouts, and modern campus conveniences in Nashik.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Seismic-resistant RCC design."
+        "detail": "Earthquake-resistant R.C.C. frame structure designed as per IS standards."
       },
       {
-        "category": "Doors",
-        "detail": "Waterproof flush doors with attractive brass hardware."
+        "category": "Masonry & Plaster",
+        "detail": "Quality brick masonry (6\" external & 4\" internal) with external double-coat sand-faced plaster & internal gypsum/neeru finish."
+      },
+      {
+        "category": "Flooring",
+        "detail": "2' x 2' vitrified tile flooring in all rooms with 3\" skirting; anti-skid ceramic tiles in sit-outs and balconies."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Polished granite kitchen platform with Nirali stainless steel sink and glazed tile dado up to lintel level."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminum sliding windows with mosquito mesh, green marble/granite sills, and safety MS grills."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with modular switches, AC point in master bedroom, and TV points in living room."
       }
     ],
     "amenities": [
-      "Gated Perimeter Security",
-      "Dedicated Covered Parking",
-      "Common Rooftop Solar Lighting"
+      "Grand Entrance Gate with Security Cabin & Intercom",
+      "Demarcated Stilt Covered Parking Bays for Wings A, B & C",
+      "High-Speed Automatic Elevators with Power Backup",
+      "Rooftop Solar Water Heating System",
+      "Paved Campus Perimeter with Senior Citizen Sit-Outs",
+      "Rainwater Harvesting System & Ground Water Recharge"
     ],
     "highlights": [
-      "Prime residential street",
-      "Peaceful low-noise surroundings",
-      "Long-term structural warranty"
+      "Directly opposite Cambridge School in prime Indira Nagar",
+      "Multi-wing architectural planning (Wings A, B, C) for maximum privacy",
+      "27+ years trust of Shreeyog Builders & Land Developers",
+      "Quick 1.3 Km connectivity to Mumbai-Agra Highway (NH-3)"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-padma-logo.png",
+    "brochurePdf": "/brochures/shree-padma-brochure.pdf",
+    "brochureUrl": "/projects/shree-padma/brochure/"
   },
   {
     "id": 9,
     "name": "Shree Anant",
     "slug": "shree-anant",
-    "location": "Govind Nagar, Nashik",
+    "location": "Opp. LIC Colony, Near Manas Hospital, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Quality Family Apartments",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/buildings/modern-luxury.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "P51600022962",
+    "logo": "/images/shreeyog/logos/shree-anant-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-anant.webp",
     "gallery": [
-      "/images/shreeyog/buildings/modern-luxury.webp",
-      "/images/shreeyog/projects/chintan.webp"
+      "/images/shreeyog/slider/shree-anant.webp",
+      "/projects/shree-anant/brochure/assets/page-1.webp",
+      "/projects/shree-anant/brochure/assets/plan-typical.webp",
+      "/projects/shree-anant/brochure/assets/plan-ground.webp",
+      "/projects/shree-anant/brochure/assets/location-map.webp"
     ],
-    "tagline": "Enduring Warmth and Structural Integrity",
-    "description": "Shree Anant in Govind Nagar reflects Shreeyog's core philosophy: building homes that stand the test of time with genuine construction quality and thoughtful layouts.",
-    "overview": "A mature residential development with a tight-knit community, celebrated for its reliable build quality and optimal city connectivity.",
+    "tagline": "A Tradition of Excellence — Comfort & Luxury Living",
+    "description": "Situated in prime Indira Nagar, Nashik opposite LIC Colony, Shree Anant offers 2 & 3 BHK luxurious homes built with natural red soil bricks, dual 9.0M road frontage, solar net metering, and a private rooftop celebration terrace.",
+    "overview": "A boutique G + 4 residential landmark crafted with time-honoured red soil brick masonry, zero common light bills via net solar power, an automatic 4-passenger elevator with battery backup, and complete move-in complimentary fixtures.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "Robust RCC construction with external weather-coat paint."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake resistant RCC framework with external 6\" and internal 4\" natural red soil brick walls."
       },
       {
-        "category": "Flooring",
-        "detail": "Durable ceramic and vitrified floor finishes."
+        "category": "Flooring & Tiling",
+        "detail": "Johnson / RAK premium vitrified tiles in all rooms; anti-skid ceramic tiles in toilets & balconies."
+      },
+      {
+        "category": "Kitchen & Utility",
+        "detail": "L-shape or parallel black granite platform with SS sink, full-height glazed dado, and included modular trolleys."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Decorative main door with safety door; 3-track powder-coated sliding windows with 4-side full granite frames."
       }
     ],
     "amenities": [
-      "Covered Parking",
-      "Underground & Overhead Water Tanks",
-      "Security Gatehouse"
+      "Natural Red Soil Brick Construction",
+      "Rooftop Solar System (Zero Common Light Bill)",
+      "Rooftop Celebration Terrace with Basin & Water",
+      "Solar Water Heater Connection to Toilets",
+      "Automatic 4-Passenger Elevator with Battery Backup",
+      "Demarcated Covered Parking with Dual 9.0M Road Access",
+      "24/7 CCTV Surveillance & Watchman Cabin with Toilet",
+      "Specially Gift Move-In Package (Lights, Fans, Curtains, Aqua Guard, Accessories)"
     ],
     "highlights": [
-      "Govind Nagar central location",
-      "Quiet residential lane",
-      "100% occupied with contented families"
+      "Opp. LIC Colony & Near Manas Hospital",
+      "Dual 9.0M East & West Road Frontages",
+      "MahaRERA: P51600022962 & CRISIL Rated Developer"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-anant-brochure.pdf",
+    "brochureUrl": "/projects/shree-anant/brochure/"
   },
   {
     "id": 10,
     "name": "Shree Niwas",
     "slug": "shree-niwas",
-    "location": "College Road, Nashik",
+    "location": "Opp. LIC Colony, Near Guru Govind Singh College, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Premium City Residences",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/buildings/tanvi-residency.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "P51600022902",
+    "logo": "/images/shreeyog/logos/shree-niwas-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-niwas.webp",
     "gallery": [
-      "/images/shreeyog/buildings/tanvi-residency.webp",
-      "/images/shreeyog/interiors/residential-lounge.webp"
+      "/images/shreeyog/slider/shree-niwas.webp",
+      "/projects/shree-niwas/brochure/assets/page-1.webp",
+      "/projects/shree-niwas/brochure/assets/plan-typical.webp",
+      "/projects/shree-niwas/brochure/assets/plan-ground.webp",
+      "/projects/shree-niwas/brochure/assets/location-map.webp"
     ],
-    "tagline": "Prestigious Living in the Cultural Hub of College Road",
-    "description": "Located within walking distance of Nashik's premier colleges, cafes, and shopping districts, Shree Niwas represents prime city center living at its finest.",
-    "overview": "A completed architectural landmark tailored for families wanting quick access to colleges, institutions, and lifestyle destinations.",
+    "tagline": "A Classic Style of Life — Better Environment Invites You",
+    "description": "Situated in prime Indira Nagar opposite LIC Colony, Shree Niwas offers 12 exclusive 2 & 3 BHK luxurious flats built with natural red soil bricks, rooftop solar net-metering, campus play garden, and a private celebration terrace.",
+    "overview": "A boutique G + 4 residential landmark of only 12 residences with 3 homes per floor, featuring authentic red soil brick masonry, zero common light bills via net solar power, an automatic 4-person elevator with battery backup, and complete move-in complimentary furnishings.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "Heavy-grade concrete framework."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake-resistant RCC framework with natural red soil bricks and eco light blocks."
       },
       {
-        "category": "Windows",
-        "detail": "Large sliding glass windows allowing ample cross ventilation."
+        "category": "Flooring & Tiling",
+        "detail": "Johnson or RAK brand premium vitrified and ceramic tiles with full-height dado in each toilet."
+      },
+      {
+        "category": "Kitchen & Utility",
+        "detail": "L-shape or parallel black granite platform with SS sink, modular trolleys, and separate wash balcony."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Box-type laminated door frames, main safety door, and 4-side full granite framing on all windows and toilets."
       }
     ],
     "amenities": [
-      "Automatic Elevator with Safety Device",
-      "Intercom Connectivity",
-      "Dedicated Two-Wheeler and Car Parking"
+      "Natural Red Soil Brick Construction",
+      "Children's Play Area, Lawn & Outdoor Green Gym",
+      "Rooftop Solar System (Zero Common Light Bill)",
+      "Rooftop Celebration Terrace with Basin & Water",
+      "Solar Hot Water Connected to Every Toilet",
+      "Automatic 4-Person Elevator with Battery Backup",
+      "Demarcated Covered Parking with 9.0M Road Access",
+      "24/7 CCTV Surveillance & Watchman Room with Toilet",
+      "Pre-Installed Move-In Gift Package (Lights, Fans, Curtains, Aqua Guard)"
     ],
     "highlights": [
-      "Walk-to-everything College Road address",
-      "High rental demand asset",
-      "Excellent lifestyle amenities nearby"
+      "Opp. LIC Colony & Guru Govind Singh College Campus",
+      "Only 12 Residences with 3 Flats Per Floor",
+      "MahaRERA: P51600022902 & CRISIL Rated Developer"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-niwas-brochure.pdf",
+    "brochureUrl": "/projects/shree-niwas/brochure/"
   },
   {
     "id": 11,
-    "name": "Shree Navshakti",
+    "name": "Shree Navashakti",
     "slug": "shree-navshakti",
-    "location": "Panchavati, Nashik",
+    "location": "Navshakti Chowk, opp. Dr. Homi Bhabha Garden, Bhabha Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Traditional Community Residences",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/projects/safalya-angle.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "MahaRERA: P51600022623",
+    "mainImage": "/images/shreeyog/slider/shree-navshakti.webp",
     "gallery": [
-      "/images/shreeyog/projects/safalya-angle.webp",
-      "/images/shreeyog/interiors/dining-space.webp"
+      "/images/shreeyog/slider/shree-navshakti.webp",
+      "/projects/shree-navashakti/brochure/assets/page-3.webp",
+      "/projects/shree-navashakti/brochure/assets/plan-ground.webp",
+      "/projects/shree-navashakti/brochure/assets/plan-typical.webp"
     ],
-    "tagline": "Serenity and Heritage in Historic Panchavati",
-    "description": "Shree Navshakti blends the timeless spiritual calmness of Panchavati with modern structural resilience and reliable amenities.",
-    "overview": "A celebrated completed development offering serene family living near the sacred banks of the Godavari.",
+    "tagline": "Peaceful living for infinity recognition of your divine soul..",
+    "description": "Located at Navshakti Chowk directly opposite Dr. Homi Bhabha Garden in Bhabha Nagar, Shree Navashakti features 16 exclusive 2 & 3 BHK residences across G + 4 floors with natural red soil brick masonry, rooftop solar net-metering, party terrace, and turnkey move-in privileges.",
+    "overview": "Conceived around spiritual calmness and construction integrity, Shree Navashakti reflects Shreeyog's 27+ years legacy with only 4 homes per floor, cross-ventilation, and zero common electricity bills.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "RCC framed structure built with premium grade cement and TMT steel."
+        "detail": "Earthquake-resistant RCC frame structure designed strictly as per IS standards."
+      },
+      {
+        "category": "Masonry",
+        "detail": "Natural red soil brick masonry providing superior climate thermal insulation and cooler ambient indoor temperatures."
+      },
+      {
+        "category": "Solar Power",
+        "detail": "Rooftop solar net-metering grid ensuring zero common electricity bills for passage lighting, lift, and water pumps."
+      },
+      {
+        "category": "Solar Water",
+        "detail": "Dedicated solar water heating line piped directly into each flat's bathroom toilet."
+      },
+      {
+        "category": "Flooring & Tiles",
+        "detail": "High-grade Johnson or RAK brand ceramic and vitrified tiles across all rooms and toilets."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "L-shape or parallel granite kitchen platform with full ceramic dado and stainless steel modular kitchen trolley."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Box type plywood door frames with laminate on both sides; granite frames on all windows and toilets."
+      },
+      {
+        "category": "Move-In Readiness",
+        "detail": "Pre-equipped with tube lights, bulbs, fan, Aqua guard purifier, cloth dryer stand, curtain rods with curtains, letter box, and nameplate."
       }
     ],
     "amenities": [
-      "Dedicated Water Storage",
-      "Secure Compound Boundary",
-      "Elevator Facility"
+      "Zero Common Light Bill (Rooftop Solar Net-Metering)",
+      "Solar Water Heating System for Each Toilet",
+      "Rooftop Party Celebration Terrace with Washbasin",
+      "Turnkey Move-In Gift Kit with Fan & Aqua Guard",
+      "L-Shape / Parallel Granite Platform with Kitchen Trolley",
+      "Johnson or RAK Brand Flooring & Wall Tiles",
+      "4-Person Automatic Elevator with Battery Backup",
+      "CCTV Surveillance in Parking & Dedicated Watchman Room"
     ],
     "highlights": [
-      "Historic and spiritual Panchavati precinct",
-      "Peaceful atmosphere",
-      "Generous family layouts"
+      "Directly opposite Dr. Homi Bhabha Garden in Bhabha Nagar",
+      "Only 16 residences on a wide 9.00m thoroughfare (4 per floor)",
+      "27+ years trust of Shreeyog Builders (Since 1992)",
+      "MahaRERA Registration No. P51600022623"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-navshakti-logo.png",
+    "brochurePdf": "/brochures/shree-navashakti-brochure.pdf",
+    "brochureUrl": "/projects/shree-navashakti/brochure/"
   },
   {
     "id": 12,
@@ -550,42 +650,43 @@
     "id": 13,
     "name": "Shree Pandurang",
     "slug": "shree-pandurang",
-    "location": "Adgaon / Highway Corridor, Nashik",
+    "location": "Opp. Podar School, Tapovan Road, Nashik",
     "status": "Ongoing",
     "featured": false,
-    "typology": "Emerging Corridor Modern Residences",
-    "rera": "Ongoing Project",
-    "mainImage": "/images/shreeyog/buildings/aerial-view.webp",
+    "typology": "2 & 3 BHK Luxurious Residences",
+    "rera": "P51600080259",
+    "logo": "/images/shreeyog/logos/shree-pandurang-logo-transparent.png",
+    "mainImage": "/images/shreeyog/slider/shree-pandurang.webp",
     "gallery": [
-      "/images/shreeyog/buildings/aerial-view.webp",
-      "/images/shreeyog/interiors/living-room.webp"
+      "/images/shreeyog/slider/shree-pandurang.webp",
+      "/images/shreeyog/buildings/shree-pandurang-day.webp"
     ],
-    "tagline": "Forward-Thinking Living Along Nashik's New Growth Axis",
-    "description": "Currently under development in the high-growth Adgaon corridor, Shree Pandurang is engineered with modern smart-home provisions and expansive open spaces.",
-    "overview": "A contemporary development bringing Shreeyog's 30+ year trust to the rapidly expanding medical, educational, and transit hub of eastern Nashik.",
+    "tagline": "Forward-Thinking Living Along Tapovan Road",
+    "description": "Situated opposite Podar International School, Shree Pandurang is engineered with modern architecture, earthquake-resistant RCC, expansive sit-out balconies, and rooftop sky wellness amenities.",
+    "overview": "A contemporary development bringing Shreeyog's 30+ year trust to the thriving Tapovan Road residential corridor of Nashik.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Latest seismic-compliant RCC framework."
+        "detail": "Earthquake-resistant RCC framework with red brick masonry."
       },
       {
         "category": "Sustainability",
-        "detail": "Rainwater harvesting and solar common-area lighting."
+        "detail": "Solar Net Metering common-area lighting and rainwater harvesting."
       }
     ],
     "amenities": [
-      "Landscaped Children's Play Park",
-      "Senior Citizen Sitting Pavilions",
-      "Modern High-Speed Elevators",
-      "EV Charging Infrastructure Provisions"
+      "Open Air Green Gym & Rooftop Yoga Deck",
+      "Senior Citizen Sitting Gazebo",
+      "Automatic 6-Passenger Elevator with Backup",
+      "Solar Net Metering (Zero Common Light Bill)"
     ],
     "highlights": [
-      "Rapidly developing residential corridor",
-      "Proximity to medical colleges and transit routes",
-      "Attractive pre-completion pricing"
+      "Fronting 9.00-meter wide roadway",
+      "Opposite Podar International School",
+      "MahaRERA Registered P51600080259"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-pandurang-brochure.pdf",
+    "brochureUrl": "/projects/shree-pandurang/brochure/"
   },
   {
     "id": 14,
@@ -596,6 +697,7 @@
     "featured": false,
     "typology": "2 & 3 BHK Luxurious Residences",
     "rera": "P51600032910",
+    "logo": "/images/shreeyog/logos/shree-nandan-logo.png",
     "mainImage": "/images/shreeyog/slider/shree-nandan.webp",
     "gallery": [
       "/images/shreeyog/slider/shree-nandan.webp",
@@ -610,7 +712,7 @@
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Advanced RCC frame with aerated autoclaved concrete blocks for superior insulation."
+        "detail": "Earthquake resistant RCC framework with natural red soil bricks and eco light blocks."
       }
     ],
     "amenities": [
@@ -626,48 +728,531 @@
       "30+ Turnkey Fixtures & Complete Curtains"
     ],
     "brochurePdf": "/brochures/shree-nandan-brochure.pdf",
-    "brochureUrl": "/projects/shree-nandan/brochure/",
-    "logo": "/images/shreeyog/logos/shree-nandan-logo.png"
+    "brochureUrl": "/projects/shree-nandan/brochure/"
   },
   {
     "id": 15,
     "name": "Shree Malhar",
     "slug": "shree-malhar",
-    "location": "Gangapur Road Extension, Nashik",
+    "location": "Savarkar Nagar, Gangapur Road, Nashik",
     "status": "Ongoing",
     "featured": false,
-    "typology": "Nature-Side Premium Residences",
-    "rera": "Ongoing Project",
-    "mainImage": "/images/shreeyog/projects/chintan.webp",
+    "typology": "3 BHK Luxurious Flats",
+    "rera": "P51600048639",
+    "logo": "/images/shreeyog/logos/shree-malhar-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-malhar.webp",
     "gallery": [
-      "/images/shreeyog/projects/chintan.webp",
-      "/images/shreeyog/interiors/private-balcony.webp"
+      "/images/shreeyog/slider/shree-malhar.webp",
+      "/projects/shree-malhar/brochure/assets/page-1.webp",
+      "/projects/shree-malhar/brochure/assets/axonometric-view.webp",
+      "/projects/shree-malhar/brochure/assets/plan-typical.webp",
+      "/projects/shree-malhar/brochure/assets/plan-terrace.webp"
     ],
-    "tagline": "Quiet Hill-View Sanctuary Near Gangapur Backwaters",
-    "description": "Nestled near the scenic Gangapur Road extension, Shree Malhar offers tranquil living framed by open skies, gentle breezes, and lush surroundings.",
-    "overview": "A nature-centric ongoing residential project designed for peace of mind, wholesome living, and enduring structural excellence.",
+    "tagline": "The Rhythm of the Delighted Life",
+    "description": "Nestled near the scenic Gangapur Road in Savarkar Nagar behind Vishwas Bank, Shree Malhar offers exclusive 3 BHK luxurious flats with only 2 residences per floor, 4 private balconies, 2-car covered parking, and rooftop terrace amenities.",
+    "overview": "A signature boutique residential landmark designed with only two homes per floor, offering complete privacy, triple-sided ventilation, dedicated 2-car covered parking, and an active rooftop leisure sky deck.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "RCC framed structure built for maximum longevity."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake resistant RCC framed structure engineered with high-grade eco light blocks / red soil brick masonry."
       },
       {
-        "category": "Balconies",
-        "detail": "Deep cantilevered viewing balconies with anti-skid tiles."
+        "category": "Flooring & Dado",
+        "detail": "800mm x 800mm premium vitrified tile flooring across all rooms; full-height designer ceramic wall dado in all toilets."
+      },
+      {
+        "category": "Kitchen & Storage",
+        "detail": "L-shape / parallel granite kitchen platform with stainless steel trolleys, crockery unit, and separate enclosed store room."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Double-side laminated main and bedroom doors with heavy-duty M.S. safety gate; three-track anodized sliding windows with mosquito nets."
+      },
+      {
+        "category": "Electrical & Utilities",
+        "detail": "Concealed wiring with modular switches, geysers in all toilets, inverter provision, false ceiling in hall, and EV charging points."
       }
     ],
     "amenities": [
-      "Landscaped Green Lawn with Walking Path",
-      "Terrace Stargazing Deck",
-      "Solar Water Heating Integration",
-      "CCTV Surveillance"
+      "Separate 2 Covered Car Parkings Per Residence",
+      "Rooftop Terrace with Yoga Space, Green Gym & Party Deck",
+      "Solar Net Metering for Common Area Lighting",
+      "8-Passenger High-Speed Automatic Elevator with Battery Backup",
+      "24/7 CCTV Surveillance & Gated Security with Watchman Cabin",
+      "Dual Water Supply with Separate Borewell Flushing Tank"
     ],
     "highlights": [
-      "Close to scenic Gangapur backwaters and vineyards",
-      "Clean air and tranquil environs",
-      "Shreeyog's proven build quality"
+      "Prime location behind Vishwas Bank, Savarkar Nagar, Gangapur Road",
+      "Only 2 flats per floor for supreme privacy and quiet living",
+      "4 expansive private balconies ensuring cross ventilation"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-malhar-brochure.pdf",
+    "brochureUrl": "/projects/shree-malhar/brochure/"
+  },
+  {
+    "id": 16,
+    "name": "Shree Kala",
+    "slug": "shree-kala",
+    "location": "Shree Ram Chowk, Ekta Colony, Rane Nagar, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 BHK Luxurious Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-kala.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-kala.webp",
+      "/projects/shree-kala/brochure/assets/page-3.webp",
+      "/projects/shree-kala/brochure/assets/page-2.webp",
+      "/projects/shree-kala/brochure/assets/page-4.webp"
+    ],
+    "tagline": "A Gracious Lifestyle of Vastu, Luxury & Neighborhood",
+    "description": "Situated at Shree Ram Chowk in peaceful Ekta Colony, Rane Nagar — just 0.8 kms from Mumbai-Agra Highway — Shree Kala offers 16 spacious 2 BHK luxurious flats with allotted stilt parking, modern elevator, dual municipal & borewell water, internal gas pipelines, and full Vastu compliance.",
+    "overview": "Shree Kala Apartment combines 17+ years of Shreeyog craftsmanship with a self-contained family environment. Designed across Stilt + 3 floors with cross-ventilated unit layouts, private sit-outs, and swift arterial highway connectivity in Nashik.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake-resistant R.C.C. frame structure designed as per IS standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brickwork."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Porcelino (Johnson) vitrified tile flooring for entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Polished granite kitchen platform (G20) with stainless steel sink and 4' glazed tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with mosquito net, M. S. safety grill & marble seal."
+      },
+      {
+        "category": "Plaster & Paint",
+        "detail": "Double-coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper paint."
+      },
+      {
+        "category": "Doors",
+        "detail": "Main door with brass fittings and night latch; laminated main door & waterproof flush doors with R.C.C. frames."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "7' height designer glazed tiles in bathroom & toilet with concealed plumbing and hot/cold wall mixer."
+      },
+      {
+        "category": "Gas Pipeline",
+        "detail": "Dedicated internal gas pipeline distribution from kitchen to every toilet & bath."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed electrification for entire flat with modular switches."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24 hours water supply of Municipal & on-site boring water with storage tanks."
+      },
+      {
+        "category": "Parking",
+        "detail": "Allotted covered stilt car parking space for each flat."
+      }
+    ],
+    "amenities": [
+      "Allotted Covered Stilt Car Parking for Each Flat",
+      "Modern High-Speed Passenger Elevator with Stilt Access",
+      "Dual 24-Hour Water Supply (Municipal & On-Site Borewell)",
+      "Dedicated Internal Gas Pipeline from Kitchen to All Toilets",
+      "Private Covered Sit-Outs (10'2\" x 6'3\") for Every Residence",
+      "3-Track Aluminium Windows with Stainless Steel Mosquito Mesh",
+      "Pre-Installed Telephone & Cable TV Connections in Living Area",
+      "Earthquake-Resistant Structural R.C.C. Engineering"
+    ],
+    "highlights": [
+      "Located at Shree Ram Chowk, Ekta Colony, Rane Nagar, Nashik",
+      "Just 0.8 kms from Mumbai-Agra Highway (NH-3)",
+      "Direct frontage on 18.00M and 30.00M wide sector thoroughfares",
+      "100% Vastu-compliant layouts with private living sit-outs",
+      "Crafted by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-kala-logo.png",
+    "brochure": "/projects/shree-kala/brochure/",
+    "brochurePdf": "/brochures/shree-kala-brochure.pdf",
+    "brochureUrl": "/projects/shree-kala/brochure/"
+  },
+  {
+    "id": 17,
+    "name": "Shree Nakshatra",
+    "slug": "shree-nakshatra",
+    "location": "Takali Road, near Ashoka Marg, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 BHK Apartment",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-nakshatra.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-nakshatra.webp",
+      "/projects/shree-nakshatra/brochure/assets/page-3.webp",
+      "/projects/shree-nakshatra/brochure/assets/page-2.webp",
+      "/projects/shree-nakshatra/brochure/assets/page-4.webp"
+    ],
+    "tagline": "A Glimmer of your own.. A Space Called HOME..!!",
+    "description": "Situated along Takali Road near Ashoka Marg and Bodhale Nagar in Nashik, Shree Nakshatra offers 16 exclusive 2 BHK apartments across G + 4 floors. Featuring private balconies, high-speed lift, 24-hour dual municipal/borewell water supply, pre-installed cable/telephone points, and allotted covered stilt parking.",
+    "overview": "Shree Nakshatra is designed for those seeking superior architectural design, resilient engineering, and luxury with economy. Offers spacious cross-ventilated suites, full Vastu compliance, and rapid transit access to both Mumbai-Agra NH-3 and Nashik-Pune Highway.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake-resistant R.C.C. frame structure designed strictly as per IS standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brickwork."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Vitrified (Johnson) tile flooring for entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Granite L-Shape kitchen platform (G20) & stainless steel sink with full-height glazed tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with Mosquito Net, M. S. safety grill & marble frame."
+      },
+      {
+        "category": "Plaster & Paint",
+        "detail": "Double-coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper paint."
+      },
+      {
+        "category": "Doors",
+        "detail": "Main door with brass fittings, Night latch and Safety door; All internal doors & frames with elegant laminate."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "Full-height designer glazed tiles in bathroom & toilet with concealed plumbing and wall mixer; PVC doors with marble frames."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed electrification for entire flat with modular switches and adequate light/fan points."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24 hours water supply with dual connections from Municipal mains and on-site borewell with storage tanks."
+      },
+      {
+        "category": "Parking",
+        "detail": "Allotted covered stilt car parking space on ground floor for each flat."
+      },
+      {
+        "category": "Media & Comms",
+        "detail": "Pre-installed television cable and telephone connection lines in living room."
+      }
+    ],
+    "amenities": [
+      "Allotted Covered Stilt Car Parking Space for Each Flat",
+      "Modern High-Speed Passenger Elevator (5'0\" x 5'0\") with Battery Backup",
+      "24-Hour Dual Water Supply (Municipal Mains & On-Site Borewell)",
+      "Pre-Installed Television Cable & Telephone Wiring in Living Room",
+      "Decorative Main Door with Brass Fittings, Night Latch & Safety Door",
+      "Polished Granite L-Shape Kitchen Platform (G20) with Glazed Tile Dado",
+      "3-Track Powder-Coated Aluminium Windows with Mosquito Net & MS Grills",
+      "Earthquake-Resistant R.C.C. Frame Engineering with Double-Coat Plaster"
+    ],
+    "highlights": [
+      "Located on Takali Road near Ashoka Marg, Kathe Galli & Bodhale Nagar",
+      "Direct arterial transit to Mumbai-Agra NH-3 and Nashik-Pune Highway",
+      "16 exclusive 2 BHK apartments across Ground Stilt + 4 Floors",
+      "100% Vastu-compliant layouts with private living balconies",
+      "Crafted by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-nakshatra-logo.png",
+    "brochure": "/projects/shree-nakshatra/brochure/",
+    "brochureUrl": "/projects/shree-nakshatra/brochure/",
+    "brochurePdf": "/brochures/shree-nakshatra-brochure.pdf"
+  },
+  {
+    "id": 18,
+    "name": "Shree Vrundavan",
+    "slug": "shree-vrundavan",
+    "location": "Indira Nagar, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Premium Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-vrundavan.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-vrundavan.webp",
+      "/projects/shree-vrundavan/brochure/assets/page-1.webp",
+      "/projects/shree-vrundavan/brochure/assets/page-2.webp",
+      "/projects/shree-vrundavan/brochure/assets/page-3.webp",
+      "/projects/shree-vrundavan/brochure/assets/page-4.webp"
+    ],
+    "tagline": "एक आपुलकीचे घर — Living Traditions in a Contemporary Way",
+    "description": "Located in the tranquil atmosphere of Shreejay Nagar, Behind HDFC Bank, Indira Nagar, Nashik — just 1.5 kms from Mumbai-Agra Highway — Shree Vrundavan is a premier completed residential landmark by Shreeyog Builders & Land Developers offering 2 & 3 BHK premium flats across Wings 'A' and 'B' with allotted covered parking, elevator, and dual water supply.",
+    "overview": "Shree Vrundavan combines peaceful living in Indira Nagar with immediate access to daily essentials. Designed across Stilt + 4 Floors with separate elevators for Wings 'A' and 'B', allotted stilt parking for every residence, 24-hour dual municipal/borewell water supply, and complete Vastu compliance.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure engineered to high safety standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brick work."
+      },
+      {
+        "category": "Paint",
+        "detail": "Double coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper paint."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Vitrified (Johnson) flooring for entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Granite kitchen platform (G20) & stainless steel sink with full-height glazed tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with Mosquito Net, M.S. grill & marble frame."
+      },
+      {
+        "category": "Doors",
+        "detail": "Main door with brass fittings, Night latch and Safety door; all internal doors & frames with laminate."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "Full-height glazed tiles in bathroom & toilet; PVC doors with marble frame; concealed plumbing with quality fittings & wall mixer."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed electrification for entire flat."
+      },
+      {
+        "category": "Parking",
+        "detail": "Demarcated covered parking space for each flat on the ground stilt floor."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24 hours water supply of Municipal & boring water."
+      },
+      {
+        "category": "Media & Comms",
+        "detail": "Telephone & cable connection in living room."
+      }
+    ],
+    "amenities": [
+      "Allotted Covered Stilt Parking Space for Each Flat",
+      "Automatic High-Speed Passenger Elevators for Wings 'A' & 'B'",
+      "24 Hours Dual Water Supply (Municipal Mains & Deep Borewell)",
+      "Pre-Installed Telephone & Television Cable Sockets in Living Room",
+      "Main Entrance Door with Brass Fittings, Night Latch & Safety Door",
+      "Polished G20 Granite Kitchen Platform with Full-Height Dado",
+      "3-Track Powder-Coated Aluminium Sliding Windows with Mosquito Mesh & MS Grills",
+      "Earthquake Resistant R.C.C. Frame Structure with Double-Coat Plaster"
+    ],
+    "highlights": [
+      "Located in Shreejay Nagar, Behind HDFC Bank, Indira Nagar, Nashik",
+      "Just 1.5 kms from Mumbai-Agra Highway (NH-3)",
+      "Stilt + 4 Floors with Wings 'A' (16 flats) & 'B' (8 flats)",
+      "Flanked by dual 6.00-meter wide roads for easy access",
+      "100% Vastu-compliant layout with private sit-out balconies",
+      "Crafted by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-vrundavan-logo-transparent.png",
+    "brochure": "/projects/shree-vrundavan/brochure/",
+    "brochureUrl": "/projects/shree-vrundavan/brochure/",
+    "brochurePdf": "/brochures/shree-vrundavan-brochure.pdf"
+  },
+  {
+    "id": 19,
+    "name": "Shree Vithal Park",
+    "slug": "shree-vithal-park",
+    "location": "Indira Nagar, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-vithal-park.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-vithal-park.webp",
+      "/projects/shree-vithal-park/brochure/assets/page-1.webp",
+      "/projects/shree-vithal-park/brochure/assets/page-2.webp",
+      "/projects/shree-vithal-park/brochure/assets/page-3.webp",
+      "/projects/shree-vithal-park/brochure/assets/page-4.webp",
+      "/projects/shree-vithal-park/brochure/assets/page-5.webp"
+    ],
+    "tagline": "श्री ||विठ्ठल|| पार्क — 2 & 3 BHK Luxurious Residences",
+    "description": "Located in the tranquil atmosphere of Indira Nagar, Nashik — just 0.8 kms from Mumbai-Agra Highway near Charvak Chowk — Shree Vithal Park is a landmark completed residential community by Shreeyog Builders & Land Developers offering 2 & 3 BHK luxurious flats across Stilt + 7 floors with allotted covered parking, elevator, gas pipeline, and dual water supply.",
+    "overview": "Positioned along a prominent 30.00-meter wide DP thoroughfare with triple-road access, Shree Vithal Park features 24 exclusive 2 & 3 BHK residences, spacious private sit-outs and terraces, high-speed passenger elevator, 24-hour dual municipal/borewell water supply, and complete Vastu compliance.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure engineered to high safety standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brick work."
+      },
+      {
+        "category": "Paint",
+        "detail": "Double coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper paint."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Vitrified (Johnson) flooring for entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Granite kitchen platform (G20) & stainless steel sink with 4' glazed tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with Mosquito Net, M.S. grill & marble seal."
+      },
+      {
+        "category": "Doors",
+        "detail": "Main door with brass fittings and Night latch; laminated main door & remaining doors water proof flush doors."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "7' height glazed tiles in bathroom & toilet; PVC doors with marble frame; concealed plumbing with quality fittings & wall mixer."
+      },
+      {
+        "category": "Gas Pipeline",
+        "detail": "Internal gas pipeline from kitchen to every toilet & bath."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed electrification for entire flat."
+      },
+      {
+        "category": "Parking",
+        "detail": "Allotted covered parking space for each flat on the ground stilt floor."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24 hours water supply of Municipal & boring water."
+      },
+      {
+        "category": "Media & Comms",
+        "detail": "Telephone & cable connection in living room."
+      }
+    ],
+    "amenities": [
+      "Allotted Covered Stilt Parking Space for Each Flat",
+      "Modern Automatic Passenger Elevator with Power Backup",
+      "24 Hours Dual Water Supply (Municipal Mains & Deep Borewell)",
+      "Internal Gas Pipeline Routed to All Toilets & Bathrooms",
+      "Pre-Installed Telephone & Television Cable Sockets in Living Room",
+      "Main Entrance Door with Brass Fittings, Night Latch & Laminate",
+      "Polished G20 Granite Kitchen Platform with Glazed Tile Dado",
+      "3-Track Powder-Coated Aluminium Windows with Mosquito Net & MS Grills"
+    ],
+    "highlights": [
+      "Located near Charvak Chowk, Indira Nagar, Nashik",
+      "Just 0.8 kms from Mumbai-Agra Highway (NH-3)",
+      "Stilt + 7 Floors with 24 luxurious residences",
+      "Triple-road frontage on 30.00M, 9.00M & 7.50M DP roads",
+      "100% Vastu-compliant layouts with private sit-outs & terraces",
+      "Crafted by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-vithal-park-logo-transparent.png",
+    "brochure": "/projects/shree-vithal-park/brochure/",
+    "brochureUrl": "/projects/shree-vithal-park/brochure/",
+    "brochurePdf": "/brochures/shree-vithal-park-brochure.pdf"
+  },
+  {
+    "id": 20,
+    "name": "Shree Shakuntal",
+    "slug": "shree-shakuntal",
+    "location": "Indira Nagar, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "1 & 2 BHK Premium Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-shakuntal.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-shakuntal.webp",
+      "/projects/shree-shakuntal/brochure/assets/page-1.webp",
+      "/projects/shree-shakuntal/brochure/assets/page-2.webp",
+      "/projects/shree-shakuntal/brochure/assets/page-3.webp",
+      "/projects/shree-shakuntal/brochure/assets/page-4.webp"
+    ],
+    "tagline": "श्री शाकुंतल — A Blissful Lifestyle Awaits You Here",
+    "description": "Situated in the prime, serene neighbourhood of Indira Nagar near Saraf Lawn on Pethe Nagar Road in Nashik, Shree Shakuntal is an exclusive completed boutique residential community developed by KALE B. M. & Shreeyog Associates. Offering 1 & 2 BHK premium residences across Stilt + 4 storeys with demarcated covered stilt car parking, passenger elevator, private sit-outs, and 24-hour dual water supply.",
+    "overview": "Shree Shakuntal stands along a tranquil 7.50-meter wide DP access road in Indira Nagar, featuring 12 exclusive 1 & 2 BHK residences (Flats 1 to 12 across 4 floors). Designed with earthquake-resistant RCC architecture, Johnson vitrified tile flooring, L-shaped G20 granite kitchen platform, and 3-track aluminium sliding windows.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure designed to seismic safety standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brick work."
+      },
+      {
+        "category": "Plaster & Paint",
+        "detail": "Double coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper paint."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Johnson vitrified tile flooring across all rooms."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Granite kitchen platform (G20) with stainless steel sink & glazed tile dado up to lintel level."
+      },
+      {
+        "category": "Doors",
+        "detail": "Attractive main entrance door with brass fittings, night latch & laminate finish; waterproof flush internal doors."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with mosquito net, marble sill & safety M.S. grills."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "Glazed ceramic wall tiles up to full lintel level; concealed plumbing with branded fittings & hot/cold wall mixer."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with adequate electrical points, TV & telephone sockets in living room."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24 hours dual water supply from Nashik Municipal Corporation mains and borewell."
+      },
+      {
+        "category": "Parking",
+        "detail": "Demarcated ground stilt covered parking bays numbered 1 to 12 for every residence."
+      },
+      {
+        "category": "Vertical Transit",
+        "detail": "Modern passenger elevator serving all residential floors with safety backup."
+      }
+    ],
+    "amenities": [
+      "Demarcated Ground Stilt Car Parking Bays (Bays 1-12)",
+      "Modern Passenger Elevator with Safety Backup",
+      "24 Hours Dual Water Supply (Municipal Mains + Borewell)",
+      "Spacious Private Balconies & Sit-Outs for Every Flat",
+      "Concealed Copper Electrification with TV & Phone Points",
+      "Laminated Designer Main Door with Brass Fittings & Night Latch",
+      "L-Shaped G20 Granite Kitchen Counter with Stainless Steel Sink",
+      "3-Track Aluminium Windows with Insect Netting & Safety Grills"
+    ],
+    "highlights": [
+      "Located at Indira Nagar, Near Saraf Lawn, Pethe Nagar Road, Nashik",
+      "Stilt + 4 Storeys boutique community with only 12 exclusive flats",
+      "1 & 2 BHK premium configurations (Flats 1-12)",
+      "Direct frontage onto wide 7.50M municipal DP access road",
+      "Developed by KALE B. M. with Ar. Umesh Bagul & Er. Prasanna Bhore",
+      "Ready-to-move completed landmark with all civic amenities"
+    ],
+    "logo": "/images/shreeyog/logos/shree-shakuntal-logo-transparent.png",
+    "brochure": "/projects/shree-shakuntal/brochure/",
+    "brochureUrl": "/projects/shree-shakuntal/brochure/",
+    "brochurePdf": "/brochures/shree-shakuntal-brochure.pdf"
   }
 ]

@@ -264,19 +264,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -286,17 +288,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -366,7 +357,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */
@@ -679,19 +670,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -701,17 +694,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -781,7 +763,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */
@@ -1102,19 +1084,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -1124,17 +1108,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -1204,7 +1177,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */

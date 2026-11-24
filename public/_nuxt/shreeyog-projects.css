@@ -520,8 +520,15 @@
     height: 150px;
   }
 
+  .sat-9 {
+    top: 61%;
+    right: 2%;
+    width: 200px;
+    height: 150px;
+  }
+
   .completed-stage {
-    min-height: 840px;
+    min-height: 890px;
   }
 
   .ongoing-stage {
@@ -2345,19 +2352,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -2367,17 +2376,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -2447,7 +2445,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */
@@ -2760,19 +2758,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -2782,17 +2782,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -2862,7 +2851,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */
@@ -3183,19 +3172,21 @@ header[data-v-81ce8483] {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              background-image 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Top state & Scroll-down state: Preserve original warm brown gradient to transparent */
+/* Persistent transparent navbar with original warm brown gradient across all scroll states */
 header.-at-top,
 header.-scrolled-down,
-header.-scrolled:not(.-scrolled-up),
+header.-scrolled,
+header.-scrolled-up,
+header[data-v-81ce8483].-scrolled-up,
+header[data-v-81ce8483].-scrolled,
+header.-dark,
+header[data-v-81ce8483].-dark,
 header:not(.-scrolled-up) {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: linear-gradient(180deg,
     rgba(123, 81, 54, 0.65) 0%,
     rgba(123, 81, 54, 0.55) 22%,
@@ -3205,17 +3196,6 @@ header:not(.-scrolled-up) {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   box-shadow: none !important;
-}
-
-/* Scroll-up state: Turn solid black with high-contrast text and sleek shadow */
-header.-scrolled-up,
-header[data-v-81ce8483].-scrolled-up {
-  background: rgba(21, 20, 21, 0.98) !important;
-  background-color: rgba(21, 20, 21, 0.98) !important;
-  background-image: none !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Inner Layout Row */
@@ -3285,7 +3265,7 @@ header .-w .sep[data-v-81ce8483] {
 
 header.-scrolled-up .-w .sep,
 header[data-v-81ce8483].-scrolled-up .-w .sep {
-  background-color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(21, 20, 21, 0.45) !important;
 }
 
 /* Center Left Navigation Button (Projects / Places) */
@@ -3587,5 +3567,485 @@ header .-w [data-v-f52f19c3].request {
   }
   .shreeyog-brand-logo {
     height: 38px !important;
+  }
+}
+
+
+/* ==========================================================================
+   UNIFIED SHOWCASE ARCHITECTURE: HIGHLIGHTED, ONGOING & COMPLETED SECTIONS
+   Exact replication of Highlighted Projects card design, stage layout, typography,
+   colors, borders, hover effects, satellite positioning & responsive alignment.
+   ========================================================================== */
+
+.c-highlighted-section,
+.c-ongoing-section,
+.c-completed-section {
+  position: relative !important;
+  background-color: var(--sy-black, #151415) !important;
+  color: var(--sy-cream, #f1eade) !important;
+  padding: clamp(3rem, 6vw, 5.5rem) 0 clamp(4rem, 8vw, 7rem) 0 !important;
+  overflow: hidden !important;
+}
+
+/* Subtle architectural divider between project portfolio sections */
+.c-ongoing-section::before,
+.c-completed-section::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 5% !important;
+  right: 5% !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(196, 154, 108, 0.25) 30%, rgba(196, 154, 108, 0.25) 70%, transparent) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* Section Header Typography */
+.c-highlighted-section .section-header,
+.c-ongoing-section .section-header,
+.c-completed-section .section-header {
+  text-align: center !important;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem) !important;
+  position: relative !important;
+  z-index: 2 !important;
+  padding: 0 1.5rem !important;
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.c-highlighted-section .section-tag,
+.c-ongoing-section .section-tag,
+.c-completed-section .section-tag {
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: var(--sy-gold, #c6a76a) !important;
+  display: block !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 500 !important;
+}
+
+.c-highlighted-section .section-title,
+.c-ongoing-section .section-title,
+.c-completed-section .section-title {
+  font-family: var(--font-t-1), "Voyage", "OTJubilee-Platinum", Georgia, serif !important;
+  font-size: clamp(2.4rem, 5.5vw, 5.5rem) !important;
+  line-height: 1.05 !important;
+  font-weight: 400 !important;
+  margin: 0 0 1rem 0 !important;
+  color: var(--sy-cream, #f1eade) !important;
+}
+
+.c-ongoing-section .section-subtitle,
+.c-completed-section .section-subtitle {
+  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem) !important;
+  line-height: 1.6 !important;
+  color: rgba(241, 234, 222, 0.72) !important;
+  margin: 0 auto !important;
+  max-width: 680px !important;
+}
+
+/* Stage Layout */
+.highlighted-stage,
+.ongoing-stage,
+.completed-stage {
+  position: relative !important;
+  max-width: 1380px !important;
+  margin: 0 auto !important;
+  padding: 1rem 1.5rem !important;
+  min-height: 620px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (min-width: 1024px) {
+  .highlighted-stage,
+  .ongoing-stage {
+    min-height: 700px !important;
+  }
+  .completed-stage {
+    min-height: 860px !important;
+  }
+}
+
+/* Featured Showcase Card (Centerpiece) */
+.featured-showcase {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 620px !important;
+  margin: 0 auto !important;
+  border-radius: 0.6rem !important;
+  overflow: hidden !important;
+  background-color: var(--sy-card-bg, #1c1b1c) !important;
+  border: 1px solid rgba(196, 154, 108, 0.28) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
+  z-index: 10 !important;
+  height: auto !important;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.featured-showcase:hover {
+  border-color: rgba(196, 154, 108, 0.55) !important;
+  box-shadow: 0 35px 75px rgba(0, 0, 0, 0.9), 0 0 30px rgba(196, 154, 108, 0.12) !important;
+}
+
+.featured-image-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 10 !important;
+  max-height: 350px !important;
+  overflow: hidden !important;
+  background-color: #0d0d0d !important;
+}
+
+.featured-image-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease !important;
+}
+
+.featured-showcase:hover .featured-image-wrapper img {
+  transform: scale(1.04) !important;
+}
+
+.featured-image-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(21, 20, 21, 0.1) 0%, rgba(21, 20, 21, 0.4) 60%, rgba(21, 20, 21, 0.85) 100%) !important;
+  pointer-events: none !important;
+}
+
+/* Floating Status Pill */
+.featured-status-badge {
+  position: absolute !important;
+  top: 1.25rem !important;
+  left: 1.25rem !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  padding: 0.35rem 0.85rem !important;
+  border-radius: 2rem !important;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.status-ongoing {
+  background: rgba(123, 81, 54, 0.4) !important;
+  border: 1px solid rgba(196, 154, 108, 0.4) !important;
+  color: #e5c38c !important;
+}
+
+.status-completed {
+  background: rgba(40, 75, 55, 0.4) !important;
+  border: 1px solid rgba(110, 190, 140, 0.4) !important;
+  color: #a2e8be !important;
+}
+
+/* Floating Project Logo in Top-Right */
+.featured-card-logo {
+  position: absolute !important;
+  top: 1.25rem !important;
+  right: 1.25rem !important;
+  z-index: 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  pointer-events: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: opacity 0.25s ease !important;
+}
+
+.featured-card-logo img {
+  width: auto !important;
+  height: 48px !important;
+  max-width: 165px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.95)) !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 768px) {
+  .featured-card-logo {
+    top: 1rem !important;
+    right: 1rem !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .featured-card-logo img {
+    height: 36px !important;
+    max-width: 125px !important;
+  }
+}
+
+/* Satellite Card Floating Project Logo - hidden per user specification */
+.sat-card-logo {
+  display: none !important;
+}
+
+/* Featured Info Panel */
+.featured-info {
+  padding: 1.4rem 1.8rem 1.5rem 1.8rem !important;
+  background: linear-gradient(180deg, #1c1b1c 0%, #151415 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.6rem !important;
+}
+
+.featured-top-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.featured-location {
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: var(--sy-gold, #c6a76a) !important;
+}
+
+.featured-counter {
+  font-family: var(--font-t-1), "Voyage", Georgia, serif !important;
+  font-size: 0.95rem !important;
+  color: rgba(241, 234, 222, 0.55) !important;
+}
+
+.featured-counter span {
+  color: var(--sy-cream, #f1eade) !important;
+  font-weight: 500 !important;
+}
+
+.featured-name {
+  font-family: var(--font-t-1), "Voyage", "OTJubilee-Platinum", Georgia, serif !important;
+  font-size: clamp(1.8rem, 2.7vw, 2.4rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.12 !important;
+  color: var(--sy-cream, #f1eade) !important;
+  margin: 0 !important;
+}
+
+.featured-desc {
+  font-family: var(--font-b-regular), "Switzer-Regular", -apple-system, sans-serif !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
+  color: rgba(241, 234, 222, 0.72) !important;
+  margin: 0 !important;
+}
+
+.featured-action-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 0.4rem !important;
+  padding-top: 0.85rem !important;
+  border-top: 1px solid rgba(196, 154, 108, 0.18) !important;
+}
+
+.featured-detail-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--sy-gold, #c6a76a) !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease, gap 0.3s ease !important;
+}
+
+.featured-detail-btn:hover {
+  color: #ffffff !important;
+  gap: 0.75rem !important;
+}
+
+.featured-nav-controls {
+  display: flex !important;
+  gap: 0.5rem !important;
+}
+
+.feat-nav-btn {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: rgba(21, 20, 21, 0.8) !important;
+  border: 1px solid rgba(196, 154, 108, 0.3) !important;
+  color: var(--sy-cream, #f1eade) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.feat-nav-btn:hover {
+  background: var(--sy-gold, #c6a76a) !important;
+  color: #151415 !important;
+  border-color: var(--sy-gold, #c6a76a) !important;
+}
+
+/* Surrounding Satellite Cards - Mobile & Tablet: strictly hide */
+.satellite-cards {
+  display: none !important;
+}
+.satellite-card {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .satellite-cards {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    pointer-events: none !important;
+    z-index: 5 !important;
+  }
+
+  .satellite-card {
+    display: block !important;
+    pointer-events: all !important;
+    position: absolute !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
+    background-color: var(--sy-card-bg, #1c1b1c) !important;
+    border: 1px solid rgba(196, 154, 108, 0.22) !important;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6) !important;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+    cursor: pointer !important;
+    z-index: 6 !important;
+    /* Strict default bounding prevents raw image dimension blowout */
+    width: 210px !important;
+    height: 140px !important;
+    max-width: 230px !important;
+    max-height: 270px !important;
+  }
+
+  .satellite-card:hover {
+    transform: translateY(-4px) scale(1.02) !important;
+    border-color: rgba(196, 154, 108, 0.55) !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.75) !important;
+    z-index: 15 !important;
+  }
+
+  .satellite-card img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .satellite-card .sat-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg, transparent 40%, rgba(21, 20, 21, 0.95) 100%) !important;
+    padding: 0.75rem 0.9rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    pointer-events: none !important;
+  }
+
+  .satellite-card .sat-num {
+    font-family: var(--font-t-1), "Voyage", serif !important;
+    font-size: 0.85rem !important;
+    color: var(--sy-gold, #c6a76a) !important;
+  }
+
+  .satellite-card .sat-name {
+    font-family: var(--font-b-medium), "Switzer-Medium", -apple-system, sans-serif !important;
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+    color: var(--sy-cream, #f1eade) !important;
+    margin-top: 0.15rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* No logos on satellite cards */
+  .satellite-card .featured-card-logo,
+  .satellite-card .card-logo,
+  .satellite-card .sat-logo {
+    display: none !important;
+  }
+
+  /* Default 5-Satellite Positions (Highlighted & Ongoing stages) */
+  .sat-1 { top: 3% !important; left: 3% !important; width: 220px !important; height: 260px !important; }
+  .sat-2 { bottom: 4% !important; left: 4% !important; width: 230px !important; height: 165px !important; }
+  .sat-3 { top: 4% !important; right: 3% !important; width: 220px !important; height: 270px !important; }
+  .sat-4 { bottom: 4% !important; right: 4% !important; width: 230px !important; height: 165px !important; }
+  .sat-5 { top: 48% !important; left: 1.5% !important; transform: translateY(-50%) !important; width: 175px !important; height: 200px !important; }
+
+  /* Hide any satellite beyond 5 in Highlighted or Ongoing */
+  .highlighted-stage:not(.completed-stage) .sat-6,
+  .highlighted-stage:not(.completed-stage) .sat-7,
+  .highlighted-stage:not(.completed-stage) .sat-8,
+  .highlighted-stage:not(.completed-stage) .sat-9,
+  .highlighted-stage:not(.completed-stage) .sat-10,
+  .highlighted-stage:not(.completed-stage) .sat-11,
+  .highlighted-stage:not(.completed-stage) .sat-12,
+  .ongoing-stage .sat-6,
+  .ongoing-stage .sat-7,
+  .ongoing-stage .sat-8,
+  .ongoing-stage .sat-9,
+  .ongoing-stage .sat-10,
+  .ongoing-stage .sat-11,
+  .ongoing-stage .sat-12 {
+    display: none !important;
+  }
+
+  /* Completed Stage 13-Satellite Balanced Framing (7 Left, 6 Right) */
+  .completed-stage { min-height: 1040px !important; }
+
+  /* Left Side: 7 cards neatly stacked from top to bottom */
+  .completed-stage .sat-1  { top: 1.5% !important; left: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+  .completed-stage .sat-7  { top: 15.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-5  { top: 29.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-9  { top: 43.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-11 { top: 57.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-13 { top: 71.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-2  { bottom: 1.5% !important; left: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+
+  /* Right Side: 6 cards neatly spaced */
+  .completed-stage .sat-3  { top: 1.5% !important; right: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+  .completed-stage .sat-8  { top: 17% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-6  { top: 32.5% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-10 { top: 48% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-12 { top: 63.5% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
+  .completed-stage .sat-4  { bottom: 1.5% !important; right: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+
+  /* Safety rule for any potential extras beyond 13 */
+  .completed-stage .sat-14,
+  .completed-stage .sat-15,
+  .completed-stage .sat-16,
+  .completed-stage .sat-17,
+  .completed-stage .sat-18 {
+    display: none !important;
   }
 }

@@ -147,7 +147,40 @@ const server = http.createServer((req, res) => {
     '/projects/shree-navshakti/Shree-Navshakti.pdf': '/brochures/shree-navashakti-brochure.pdf',
     '/projects/shree-navshakti/Shree-Navshakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
     '/projects/shree-navshakti/brochure/Shree-Navshakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
-    '/projects/shree-navshakti/brochure/brochure.pdf': '/brochures/shree-navashakti-brochure.pdf'
+    '/projects/shree-navshakti/brochure/brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+
+    '/brochures/shree-kala.pdf': '/brochures/shree-kala-brochure.pdf',
+    '/projects/shree-kala/Shree-Kala.pdf': '/brochures/shree-kala-brochure.pdf',
+    '/projects/shree-kala/Shree-Kala-Brochure.pdf': '/brochures/shree-kala-brochure.pdf',
+    '/projects/shree-kala/brochure/Shree-Kala-Brochure.pdf': '/brochures/shree-kala-brochure.pdf',
+    '/projects/shree-kala/brochure/brochure.pdf': '/brochures/shree-kala-brochure.pdf',
+
+    '/brochures/shree-nakshatra.pdf': '/brochures/shree-nakshatra-brochure.pdf',
+    '/projects/shree-nakshatra/Shree-Nakshatra.pdf': '/brochures/shree-nakshatra-brochure.pdf',
+    '/projects/shree-nakshatra/Shree-Nakshatra-Brochure.pdf': '/brochures/shree-nakshatra-brochure.pdf',
+    '/projects/shree-nakshatra/brochure/Shree-Nakshatra-Brochure.pdf': '/brochures/shree-nakshatra-brochure.pdf',
+    '/projects/shree-nakshatra/brochure/brochure.pdf': '/brochures/shree-nakshatra-brochure.pdf',
+
+    '/projects/shree-vrundavan/brochure': '/projects/shree-vrundavan/brochure/',
+    '/brochures/shree-vrundavan.pdf': '/brochures/shree-vrundavan-brochure.pdf',
+    '/projects/shree-vrundavan/Shree-Vrundavan.pdf': '/brochures/shree-vrundavan-brochure.pdf',
+    '/projects/shree-vrundavan/Shree-Vrundavan-Brochure.pdf': '/brochures/shree-vrundavan-brochure.pdf',
+    '/projects/shree-vrundavan/brochure/Shree-Vrundavan-Brochure.pdf': '/brochures/shree-vrundavan-brochure.pdf',
+    '/projects/shree-vrundavan/brochure/brochure.pdf': '/brochures/shree-vrundavan-brochure.pdf',
+
+    '/projects/shree-vithal-park/brochure': '/projects/shree-vithal-park/brochure/',
+    '/brochures/shree-vithal-park.pdf': '/brochures/shree-vithal-park-brochure.pdf',
+    '/projects/shree-vithal-park/Shree-Vithal-Park.pdf': '/brochures/shree-vithal-park-brochure.pdf',
+    '/projects/shree-vithal-park/Shree-Vithal-Park-Brochure.pdf': '/brochures/shree-vithal-park-brochure.pdf',
+    '/projects/shree-vithal-park/brochure/Shree-Vithal-Park-Brochure.pdf': '/brochures/shree-vithal-park-brochure.pdf',
+    '/projects/shree-vithal-park/brochure/brochure.pdf': '/brochures/shree-vithal-park-brochure.pdf',
+
+    '/projects/shree-shakuntal/brochure': '/projects/shree-shakuntal/brochure/',
+    '/brochures/shree-shakuntal.pdf': '/brochures/shree-shakuntal-brochure.pdf',
+    '/projects/shree-shakuntal/Shree-Shakuntal.pdf': '/brochures/shree-shakuntal-brochure.pdf',
+    '/projects/shree-shakuntal/Shree-Shakuntal-Brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf',
+    '/projects/shree-shakuntal/brochure/Shree-Shakuntal-Brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf',
+    '/projects/shree-shakuntal/brochure/brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {
