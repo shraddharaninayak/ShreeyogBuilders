@@ -130,7 +130,13 @@ const server = http.createServer((req, res) => {
     '/projects/shree-niwas/Shree-Niwas.pdf': '/brochures/shree-niwas-brochure.pdf',
     '/projects/shree-niwas/Shree-Niwas-Brochure.pdf': '/brochures/shree-niwas-brochure.pdf',
     '/projects/shree-niwas/brochure/Shree-Niwas-Brochure.pdf': '/brochures/shree-niwas-brochure.pdf',
-    '/projects/shree-niwas/brochure/brochure.pdf': '/brochures/shree-niwas-brochure.pdf'
+    '/projects/shree-niwas/brochure/brochure.pdf': '/brochures/shree-niwas-brochure.pdf',
+
+    '/brochures/shree-padma.pdf': '/brochures/shree-padma-brochure.pdf',
+    '/projects/shree-padma/Shree-Padma.pdf': '/brochures/shree-padma-brochure.pdf',
+    '/projects/shree-padma/Shree-Padma-Brochure.pdf': '/brochures/shree-padma-brochure.pdf',
+    '/projects/shree-padma/brochure/Shree-Padma-Brochure.pdf': '/brochures/shree-padma-brochure.pdf',
+    '/projects/shree-padma/brochure/brochure.pdf': '/brochures/shree-padma-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {

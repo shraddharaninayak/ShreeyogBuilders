@@ -54,6 +54,7 @@
     { "source": "/projects/shree-nandan/brochure", "destination": "/projects/shree-nandan/brochure/", "permanent": true },
     { "source": "/projects/shree-anant/brochure", "destination": "/projects/shree-anant/brochure/", "permanent": true },
     { "source": "/projects/shree-niwas/brochure", "destination": "/projects/shree-niwas/brochure/", "permanent": true },
+    { "source": "/projects/shree-padma/brochure", "destination": "/projects/shree-padma/brochure/", "permanent": true },
 
     { "source": "/brochures/shree-nath-enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-nath-enclave/Shree-Nath-Enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
@@ -96,6 +97,12 @@
     { "source": "/projects/shree-niwas/Shree-Niwas.pdf", "destination": "/brochures/shree-niwas-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-niwas/Shree-Niwas-Brochure.pdf", "destination": "/brochures/shree-niwas-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-niwas/brochure/Shree-Niwas-Brochure.pdf", "destination": "/brochures/shree-niwas-brochure.pdf", "permanent": true },
-    { "source": "/projects/shree-niwas/brochure/brochure.pdf", "destination": "/brochures/shree-niwas-brochure.pdf", "permanent": true }
+    { "source": "/projects/shree-niwas/brochure/brochure.pdf", "destination": "/brochures/shree-niwas-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-padma.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-padma/Shree-Padma.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-padma/Shree-Padma-Brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-padma/brochure/Shree-Padma-Brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-padma/brochure/brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true }
   ]
 }

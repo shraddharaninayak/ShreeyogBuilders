@@ -359,41 +359,64 @@ module.exports = [
     "id": 8,
     "name": "Shree Padma",
     "slug": "shree-padma",
-    "location": "Gangapur Road, Nashik",
+    "location": "Opp. Cambridge School, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Boutique Residential Enclave",
+    "typology": "2 & 3 BHK Premium Flats (Wings A, B & C)",
     "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/projects/nisarg.webp",
+    "mainImage": "/images/shreeyog/slider/shree-padma.webp",
     "gallery": [
-      "/images/shreeyog/projects/nisarg.webp",
-      "/images/shreeyog/interiors/living-room.webp"
+      "/images/shreeyog/slider/shree-padma.webp",
+      "/projects/shree-padma/brochure/assets/page-3.webp",
+      "/projects/shree-padma/brochure/assets/page-4.webp",
+      "/projects/shree-padma/brochure/assets/page-5.webp"
     ],
-    "tagline": "Exclusive Low-Density Living in Gangapur Road",
-    "description": "A private boutique residential development designed for discerning homeowners who prioritize quiet community living in an upscale residential quarter.",
-    "overview": "Completed to rigorous structural standards, Shree Padma showcases timeless exterior design and enduring interior finishes.",
+    "tagline": "A place where creates the Fragrance of Happiness...",
+    "description": "Located directly opposite Cambridge School in prime Indira Nagar, Shree Padma features multi-wing 2 & 3 BHK premium residences across Wings A, B, and C with stilt parking, solar water heating, and manicured garden surroundings.",
+    "overview": "Conceived around enduring family relationships and peaceful community living, Shree Padma combines earthquake-resistant structural engineering, cross-ventilated unit layouts, and modern campus conveniences in Nashik.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "Seismic-resistant RCC design."
+        "detail": "Earthquake-resistant R.C.C. frame structure designed as per IS standards."
       },
       {
-        "category": "Doors",
-        "detail": "Waterproof flush doors with attractive brass hardware."
+        "category": "Masonry & Plaster",
+        "detail": "Quality brick masonry (6\" external & 4\" internal) with external double-coat sand-faced plaster & internal gypsum/neeru finish."
+      },
+      {
+        "category": "Flooring",
+        "detail": "2' x 2' vitrified tile flooring in all rooms with 3\" skirting; anti-skid ceramic tiles in sit-outs and balconies."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Polished granite kitchen platform with Nirali stainless steel sink and glazed tile dado up to lintel level."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminum sliding windows with mosquito mesh, green marble/granite sills, and safety MS grills."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with modular switches, AC point in master bedroom, and TV points in living room."
       }
     ],
     "amenities": [
-      "Gated Perimeter Security",
-      "Dedicated Covered Parking",
-      "Common Rooftop Solar Lighting"
+      "Grand Entrance Gate with Security Cabin & Intercom",
+      "Demarcated Stilt Covered Parking Bays for Wings A, B & C",
+      "High-Speed Automatic Elevators with Power Backup",
+      "Rooftop Solar Water Heating System",
+      "Paved Campus Perimeter with Senior Citizen Sit-Outs",
+      "Rainwater Harvesting System & Ground Water Recharge"
     ],
     "highlights": [
-      "Prime residential street",
-      "Peaceful low-noise surroundings",
-      "Long-term structural warranty"
+      "Directly opposite Cambridge School in prime Indira Nagar",
+      "Multi-wing architectural planning (Wings A, B, C) for maximum privacy",
+      "27+ years trust of Shreeyog Builders & Land Developers",
+      "Quick 1.3 Km connectivity to Mumbai-Agra Highway (NH-3)"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-padma-logo.png",
+    "brochurePdf": "/brochures/shree-padma-brochure.pdf",
+    "brochureUrl": "/projects/shree-padma/brochure/"
   },
   {
     "id": 9,
