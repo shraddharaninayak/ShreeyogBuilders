@@ -456,41 +456,59 @@ module.exports = [
     "id": 10,
     "name": "Shree Niwas",
     "slug": "shree-niwas",
-    "location": "College Road, Nashik",
+    "location": "Opp. LIC Colony, Near Guru Govind Singh College, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Premium City Residences",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/buildings/tanvi-residency.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "P51600022902",
+    "logo": "/images/shreeyog/logos/shree-niwas-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-niwas.webp",
     "gallery": [
-      "/images/shreeyog/buildings/tanvi-residency.webp",
-      "/images/shreeyog/interiors/residential-lounge.webp"
+      "/images/shreeyog/slider/shree-niwas.webp",
+      "/projects/shree-niwas/brochure/assets/page-1.webp",
+      "/projects/shree-niwas/brochure/assets/plan-typical.webp",
+      "/projects/shree-niwas/brochure/assets/plan-ground.webp",
+      "/projects/shree-niwas/brochure/assets/location-map.webp"
     ],
-    "tagline": "Prestigious Living in the Cultural Hub of College Road",
-    "description": "Located within walking distance of Nashik's premier colleges, cafes, and shopping districts, Shree Niwas represents prime city center living at its finest.",
-    "overview": "A completed architectural landmark tailored for families wanting quick access to colleges, institutions, and lifestyle destinations.",
+    "tagline": "A Classic Style of Life — Better Environment Invites You",
+    "description": "Situated in prime Indira Nagar opposite LIC Colony, Shree Niwas offers 12 exclusive 2 & 3 BHK luxurious flats built with natural red soil bricks, rooftop solar net-metering, campus play garden, and a private celebration terrace.",
+    "overview": "A boutique G + 4 residential landmark of only 12 residences with 3 homes per floor, featuring authentic red soil brick masonry, zero common light bills via net solar power, an automatic 4-person elevator with battery backup, and complete move-in complimentary furnishings.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "Heavy-grade concrete framework."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake-resistant RCC framework with natural red soil bricks and eco light blocks."
       },
       {
-        "category": "Windows",
-        "detail": "Large sliding glass windows allowing ample cross ventilation."
+        "category": "Flooring & Tiling",
+        "detail": "Johnson or RAK brand premium vitrified and ceramic tiles with full-height dado in each toilet."
+      },
+      {
+        "category": "Kitchen & Utility",
+        "detail": "L-shape or parallel black granite platform with SS sink, modular trolleys, and separate wash balcony."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Box-type laminated door frames, main safety door, and 4-side full granite framing on all windows and toilets."
       }
     ],
     "amenities": [
-      "Automatic Elevator with Safety Device",
-      "Intercom Connectivity",
-      "Dedicated Two-Wheeler and Car Parking"
+      "Natural Red Soil Brick Construction",
+      "Children's Play Area, Lawn & Outdoor Green Gym",
+      "Rooftop Solar System (Zero Common Light Bill)",
+      "Rooftop Celebration Terrace with Basin & Water",
+      "Solar Hot Water Connected to Every Toilet",
+      "Automatic 4-Person Elevator with Battery Backup",
+      "Demarcated Covered Parking with 9.0M Road Access",
+      "24/7 CCTV Surveillance & Watchman Room with Toilet",
+      "Pre-Installed Move-In Gift Package (Lights, Fans, Curtains, Aqua Guard)"
     ],
     "highlights": [
-      "Walk-to-everything College Road address",
-      "High rental demand asset",
-      "Excellent lifestyle amenities nearby"
+      "Opp. LIC Colony & Guru Govind Singh College Campus",
+      "Only 12 Residences with 3 Flats Per Floor",
+      "MahaRERA: P51600022902 & CRISIL Rated Developer"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-niwas-brochure.pdf",
+    "brochureUrl": "/projects/shree-niwas/brochure/"
   },
   {
     "id": 11,
