@@ -55,6 +55,8 @@
     { "source": "/projects/shree-anant/brochure", "destination": "/projects/shree-anant/brochure/", "permanent": true },
     { "source": "/projects/shree-niwas/brochure", "destination": "/projects/shree-niwas/brochure/", "permanent": true },
     { "source": "/projects/shree-padma/brochure", "destination": "/projects/shree-padma/brochure/", "permanent": true },
+    { "source": "/projects/shree-navashakti/brochure", "destination": "/projects/shree-navashakti/brochure/", "permanent": true },
+    { "source": "/projects/shree-navshakti/brochure", "destination": "/projects/shree-navashakti/brochure/", "permanent": true },
 
     { "source": "/brochures/shree-nath-enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-nath-enclave/Shree-Nath-Enclave.pdf", "destination": "/brochures/shree-nath-enclave-brochure.pdf", "permanent": true },
@@ -103,6 +105,17 @@
     { "source": "/projects/shree-padma/Shree-Padma.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-padma/Shree-Padma-Brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
     { "source": "/projects/shree-padma/brochure/Shree-Padma-Brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
-    { "source": "/projects/shree-padma/brochure/brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true }
+    { "source": "/projects/shree-padma/brochure/brochure.pdf", "destination": "/brochures/shree-padma-brochure.pdf", "permanent": true },
+
+    { "source": "/brochures/shree-navashakti.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/brochures/shree-navshakti.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navashakti/Shree-Navashakti.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navashakti/Shree-Navashakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navashakti/brochure/Shree-Navashakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navashakti/brochure/brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navshakti/Shree-Navshakti.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navshakti/Shree-Navshakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navshakti/brochure/Shree-Navshakti-Brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true },
+    { "source": "/projects/shree-navshakti/brochure/brochure.pdf", "destination": "/brochures/shree-navashakti-brochure.pdf", "permanent": true }
   ]
 }

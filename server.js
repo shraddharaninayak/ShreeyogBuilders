@@ -136,7 +136,18 @@ const server = http.createServer((req, res) => {
     '/projects/shree-padma/Shree-Padma.pdf': '/brochures/shree-padma-brochure.pdf',
     '/projects/shree-padma/Shree-Padma-Brochure.pdf': '/brochures/shree-padma-brochure.pdf',
     '/projects/shree-padma/brochure/Shree-Padma-Brochure.pdf': '/brochures/shree-padma-brochure.pdf',
-    '/projects/shree-padma/brochure/brochure.pdf': '/brochures/shree-padma-brochure.pdf'
+    '/projects/shree-padma/brochure/brochure.pdf': '/brochures/shree-padma-brochure.pdf',
+
+    '/brochures/shree-navashakti.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/brochures/shree-navshakti.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navashakti/Shree-Navashakti.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navashakti/Shree-Navashakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navashakti/brochure/Shree-Navashakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navashakti/brochure/brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navshakti/Shree-Navshakti.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navshakti/Shree-Navshakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navshakti/brochure/Shree-Navshakti-Brochure.pdf': '/brochures/shree-navashakti-brochure.pdf',
+    '/projects/shree-navshakti/brochure/brochure.pdf': '/brochures/shree-navashakti-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {

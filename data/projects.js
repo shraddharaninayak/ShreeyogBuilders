@@ -535,39 +535,76 @@ module.exports = [
   },
   {
     "id": 11,
-    "name": "Shree Navshakti",
+    "name": "Shree Navashakti",
     "slug": "shree-navshakti",
-    "location": "Panchavati, Nashik",
+    "location": "Navshakti Chowk, opp. Dr. Homi Bhabha Garden, Bhabha Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Traditional Community Residences",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/projects/safalya-angle.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "MahaRERA: P51600022623",
+    "mainImage": "/images/shreeyog/slider/shree-navshakti.webp",
     "gallery": [
-      "/images/shreeyog/projects/safalya-angle.webp",
-      "/images/shreeyog/interiors/dining-space.webp"
+      "/images/shreeyog/slider/shree-navshakti.webp",
+      "/projects/shree-navashakti/brochure/assets/page-3.webp",
+      "/projects/shree-navashakti/brochure/assets/plan-ground.webp",
+      "/projects/shree-navashakti/brochure/assets/plan-typical.webp"
     ],
-    "tagline": "Serenity and Heritage in Historic Panchavati",
-    "description": "Shree Navshakti blends the timeless spiritual calmness of Panchavati with modern structural resilience and reliable amenities.",
-    "overview": "A celebrated completed development offering serene family living near the sacred banks of the Godavari.",
+    "tagline": "Peaceful living for infinity recognition of your divine soul..",
+    "description": "Located at Navshakti Chowk directly opposite Dr. Homi Bhabha Garden in Bhabha Nagar, Shree Navashakti features 16 exclusive 2 & 3 BHK residences across G + 4 floors with natural red soil brick masonry, rooftop solar net-metering, party terrace, and turnkey move-in privileges.",
+    "overview": "Conceived around spiritual calmness and construction integrity, Shree Navashakti reflects Shreeyog's 27+ years legacy with only 4 homes per floor, cross-ventilation, and zero common electricity bills.",
     "specifications": [
       {
         "category": "Structure",
-        "detail": "RCC framed structure built with premium grade cement and TMT steel."
+        "detail": "Earthquake-resistant RCC frame structure designed strictly as per IS standards."
+      },
+      {
+        "category": "Masonry",
+        "detail": "Natural red soil brick masonry providing superior climate thermal insulation and cooler ambient indoor temperatures."
+      },
+      {
+        "category": "Solar Power",
+        "detail": "Rooftop solar net-metering grid ensuring zero common electricity bills for passage lighting, lift, and water pumps."
+      },
+      {
+        "category": "Solar Water",
+        "detail": "Dedicated solar water heating line piped directly into each flat's bathroom toilet."
+      },
+      {
+        "category": "Flooring & Tiles",
+        "detail": "High-grade Johnson or RAK brand ceramic and vitrified tiles across all rooms and toilets."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "L-shape or parallel granite kitchen platform with full ceramic dado and stainless steel modular kitchen trolley."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Box type plywood door frames with laminate on both sides; granite frames on all windows and toilets."
+      },
+      {
+        "category": "Move-In Readiness",
+        "detail": "Pre-equipped with tube lights, bulbs, fan, Aqua guard purifier, cloth dryer stand, curtain rods with curtains, letter box, and nameplate."
       }
     ],
     "amenities": [
-      "Dedicated Water Storage",
-      "Secure Compound Boundary",
-      "Elevator Facility"
+      "Zero Common Light Bill (Rooftop Solar Net-Metering)",
+      "Solar Water Heating System for Each Toilet",
+      "Rooftop Party Celebration Terrace with Washbasin",
+      "Turnkey Move-In Gift Kit with Fan & Aqua Guard",
+      "L-Shape / Parallel Granite Platform with Kitchen Trolley",
+      "Johnson or RAK Brand Flooring & Wall Tiles",
+      "4-Person Automatic Elevator with Battery Backup",
+      "CCTV Surveillance in Parking & Dedicated Watchman Room"
     ],
     "highlights": [
-      "Historic and spiritual Panchavati precinct",
-      "Peaceful atmosphere",
-      "Generous family layouts"
+      "Directly opposite Dr. Homi Bhabha Garden in Bhabha Nagar",
+      "Only 16 residences on a wide 9.00m thoroughfare (4 per floor)",
+      "27+ years trust of Shreeyog Builders (Since 1992)",
+      "MahaRERA Registration No. P51600022623"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "logo": "/images/shreeyog/logos/shree-navshakti-logo.png",
+    "brochurePdf": "/brochures/shree-navashakti-brochure.pdf",
+    "brochureUrl": "/projects/shree-navashakti/brochure/"
   },
   {
     "id": 12,
