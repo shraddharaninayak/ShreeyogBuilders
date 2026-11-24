@@ -118,7 +118,13 @@ const server = http.createServer((req, res) => {
     '/projects/shree-nandan/Shree-Nandan.pdf': '/brochures/shree-nandan-brochure.pdf',
     '/projects/shree-nandan/Shree-Nandan-Brochure.pdf': '/brochures/shree-nandan-brochure.pdf',
     '/projects/shree-nandan/brochure/Shree-Nandan-Brochure.pdf': '/brochures/shree-nandan-brochure.pdf',
-    '/projects/shree-nandan/brochure/brochure.pdf': '/brochures/shree-nandan-brochure.pdf'
+    '/projects/shree-nandan/brochure/brochure.pdf': '/brochures/shree-nandan-brochure.pdf',
+
+    '/brochures/shree-anant.pdf': '/brochures/shree-anant-brochure.pdf',
+    '/projects/shree-anant/Shree-Anant.pdf': '/brochures/shree-anant-brochure.pdf',
+    '/projects/shree-anant/Shree-Anant-Brochure.pdf': '/brochures/shree-anant-brochure.pdf',
+    '/projects/shree-anant/brochure/Shree-Anant-Brochure.pdf': '/brochures/shree-anant-brochure.pdf',
+    '/projects/shree-anant/brochure/brochure.pdf': '/brochures/shree-anant-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {

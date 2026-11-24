@@ -399,41 +399,58 @@ module.exports = [
     "id": 9,
     "name": "Shree Anant",
     "slug": "shree-anant",
-    "location": "Govind Nagar, Nashik",
+    "location": "Opp. LIC Colony, Near Manas Hospital, Indira Nagar, Nashik",
     "status": "Completed",
     "featured": false,
-    "typology": "Quality Family Apartments",
-    "rera": "Completed Project",
-    "mainImage": "/images/shreeyog/buildings/modern-luxury.webp",
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "P51600022962",
+    "logo": "/images/shreeyog/logos/shree-anant-logo.png",
+    "mainImage": "/images/shreeyog/slider/shree-anant.webp",
     "gallery": [
-      "/images/shreeyog/buildings/modern-luxury.webp",
-      "/images/shreeyog/projects/chintan.webp"
+      "/images/shreeyog/slider/shree-anant.webp",
+      "/projects/shree-anant/brochure/assets/page-1.webp",
+      "/projects/shree-anant/brochure/assets/plan-typical.webp",
+      "/projects/shree-anant/brochure/assets/plan-ground.webp",
+      "/projects/shree-anant/brochure/assets/location-map.webp"
     ],
-    "tagline": "Enduring Warmth and Structural Integrity",
-    "description": "Shree Anant in Govind Nagar reflects Shreeyog's core philosophy: building homes that stand the test of time with genuine construction quality and thoughtful layouts.",
-    "overview": "A mature residential development with a tight-knit community, celebrated for its reliable build quality and optimal city connectivity.",
+    "tagline": "A Tradition of Excellence — Comfort & Luxury Living",
+    "description": "Situated in prime Indira Nagar, Nashik opposite LIC Colony, Shree Anant offers 2 & 3 BHK luxurious homes built with natural red soil bricks, dual 9.0M road frontage, solar net metering, and a private rooftop celebration terrace.",
+    "overview": "A boutique G + 4 residential landmark crafted with time-honoured red soil brick masonry, zero common light bills via net solar power, an automatic 4-passenger elevator with battery backup, and complete move-in complimentary fixtures.",
     "specifications": [
       {
-        "category": "Structure",
-        "detail": "Robust RCC construction with external weather-coat paint."
+        "category": "Structure & Masonry",
+        "detail": "Earthquake resistant RCC framework with external 6\" and internal 4\" natural red soil brick walls."
       },
       {
-        "category": "Flooring",
-        "detail": "Durable ceramic and vitrified floor finishes."
+        "category": "Flooring & Tiling",
+        "detail": "Johnson / RAK premium vitrified tiles in all rooms; anti-skid ceramic tiles in toilets & balconies."
+      },
+      {
+        "category": "Kitchen & Utility",
+        "detail": "L-shape or parallel black granite platform with SS sink, full-height glazed dado, and included modular trolleys."
+      },
+      {
+        "category": "Doors & Windows",
+        "detail": "Decorative main door with safety door; 3-track powder-coated sliding windows with 4-side full granite frames."
       }
     ],
     "amenities": [
-      "Covered Parking",
-      "Underground & Overhead Water Tanks",
-      "Security Gatehouse"
+      "Natural Red Soil Brick Construction",
+      "Rooftop Solar System (Zero Common Light Bill)",
+      "Rooftop Celebration Terrace with Basin & Water",
+      "Solar Water Heater Connection to Toilets",
+      "Automatic 4-Passenger Elevator with Battery Backup",
+      "Demarcated Covered Parking with Dual 9.0M Road Access",
+      "24/7 CCTV Surveillance & Watchman Cabin with Toilet",
+      "Specially Gift Move-In Package (Lights, Fans, Curtains, Aqua Guard, Accessories)"
     ],
     "highlights": [
-      "Govind Nagar central location",
-      "Quiet residential lane",
-      "100% occupied with contented families"
+      "Opp. LIC Colony & Near Manas Hospital",
+      "Dual 9.0M East & West Road Frontages",
+      "MahaRERA: P51600022962 & CRISIL Rated Developer"
     ],
-    "brochurePdf": null,
-    "brochureUrl": null
+    "brochurePdf": "/brochures/shree-anant-brochure.pdf",
+    "brochureUrl": "/projects/shree-anant/brochure/"
   },
   {
     "id": 10,
