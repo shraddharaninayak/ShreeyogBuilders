@@ -2718,16 +2718,36 @@ header .-w [data-v-f52f19c3].request {
 /* Responsive Handling */
 @media (max-width: 860px) {
   header .-w .places,
+  header .-w [data-v-81ce8483].places,
+  header .-w a.places,
   header .-w .sep,
+  header .-w [data-v-81ce8483].sep,
   header .-w .objects,
+  header .-w [data-v-81ce8483].objects,
   header .-w .objects.about {
     display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   header .-w {
     padding: 12px 18px !important;
+    justify-content: space-between !important;
   }
   .shreeyog-brand-logo {
     height: 38px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-stats {
+    flex-wrap: wrap !important;
+    gap: 1.25rem 2rem !important;
+    padding: 1rem 0.5rem !important;
+    justify-content: center !important;
   }
 }
 
@@ -3132,16 +3152,36 @@ header .-w [data-v-f52f19c3].request {
 /* Responsive Handling */
 @media (max-width: 860px) {
   header .-w .places,
+  header .-w [data-v-81ce8483].places,
+  header .-w a.places,
   header .-w .sep,
+  header .-w [data-v-81ce8483].sep,
   header .-w .objects,
+  header .-w [data-v-81ce8483].objects,
   header .-w .objects.about {
     display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   header .-w {
     padding: 12px 18px !important;
+    justify-content: space-between !important;
   }
   .shreeyog-brand-logo {
     height: 38px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-stats {
+    flex-wrap: wrap !important;
+    gap: 1.25rem 2rem !important;
+    padding: 1rem 0.5rem !important;
+    justify-content: center !important;
   }
 }
 
@@ -3557,16 +3597,36 @@ header .-w [data-v-f52f19c3].request {
 /* Responsive Handling */
 @media (max-width: 860px) {
   header .-w .places,
+  header .-w [data-v-81ce8483].places,
+  header .-w a.places,
   header .-w .sep,
+  header .-w [data-v-81ce8483].sep,
   header .-w .objects,
+  header .-w [data-v-81ce8483].objects,
   header .-w .objects.about {
     display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   header .-w {
     padding: 12px 18px !important;
+    justify-content: space-between !important;
   }
   .shreeyog-brand-logo {
     height: 38px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-stats {
+    flex-wrap: wrap !important;
+    gap: 1.25rem 2rem !important;
+    padding: 1rem 0.5rem !important;
+    justify-content: center !important;
   }
 }
 
@@ -4020,32 +4080,34 @@ header .-w [data-v-f52f19c3].request {
     display: none !important;
   }
 
-  /* Completed Stage 13-Satellite Balanced Framing (7 Left, 6 Right) */
-  .completed-stage { min-height: 1040px !important; }
+  /* Completed Stage 18-Satellite Balanced Framing (9 Left, 9 Right) */
+  .completed-stage { min-height: 1260px !important; }
 
-  /* Left Side: 7 cards neatly stacked from top to bottom */
-  .completed-stage .sat-1  { top: 1.5% !important; left: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
-  .completed-stage .sat-7  { top: 15.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-5  { top: 29.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-9  { top: 43.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-11 { top: 57.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-13 { top: 71.5% !important; left: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-2  { bottom: 1.5% !important; left: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+  /* Left Side: 9 cards neatly stacked from top to bottom */
+  .completed-stage .sat-1  { top: 1.0% !important; left: 2% !important; width: 205px !important; height: 122px !important; transform: none !important; }
+  .completed-stage .sat-7  { top: 12.2% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-5  { top: 23.4% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-9  { top: 34.6% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-11 { top: 45.8% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-13 { top: 57.0% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-15 { top: 68.2% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-17 { top: 79.4% !important; left: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-2  { bottom: 1.0% !important; left: 2% !important; width: 205px !important; height: 122px !important; transform: none !important; }
 
-  /* Right Side: 6 cards neatly spaced */
-  .completed-stage .sat-3  { top: 1.5% !important; right: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
-  .completed-stage .sat-8  { top: 17% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-6  { top: 32.5% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-10 { top: 48% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-12 { top: 63.5% !important; right: 1.2% !important; width: 195px !important; height: 125px !important; transform: none !important; }
-  .completed-stage .sat-4  { bottom: 1.5% !important; right: 2% !important; width: 210px !important; height: 130px !important; transform: none !important; }
+  /* Right Side: 9 cards neatly spaced */
+  .completed-stage .sat-3  { top: 1.0% !important; right: 2% !important; width: 205px !important; height: 122px !important; transform: none !important; }
+  .completed-stage .sat-8  { top: 12.2% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-6  { top: 23.4% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-10 { top: 34.6% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-12 { top: 45.8% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-14 { top: 57.0% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-16 { top: 68.2% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-18 { top: 79.4% !important; right: 1.2% !important; width: 195px !important; height: 118px !important; transform: none !important; }
+  .completed-stage .sat-4  { bottom: 1.0% !important; right: 2% !important; width: 205px !important; height: 122px !important; transform: none !important; }
 
-  /* Safety rule for any potential extras beyond 13 */
-  .completed-stage .sat-14,
-  .completed-stage .sat-15,
-  .completed-stage .sat-16,
-  .completed-stage .sat-17,
-  .completed-stage .sat-18 {
+  /* Safety rule for any potential extras beyond 18 */
+  .completed-stage .sat-19,
+  .completed-stage .sat-20 {
     display: none !important;
   }
 }

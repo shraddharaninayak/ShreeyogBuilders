@@ -180,7 +180,41 @@ const server = http.createServer((req, res) => {
     '/projects/shree-shakuntal/Shree-Shakuntal.pdf': '/brochures/shree-shakuntal-brochure.pdf',
     '/projects/shree-shakuntal/Shree-Shakuntal-Brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf',
     '/projects/shree-shakuntal/brochure/Shree-Shakuntal-Brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf',
-    '/projects/shree-shakuntal/brochure/brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf'
+    '/projects/shree-shakuntal/brochure/brochure.pdf': '/brochures/shree-shakuntal-brochure.pdf',
+
+        '/projects/shree-samarth/brochure': '/projects/shree-samarth/brochure/',
+    '/projects/shree-samarth': '/projects/shree-samarth/brochure/',
+    '/brochures/shree-samarth.pdf': '/brochures/shree-samarth-brochure.pdf',
+    '/projects/shree-samarth/Shree-Samarth.pdf': '/brochures/shree-samarth-brochure.pdf',
+    '/projects/shree-samarth/Shree-Samarth-Brochure.pdf': '/brochures/shree-samarth-brochure.pdf',
+
+    '/projects/shree-vinayak/brochure': '/projects/shree-vinayak/brochure/',
+    '/projects/shree-vinayak': '/projects/shree-vinayak/brochure/',
+    '/brochures/shree-vinayak.pdf': '/brochures/shree-vinayak-brochure.pdf',
+    '/projects/shree-vinayak/Shree-Vinayak.pdf': '/brochures/shree-vinayak-brochure.pdf',
+    '/projects/shree-vinayak/Shree-Vinayak-Brochure.pdf': '/brochures/shree-vinayak-brochure.pdf',
+
+    '/projects/shree-nisarg/brochure': '/projects/shree-nisarg/brochure/',
+    '/projects/shree-nisarg': '/projects/shree-nisarg/brochure/',
+    '/brochures/shree-nisarg.pdf': '/brochures/shree-nisarg-brochure.pdf',
+    '/projects/shree-nisarg/Shree-Nisarg.pdf': '/brochures/shree-nisarg-brochure.pdf',
+    '/projects/shree-nisarg/Shree-Nisarg-Brochure.pdf': '/brochures/shree-nisarg-brochure.pdf',
+
+    '/projects/shree-niketan/brochure': '/projects/shree-niketan/brochure/',
+    '/projects/shree-niketan': '/projects/shree-niketan/brochure/',
+    '/brochures/shree-niketan.pdf': '/brochures/shree-niketan-brochure.pdf',
+    '/projects/shree-niketan/Shree-Niketan.pdf': '/brochures/shree-niketan-brochure.pdf',
+    '/projects/shree-niketan/Shree-Niketan-Brochure.pdf': '/brochures/shree-niketan-brochure.pdf',
+    '/projects/shree-niketan/brochure/Shree-Niketan-Brochure.pdf': '/brochures/shree-niketan-brochure.pdf',
+    '/projects/shree-niketan/brochure/brochure.pdf': '/brochures/shree-niketan-brochure.pdf',
+
+    '/projects/shree-chintamani/brochure': '/projects/shree-chintamani/brochure/',
+    '/projects/shree-chintamani': '/projects/shree-chintamani/brochure/',
+    '/brochures/shree-chintamani.pdf': '/brochures/shree-chintamani-brochure.pdf',
+    '/projects/shree-chintamani/Shree-Chintamani.pdf': '/brochures/shree-chintamani-brochure.pdf',
+    '/projects/shree-chintamani/Shree-Chintamani-Brochure.pdf': '/brochures/shree-chintamani-brochure.pdf',
+    '/projects/shree-chintamani/brochure/Shree-Chintamani-Brochure.pdf': '/brochures/shree-chintamani-brochure.pdf',
+    '/projects/shree-chintamani/brochure/brochure.pdf': '/brochures/shree-chintamani-brochure.pdf'
   };
 
   if (brochureRedirects[pathname]) {

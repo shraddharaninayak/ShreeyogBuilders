@@ -52,6 +52,14 @@ const qo = Le({
         document.head.appendChild(link);
       }
 
+      if (!document.getElementById("shreeyog-footer-css")) {
+        const flink = document.createElement("link");
+        flink.id = "shreeyog-footer-css";
+        flink.rel = "stylesheet";
+        flink.href = "/_nuxt/shreeyog-footer.css";
+        document.head.appendChild(flink);
+      }
+
       // 2. Ensure loaded & ready classes and unlock overflow
       const doc = document.documentElement;
       doc.classList.add("-loaded", "-ready");

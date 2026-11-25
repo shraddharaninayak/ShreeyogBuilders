@@ -1254,5 +1254,451 @@
     "brochure": "/projects/shree-shakuntal/brochure/",
     "brochureUrl": "/projects/shree-shakuntal/brochure/",
     "brochurePdf": "/brochures/shree-shakuntal-brochure.pdf"
+  },
+  {
+    "id": 21,
+    "name": "Shree Niketan",
+    "slug": "shree-niketan",
+    "location": "Kamatwada, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 BHK Luxury Homes & Shops",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-niketan.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-niketan.webp",
+      "/projects/shree-niketan/brochure/assets/page-1.webp",
+      "/projects/shree-niketan/brochure/assets/page-2.webp",
+      "/projects/shree-niketan/brochure/assets/page-3.webp",
+      "/projects/shree-niketan/brochure/assets/page-4.webp",
+      "/projects/shree-niketan/brochure/assets/page-5.webp"
+    ],
+    "tagline": "Shree Niketan — A Peaceful Nest... Nestled Majestically",
+    "description": "Standing along a prominent 24.00-meter wide DP road at Gulmohar Colony on DGP Nagar Road in Kamatwada, Nashik, Shree Niketan is an accomplished residential and retail community featuring Stilt + 6 storeys across twin wings (Wings A & B), 36 luxurious 2 BHK apartments, 6 ground commercial shops, dual elevators, internal gas pipelines, and dedicated parking.",
+    "overview": "Shree Niketan combines modern twin-wing residential architecture with ground-level convenience shopping along a 24M DP road. Located minutes from Symbiosis School and Trimurti Chowk, the project offers 36 spacious 2 BHK residences (890 sq.ft saleable) designed with Johnson vitrified tile flooring, G20 granite kitchen counters, dual 6'x6' passenger elevators, and demarcated stilt parking bays.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure engineered to high safety codes."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brick masonry."
+      },
+      {
+        "category": "Plaster & Paint",
+        "detail": "Double coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Johnson Vitrified tile flooring uniformly laid across the entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Polished G20 granite platform with stainless steel sink and 4' high designer glazed tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with mosquito netting, safety M.S. grills & marble sills."
+      },
+      {
+        "category": "Doors",
+        "detail": "Laminated entrance main door with brass hardware and Night Latch; waterproof flush internal doors."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "7' height glazed wall ceramic tiles; PVC doors with marble frames; concealed plumbing with wall mixer."
+      },
+      {
+        "category": "Gas Pipeline",
+        "detail": "Dedicated internal gas pipeline safely routed from the kitchen counter to all bathrooms and toilets."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with adequate electrical points, TV socket, and telephone connection in living room."
+      },
+      {
+        "category": "Parking",
+        "detail": "Separate allotted covered stilt parking space demarcated for each individual residence."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24-hour dual water supply from Nashik Municipal Corporation mains and reliable deep borewell system."
+      }
+    ],
+    "amenities": [
+      "Allotted Covered Stilt Parking Space for Each Flat",
+      "Dual Automatic Passenger Elevators (6'0\" x 6'0\")",
+      "6 Ground Floor Commercial Retail Shops (235 - 315 sq.ft)",
+      "Internal Gas Pipeline from Kitchen to Toilets",
+      "24 Hours Dual Water Supply (Municipal Mains + Borewell)",
+      "Spacious 10'0\" x 6'0\" Private Sit-Out Balconies",
+      "3-Track Aluminium Windows with Insect Netting & MS Grills",
+      "Prominent Frontage on Wide 24.00-Meter DP Road"
+    ],
+    "highlights": [
+      "Located at Gulmohar Colony, DGP Nagar Road, Kamatwada, Nashik",
+      "Stilt + 6 Storeys Twin Wings (Wing A with 24 flats, Wing B with 12 flats)",
+      "36 Luxurious 2 BHK Residences (890 sq.ft saleable)",
+      "Direct 24.00-meter wide DP thoroughfare access",
+      "Minutes to Symbiosis School, Trimurti Chowk & City Centre Mall",
+      "Developed by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-niketan-logo-transparent.png",
+    "brochure": "/projects/shree-niketan/brochure/",
+    "brochureUrl": "/projects/shree-niketan/brochure/",
+    "brochurePdf": "/brochures/shree-niketan-brochure.pdf"
+  },
+  {
+    "id": 22,
+    "name": "Shree Chintamani",
+    "slug": "shree-chintamani",
+    "location": "Gangapur Road, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Apartments",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-chintamani.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-chintamani.webp",
+      "/projects/shree-chintamani/brochure/assets/page-1.webp",
+      "/projects/shree-chintamani/brochure/assets/page-2.webp",
+      "/projects/shree-chintamani/brochure/assets/page-3.webp",
+      "/projects/shree-chintamani/brochure/assets/page-4.webp"
+    ],
+    "tagline": "श्री चिंतामणी — The Prestigious Location for Your Home",
+    "description": "Situated at Datta Chowk on Nirmala Convent Road in prime Gangapur Road, Nashik, Shree Chintamani is an exclusive completed residential community offering 18 luxurious 2 and 3 BHK apartments across Stilt + 5 storeys with allocated stilt parking, passenger elevator, private sit-outs, and panoramic views of the Godavari river greenbelt and Godapark.",
+    "overview": "Located in one of Nashik's most coveted residential avenues just minutes from College Road and Nirmala Convent School, Shree Chintamani features 18 premium 2 & 3 BHK residences overlooking tranquil riverfront greenery. Built with earthquake-resistant RCC architecture, 2'x2' Johnson vitrified flooring, G20 granite kitchen counters, automatic passenger lift, and 24-hour dual water supply.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure designed to rigorous seismic safety standards."
+      },
+      {
+        "category": "Brick Work",
+        "detail": "External walls 6\" thick and internal partition walls 4.5\" thick brick masonry."
+      },
+      {
+        "category": "Plaster & Paint",
+        "detail": "Double coat external plaster with semi-acrylic paint; Neeru-finish internal plaster with Asian Oil Bound Distemper."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Good quality 2' x 2' Johnson Vitrified tile flooring uniformly laid across the entire flat."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Granite kitchen platform (G20) with stainless steel sink and 4' high glazed ceramic tile dado."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with mosquito netting, safety M.S. grills & marble sills."
+      },
+      {
+        "category": "Doors",
+        "detail": "Laminated entrance main door with brass hardware and Night Latch; waterproof flush internal doors."
+      },
+      {
+        "category": "Bath / Toilet",
+        "detail": "7' height glazed wall ceramic tiles; PVC doors with marble frames; concealed plumbing with quality fittings & wall mixer."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with adequate electrical points, TV socket, and telephone connection in living room."
+      },
+      {
+        "category": "Parking",
+        "detail": "Separate allocated parking space demarcated for each individual residence on ground stilt level."
+      },
+      {
+        "category": "Water Supply",
+        "detail": "24-hour dual water supply from Nashik Municipal Corporation mains and reliable deep borewell system."
+      },
+      {
+        "category": "Vertical Transit",
+        "detail": "Modern automatic passenger elevator servicing all residential floors with safety battery backup."
+      }
+    ],
+    "amenities": [
+      "Allocated Covered Stilt Parking Space for Each Flat",
+      "Modern Automatic Passenger Elevator with Battery Backup",
+      "Panoramic Views of Godavari River Greenbelt & Godapark",
+      "24 Hours Dual Water Supply (Municipal Mains + Borewell)",
+      "Spacious Private Balconies & Sit-Outs for Every Flat",
+      "Concealed Copper Electrification with TV & Phone Points",
+      "Polished G20 Granite Kitchen Counter with Glazed Dado",
+      "3-Track Aluminium Windows with Insect Netting & MS Grills"
+    ],
+    "highlights": [
+      "Located at Datta Chowk, Nirmala Convent Road, Gangapur Road, Nashik",
+      "Stilt + 5 Storeys boutique community with 18 exclusive residences",
+      "2 & 3 BHK luxury apartment configurations",
+      "Adjacent to Godavari River greenery and Godapark promenades",
+      "Minutes to Nirmala Convent High School, College Road & Canada Corner",
+      "Developed by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-chintamani-logo-transparent.png",
+    "brochure": "/projects/shree-chintamani/brochure/",
+    "brochureUrl": "/projects/shree-chintamani/brochure/",
+    "brochurePdf": "/brochures/shree-chintamani-brochure.pdf"
+  },
+  {
+    "id": 23,
+    "name": "Shree Samarth",
+    "slug": "shree-samarth",
+    "location": "Indira Nagar Annex, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Flats & Penthouses",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-samarth.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-samarth.webp",
+      "/projects/shree-samarth/brochure/assets/page-1.webp",
+      "/projects/shree-samarth/brochure/assets/page-2.webp",
+      "/projects/shree-samarth/brochure/assets/page-3.webp",
+      "/projects/shree-samarth/brochure/assets/page-4.webp",
+      "/projects/shree-samarth/brochure/assets/page-5.webp",
+      "/projects/shree-samarth/brochure/assets/page-6.webp"
+    ],
+    "tagline": "Shree Samarth — Make Your Life Divine!",
+    "description": "Located opposite LIC Colony behind Samrat Sweet in prime Indira Nagar Annex, Nashik, Shree Samarth is a landmark completed residential community comprising Stilt + 4 floors across twin wings (Wings A & B), 26 residences including 4th-floor penthouses with private open sky terraces, children's play area, open-air green gym, landscaped mound and lawn, performance stage, dual lifts, and 100% demarcated stilt car parking.",
+    "overview": "Shree Samarth delivers serene, divine living in one of Nashik's most coveted residential neighborhoods. Featuring twin wings (Wings A & B) with independent elevators, the project offers spacious 2 & 3 BHK residences on typical floors (Flats A-1 to A-12 and B-1 to B-12) and prestigious 4th-floor penthouses (A-13 & B-13) with vast private open terraces, an outdoor green gym, children play area, and demarcated stilt parking bays.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure designed to rigorous Indian Standard (IS) seismic codes."
+      },
+      {
+        "category": "Brick Work & Plaster",
+        "detail": "6\" thick external brick walls with double coat sand-faced plaster; smooth neeru plaster finish internally."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Premium 2' x 2' vitrified tile flooring in living, dining, and bedrooms; anti-skid ceramic tiles in terraces and washrooms."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Polished granite kitchen platform with stainless steel sink and designer glazed ceramic tile dado up to lintel level."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with mosquito netting, safety M.S. grills, and polished marble sills."
+      },
+      {
+        "category": "Doors",
+        "detail": "Attractive main entrance door with brass fittings and Night Latch; waterproof flush internal doors for all bedrooms."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with modular switches, adequate points, TV/telephone points, and AC point provision in master bedroom."
+      },
+      {
+        "category": "Plumbing & Bath",
+        "detail": "Concealed CPVC plumbing with branded CP fittings, quality sanitaryware, hot/cold mixer unit, and solar water heating provision."
+      },
+      {
+        "category": "Parking",
+        "detail": "26 demarcated covered stilt parking bays (A-1 to A-13 and B-1 to B-13) serviced by a wide 6.00-meter peripheral driveway."
+      },
+      {
+        "category": "Lifts & Water",
+        "detail": "Twin automatic passenger elevators with battery backup; 24-hour water supply with overhead and underground storage reservoirs."
+      }
+    ],
+    "amenities": [
+      "Children's Play Area with Safe Play Equipment & Sand Pit",
+      "Open-Air Green Gym for Daily Outdoor Fitness & Wellness",
+      "Landscaped Central Garden with Green Lawn & Earth Mound",
+      "Community Performance Stage & Shaded Evening Seating Arena",
+      "Twin High-Speed Automatic Elevators with Inverter Backup",
+      "26 Demarcated Covered Stilt Parking Bays with 6.00M Driveway",
+      "24x7 Security Cabin with Intercom & Rainwater Harvesting",
+      "4th-Floor Penthouses Featuring Expansive Private Sky Terraces"
+    ],
+    "highlights": [
+      "Located Opp. LIC Colony, Behind Samrat Sweet, Indira Nagar Annex, Nashik",
+      "Stilt + 4 Floors Twin Wings (A & B) with 26 Total Residences",
+      "2 & 3 BHK Luxurious Flats & Elite Top-Floor Penthouses",
+      "Independent Elevator & Core for Each Wing ensuring Privacy",
+      "Minutes to Mumbai-Agra Highway (NH-3), Symbiosis School & Wockhardt",
+      "Developed by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-samarth-logo-transparent.png",
+    "brochure": "/projects/shree-samarth/brochure/",
+    "brochureUrl": "/projects/shree-samarth/brochure/",
+    "brochurePdf": "/brochures/shree-samarth-brochure.pdf"
+  },
+  {
+    "id": 24,
+    "name": "Shree Vinayak",
+    "slug": "shree-vinayak",
+    "location": "Indira Nagar, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Premium Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-vinayak.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-vinayak.webp",
+      "/projects/shree-vinayak/brochure/assets/page-1.webp",
+      "/projects/shree-vinayak/brochure/assets/page-2.webp",
+      "/projects/shree-vinayak/brochure/assets/page-3.webp",
+      "/projects/shree-vinayak/brochure/assets/page-4.webp",
+      "/projects/shree-vinayak/brochure/assets/page-5.webp"
+    ],
+    "tagline": "सुख-समृद्धीचा वास होऊ दे.. सर्व घराघरात !",
+    "description": "Situated just 200 meters off Mumbai-Agra Highway behind Hotel Tapasvi in Indira Nagar, Nashik, Shree Vinayak is a distinguished low-density residential community featuring Stilt + 4 floors, 16 exclusive apartments (3 BHK on 1st floor; 2 BHK on 2nd floor with personal 156 sq.ft private open terraces; 2 BHK on upper floors), Sanskar Mandir, high-speed elevator, and 16 demarcated stilt car parking bays.",
+    "overview": "Shree Vinayak offers high connectivity combined with peaceful neighborhood living. Positioned only 200 meters from the Mumbai-Agra National Highway, the development features 16 thoughtfully designed homes, a ground-level Sanskar Mandir temple for daily prayers, personal 156 sq.ft open sky terraces for 2nd-floor residences, an automatic elevator with power backup, and guaranteed car parking for every home.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Earthquake resistant R.C.C. frame structure designed in strict accordance with IS codes."
+      },
+      {
+        "category": "Brick Work & Plaster",
+        "detail": "6\" external brickwork, 4\" internal brick masonry with double coat sand-faced plaster outside and neeru finish inside."
+      },
+      {
+        "category": "Flooring",
+        "detail": "2' x 2' vitrified tile flooring uniformly across all rooms; anti-skid ceramic tiles in terraces and washrooms."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Black granite kitchen platform with stainless steel sink and glazed tile dado up to lintel level (7 ft)."
+      },
+      {
+        "category": "Windows",
+        "detail": "3-track powder-coated aluminium sliding windows with safety M.S. grills and marble frame sills."
+      },
+      {
+        "category": "Doors",
+        "detail": "Waterproof laminated main door with eye-hole & brass fittings; waterproof flush doors for bedrooms and toilets."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with Anchor/Legrand modular switches, TV/phone points, and inverter wiring provision."
+      },
+      {
+        "category": "Plumbing & Sanitary",
+        "detail": "Concealed CPVC plumbing with premium CP fittings, wall mixer, solar water connection, and branded sanitaryware."
+      },
+      {
+        "category": "Parking",
+        "detail": "Covered ground stilt parking with 16 clearly numbered individual car parking bays."
+      },
+      {
+        "category": "Lift & Security",
+        "detail": "Modern passenger elevator with automatic rescue device; dedicated watchman cabin at entrance gate."
+      }
+    ],
+    "amenities": [
+      "Sanskar Mandir Community Temple at Ground Level",
+      "16 Demarcated Covered Stilt Car Parking Bays",
+      "Automatic Passenger Elevator with Battery Inverter Backup",
+      "Personal 156 sq.ft Attached Open Terraces (2nd Floor Homes)",
+      "Security Watchman Cabin with Visitor Control & Intercom",
+      "Rainwater Harvesting with Underground & Overhead Reservoirs",
+      "Prime Location Just 200 Meters from Mumbai-Agra Highway",
+      "Intimate 16-Home Community Offering Maximum Privacy"
+    ],
+    "highlights": [
+      "Located Behind Hotel Tapasvi, Indira Nagar, Nashik (200m from Highway)",
+      "Stilt + 4 Storeys Boutique Residence with 16 Exclusive Homes",
+      "1st Floor 3 BHK, 2nd Floor 2 BHK with Terraces, 3rd-4th Floor 2 BHK",
+      "Ground Floor Sanskar Mandir for Spiritual Serenity",
+      "Minutes to Pathardi Phata, City Center Mall & Wockhardt Hospital",
+      "Developed by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-vinayak-logo-transparent.png",
+    "brochure": "/projects/shree-vinayak/brochure/",
+    "brochureUrl": "/projects/shree-vinayak/brochure/",
+    "brochurePdf": "/brochures/shree-vinayak-brochure.pdf"
+  },
+  {
+    "id": 25,
+    "name": "Shree Nisarg",
+    "slug": "shree-nisarg",
+    "location": "Gangapur Road, Nashik",
+    "status": "Completed",
+    "featured": false,
+    "typology": "2 & 3 BHK Luxurious Flats",
+    "rera": "Completed Project",
+    "mainImage": "/images/shreeyog/slider/shree-nisarg.webp",
+    "gallery": [
+      "/images/shreeyog/slider/shree-nisarg.webp",
+      "/projects/shree-nisarg/brochure/assets/page-1.webp",
+      "/projects/shree-nisarg/brochure/assets/page-2.webp",
+      "/projects/shree-nisarg/brochure/assets/page-3.webp",
+      "/projects/shree-nisarg/brochure/assets/page-4.webp",
+      "/projects/shree-nisarg/brochure/assets/page-5.webp"
+    ],
+    "tagline": "Relax in the soothing lap of mother nature",
+    "description": "Situated in the revered residential enclave of Gangapur Road opposite Pramod Nagar, Nashik, Shree Nisarg is a nature-inspired completed residential landmark comprising Stilt + 4 floors across twin wings (Wings A & B), 24 homes (Wing A: 8 spacious 3 BHK residences of 1,270 sq.ft; Wing B: 16 comfortable 2 BHK residences of 1,025 sq.ft), roadside landscaped front park, dual automatic lifts, and 24 demarcated stilt car bays.",
+    "overview": "Shree Nisarg unites architectural finesse with lush botanical serenity on prime Gangapur Road. Positioned near Nirmala Convent School and KTHM campus, the development features 24 expansive homes across twin towers, an exclusive landscaped roadside front park along the 12M thoroughfare, independent high-speed elevators for each wing, full stilt parking bays (A-1 to A-8 and B-1 to B-16), and dual municipal and borewell water supply.",
+    "specifications": [
+      {
+        "category": "Structure",
+        "detail": "Sturdy earthquake resistant R.C.C. framed structure engineered to high safety benchmarks."
+      },
+      {
+        "category": "Brick Work & Plaster",
+        "detail": "6\" external and internal brick walls with double coat sand-faced plaster externally and smooth gypsum/neeru plaster internally."
+      },
+      {
+        "category": "Flooring",
+        "detail": "Premium 2' x 2' vitrified tile flooring in drawing, dining, kitchen, and bedrooms; non-slippery tiles in terraces & washrooms."
+      },
+      {
+        "category": "Kitchen",
+        "detail": "Fine polished granite kitchen counter with stainless steel sink, glazed ceramic tile dado up to lintel, and water purifier connection."
+      },
+      {
+        "category": "Windows",
+        "detail": "Powder-coated aluminium sliding windows with mosquito netting, safety M.S. grills, and polished stone sills."
+      },
+      {
+        "category": "Doors",
+        "detail": "Teak wood frame ornamental main door with brass hardware; waterproof flush internal doors for all bedrooms."
+      },
+      {
+        "category": "Electrification",
+        "detail": "Concealed copper wiring with Anchor/Legrand modular switches, AC point in master bedroom, and inverter backup wiring."
+      },
+      {
+        "category": "Plumbing & Sanitary",
+        "detail": "Concealed CPVC plumbing with Jaguar/equivalent CP fittings, solar water heating connection, and anti-skid bathroom floors."
+      },
+      {
+        "category": "Parking",
+        "detail": "24 demarcated covered stilt parking bays (A-1 to A-8 for Wing A, B-1 to B-16 for Wing B) with wide circulation driveways."
+      },
+      {
+        "category": "Elevators & Water",
+        "detail": "Dual automatic passenger elevators (one per wing) with emergency backup; dual municipal and on-site borewell water supply."
+      }
+    ],
+    "amenities": [
+      "Dedicated Landscaped Front Park Facing the 12M Road",
+      "Dual High-Speed Automatic Passenger Elevators (One Per Wing)",
+      "24 Demarcated Covered Stilt Parking Bays (A-1 to A-8, B-1 to B-16)",
+      "Distinct Twin Wings: Wing A (3 BHK) and Wing B (2 BHK)",
+      "Dual Water Supply: Municipal Mains & Deep Borewell with Sump",
+      "Aesthetic Perimeter Boundary Wall, Designer Gate & Security Cabin",
+      "Walking Distance to Nirmala Convent School & Gangapur Road",
+      "Rainwater Harvesting System Recharging Groundwater Levels"
+    ],
+    "highlights": [
+      "Located Opp. Pramod Nagar, Near Nirmala Convent High School, Gangapur Road, Nashik",
+      "Stilt + 4 Storeys Twin Wings (A & B) with 24 Total Residences",
+      "Wing A: 8 Luxury 3 BHK Homes (1,270 sq.ft) & Wing B: 16 Luxury 2 BHK Homes (1,025 sq.ft)",
+      "Lush Roadside Front Park & Tree-Lined Surroundings",
+      "Minutes to College Road, KTHM, Someshwar & Navshya Ganpati",
+      "Developed by Shreeyog Builders & Land Developers (Since 1992)"
+    ],
+    "logo": "/images/shreeyog/logos/shree-nisarg-logo-transparent.png",
+    "brochure": "/projects/shree-nisarg/brochure/",
+    "brochureUrl": "/projects/shree-nisarg/brochure/",
+    "brochurePdf": "/brochures/shree-nisarg-brochure.pdf"
   }
 ]
